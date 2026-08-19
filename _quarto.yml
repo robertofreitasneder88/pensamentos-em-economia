@@ -1,0 +1,26 @@
+project:
+  type: website
+  resources:
+    - introducao-economia/aulas
+
+website:
+  title: "Pensamentos em economia"
+
+  sidebar:
+    style: "docked"
+    search: true
+    contents:
+      - section: "Cursos"
+        contents:
+          - text: "Introdução à Economia"
+            href: introducao-economia/index.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+    toc: true
+
+editor: visual

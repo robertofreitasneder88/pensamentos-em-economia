@@ -1,0 +1,9 @@
+---
+title: "Introdução à Economia"
+---
+
+### Módulo 1
+
+[**Aula 1 - Os 10 princípios da economia**](aulas/aulas_1/Aula%201.html){target="_blank"}
+
+[**Aula 2 - Pensando como um economista**](aulas/aulas_2/Aula%202.html){target="_blank"}
