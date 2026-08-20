@@ -7,3 +7,5 @@ title: "Introdução à Economia"
 [**Aula 1 - Os 10 princípios da economia**](aulas/aulas_1/Aula%201.html){target="_blank"}
 
 [**Aula 2 - Pensando como um economista**](aulas/aulas_2/Aula%202.html){target="_blank"}
+
+[**Aula 3 - Interdependência e ganhos de comércio**](aulas/aulas_3/Aula%203.html){target="_blank"}
