@@ -2,6 +2,10 @@
 title: "Introdução à Economia"
 ---
 
+### Outros Arquivos
+
+[**Cronograma**](aulas/outros_arquivos/cronograma.html){target="_blank"}
+
 ### Módulo 1
 
 [**Aula 1 - Os 10 princípios da economia**](aulas/aulas_1/Aula%201.html){target="_blank"}
