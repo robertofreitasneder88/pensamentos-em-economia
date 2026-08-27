@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Aula 5_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Aula 5_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Aula 5_files/libs/quarto-html/popper.min.js"></script>
+<script src="Aula 5_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Aula 5_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Aula 5_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Aula 5_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <title>Introdução à economia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Aula 5_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Aula 5_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Aula 5_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link href="Aula 5_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Aula 5_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Aula 5_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Aula 5_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Introdução à economia</h1>
+  <p class="subtitle">Aula 5 - Elasticidade e suas aplicações</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="menu" class="slide level2 smaler scrollable">
+<h2>Elasticidade e suas aplicações</h2>
+<h3 id="introdução">Introdução!</h3>
+<p><a href="#/intro">01 — Introdução</a></p>
+<h3 id="elasticidade-da-demanda">Elasticidade da demanda</h3>
+<p><a href="#/elastdem">02 — Elasticidade-preço de demanda e seus determinantes</a></p>
+<p><a href="#/calcelasprec">03 — Calculando a elasticidade-preço da demanda</a></p>
+<p><a href="#/curdemvar">04 — A variedade das curvas de demanda</a></p>
+<p><a href="#/elastdemrt">05 — Elasticidade de demanda e receita total</a></p>
+<p><a href="#/elastrtalcd">06 — Elasticidade e receita total ao longo da curva de demanda</a></p>
+<p><a href="#/outelasdem">07 — Outras elasticidades de demanda</a></p>
+<p><a href="#/JRP1">🏆 Vamos a um Jogo rápido!</a></p>
+<h3 id="elasticidade-da-oferta">Elasticidade da oferta</h3>
+<p><a href="#/elasprecoferdet">08 — Elasticidade-preço da oferta e seus determinantes</a></p>
+<p><a href="#/calcelastofer">09 — Calculando a elasticidade-preço da oferta</a></p>
+<p><a href="#/curofervar">10 — A variedade das curvas de oferta</a></p>
+<p><a href="#/JRP2">🏆 Vamos a um Jogo rápido!</a></p>
+<h3 id="três-aplicações-da-elasticidade-preço-de-oferta-e-demanda">Três aplicações da elasticidade-preço de oferta e demanda</h3>
+<p><a href="#/ce1">11 — Podem boas notícias para fazendeiros ser más notícias para fazendeiros</a></p>
+<p><a href="#/ce2">12 — Porquê a OPEP falhou em manter o alto o preços do petróleo</a></p>
+<p><a href="#/ce3">13 — A guerra contra as drogas aumenta ou diminui os crimes relacionados ao uso de drogas?</a></p>
+<p><a href="#/JRP3">🏆 Vamos a um Jogo rápido!</a></p>
+<h3 id="conclusão">Conclusão</h3>
+<p><a href="#/conclusao">Conclusão</a></p>
+</section>
+<section id="intro" class="slide level2 smaller scrollable">
+<h2>Introdução</h2>
+<p><strong>O que acontece quando o preço da gasolina aumenta?</strong></p>
+<p>Imagine que algum evento provoque uma forte alta no preço da gasolina:</p>
+<p>🌍 Guerra no Oriente Médio → redução da oferta mundial de petróleo;</p>
+<p>🏛 Crescimento da economia chinesa → aumento da demanda mundial por petróleo;</p>
+<p>Pela <strong>Lei da Demanda</strong>, já sabemos a direção da resposta:</p>
+<p>Preço da gasolina ↑ → Quantidade demandada de gasolina ↓</p>
+<p>Mas surge uma questão mais interessante:</p>
+<p><strong>Quanto o consumo diminui?</strong></p>
+<p>É justamente isso que a elasticidade procura medir.</p>
+<p><strong>Elasticidade</strong> mede o quanto compradores e vendedores respondem a mudanças nas condições de mercado.</p>
+<p>Ela permite passar de uma análise apenas qualitativa para uma análise quantitativa:</p>
+<p><strong>⛽ Um exemplo: gasolina</strong></p>
+<p>Estudos citados por Mankiw mostram que um aumento de 10% no preço da gasolina provoca aproximadamente:</p>
+<p>Após 1 ano: consumo ↓ 2,5%</p>
+<p>Após 5 anos: consumo ↓ 6%</p>
+<p><strong>Ideia central da aula</strong>: Elasticidade mede a intensidade da resposta de consumidores e produtores às mudanças no mercado.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="elastdem" class="slide level2 smaller scrollable">
+<h2>02 — Elasticidade-preço da demanda</h2>
+<p>No estudo da demanda, vimos para onde a quantidade demandada se move quando preços, renda ou outras condições mudam.</p>
+<p>Agora queremos saber <strong>quanto</strong> ela muda.</p>
+<p><strong>Elasticidade-preço da demanda</strong>: Mede o quanto a quantidade demandada responde a uma variação no preço do próprio bem.</p>
+<p><strong>Demanda elástica</strong> → a quantidade demandada reage de modo mais do que proporcional à mudança no preço.</p>
+<p><strong>Demanda inelástica</strong> → a quantidade demandada reage de modo menos do que proporcional à mudança no preço.</p>
+<p>Quanto mais fácil for para o consumidor reduzir ou substituir o consumo diante de um aumento de preço, mais elástica tende a ser a demanda.</p>
+<p><strong>O que determina a elasticidade da demanda?</strong></p>
+<p>🔄 <strong>1. Disponibilidade de substitutos</strong></p>
+<p>Quanto mais fácil substituir um bem, maior tende a ser sua elasticidade.</p>
+<p>Manteiga → margarina é um substituto próximo → mais elástica</p>
+<p>Ovos → poucos substitutos próximos → mais inelástica</p>
+<p>💎 <strong>2. Necessidades × Luxos</strong></p>
+<p>Necessidades → demanda tende a ser inelástica 🏥 Consulta médica</p>
+<p>Luxos → demanda tende a ser elástica</p>
+<p>⛵ Barco a vela</p>
+<p>⚠️ <strong>A classificação depende das preferências do consumidor, e não de uma característica intrínseca do produto.</strong></p>
+<p><img src="imagens/img_0.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p>🔍 <strong>3. Definição do mercado</strong></p>
+<p>Quanto mais específico o mercado, maior tende a ser a elasticidade:</p>
+<p>Alimentos</p>
+<p>⬇️ menos elástica</p>
+<p>Sorvetes</p>
+<p>⬇️ mais elástica</p>
+<p>Sorvete de baunilha ⬇️ mais elástica ainda</p>
+<p>Por quê? Quanto mais estreita a definição, mais fácil encontrar substitutos próximos.</p>
+<p>⏳ <strong>4. Horizonte de tempo</strong></p>
+<p>A demanda tende a ser mais elástica no longo prazo.</p>
+<p>Preço da gasolina ↑</p>
+<p>Curto prazo: poucas alternativas → consumo cai pouco.</p>
+<p>Longo prazo: consumidores podem trocar de carro, usar transporte público ou mudar de localização → consumo cai mais.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="calcelasprec" class="slide level2 scrollable">
+<h2>03 - Computando a elasticidade-preço da demanda</h2>
+<p>Até agora vimos a elasticidade de forma conceitual. Agora podemos medi-la.</p>
+<p>📐 <strong>Elasticidade-preço da demanda</strong></p>
+<p><span class="math display">\[ \boxed{ E_d= \frac{\%\Delta Q_d} {\%\Delta P} } \]</span></p>
+<p>Ou seja:</p>
+<p><strong>Elasticidade</strong> = variação percentual da quantidade demandada ÷ variação percentual do preço</p>
+<p>🍦 <strong>Exemplo: sorvete</strong></p>
+<p>Suponha que o preço de um sorvete aumente 10% e, como consequência, a quantidade demandada diminua 20%.</p>
+<p><span class="math display">\[ E_d= \frac{-20\%} {+10\%} =-2 \]</span></p>
+<p>Isso significa que:</p>
+<p>Uma variação de 1% no preço está associada a uma variação de 2% na quantidade demandada, em sentido contrário.</p>
+<p>➖ <strong>E o sinal negativo?</strong></p>
+<p>Pela Lei da Demanda:</p>
+<p><span class="math display">\[ P\uparrow \quad\Rightarrow\quad Q_d\downarrow \]</span></p>
+<p>Preço e quantidade demandada normalmente variam em sentidos opostos. Por isso, matematicamente, a elasticidade-preço da demanda é negativa.</p>
+<p><strong>Por convenção</strong>, porém, é comum apresentar seu valor absoluto:</p>
+<p><span class="math display">\[ |-2|=\boxed{2} \]</span></p>
+<p>Assim, dizemos simplesmente:</p>
+<p>Elasticidade-preço da demanda = 2</p>
+<p>💡<strong>Como interpretar?</strong></p>
+<p>Quanto maior o valor da elasticidade, maior a sensibilidade dos consumidores ao preço.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Elasticidade</th>
+<th>Resposta da quantidade</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_d &lt; 1\)</span></td>
+<td>Pequena → <strong>Demanda inelástica</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(E_d = 1\)</span></td>
+<td>Proporcional → <strong>Elasticidade unitária</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_d &gt; 1\)</span></td>
+<td>Grande → <strong>Demanda elástica</strong></td>
+</tr>
+</tbody>
+</table>
+<p>No nosso exemplo:</p>
+<p><span class="math display">\[ E_d=2&gt;1 \]</span></p>
+<p>➡️ Portanto, a demanda por sorvete é <strong>elástica</strong> nesse intervalo de preços.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="curdemvar" class="slide level2 smaller scrollable">
+<h2>04 — A variedade das curvas de demanda</h2>
+<p><img src="imagens/img_1.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="elastdemrt" class="slide level2 smaller scrollable">
+<h2>05 — Elasticidade de demanda e receita total</h2>
+<p>A receita total (RT) corresponde ao valor pago pelos consumidores e recebido pelos vendedores:</p>
+<p><span class="math display">\[ \boxed{RT=P\times Q} \]</span></p>
+<p>Em um gráfico de oferta e demanda, a receita total pode ser representada pela área do retângulo cuja altura é o preço (<span class="math inline">\(P\)</span>) e cuja largura é a quantidade vendida (<span class="math inline">\(Q\)</span>).</p>
+<p><strong>Exemplo:</strong></p>
+<p>Se:</p>
+<p><span class="math display">\[ P=R\$4 \qquad\text{e}\qquad Q=100 \]</span></p>
+<p>então:</p>
+<p><span class="math display">\[ RT=4\times100=\boxed{R\$400} \]</span></p>
+<p><img src="imagens/img_2.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><strong>O que acontece com a receita quando o preço aumenta?</strong></p>
+<p>A resposta depende da elasticidade-preço da demanda.</p>
+<p>🟢 <strong>Demanda inelástica</strong> — <span class="math inline">\(|E_d|&lt;1\)</span></p>
+<p>A quantidade demandada varia proporcionalmente menos que o preço.</p>
+<p>Exemplo:</p>
+<p><span class="math display">\[ P:R\$4\rightarrow R\$5 \]</span> <span class="math display">\[ Q:100\rightarrow90 \]</span></p>
+<p>Antes:</p>
+<p><span class="math display">\[ RT=4\times100=R\$400 \]</span></p>
+<p>Depois:</p>
+<p><span class="math display">\[ RT=5\times90=\boxed{R\$450} \]</span></p>
+<p>Portanto:</p>
+<p>Preço ↑ → Receita Total ↑</p>
+<p>O ganho obtido com o preço maior supera a perda decorrente da redução da quantidade vendida.</p>
+<p>🔴 <strong>Demanda elástica</strong> — <span class="math inline">\(|E_d|&gt;1\)</span></p>
+<p>A quantidade demandada varia proporcionalmente mais que o preço.</p>
+<p>Exemplo:</p>
+<p><span class="math display">\[ P:R\$4\rightarrow R\$5 \]</span> <span class="math display">\[ Q:100\rightarrow70 \]</span></p>
+<p>Antes:</p>
+<p><span class="math display">\[ RT=4\times100=R\$400 \]</span></p>
+<p>Depois:</p>
+<p><span class="math display">\[ RT=5\times70=\boxed{R\$350} \]</span></p>
+<p>Portanto:</p>
+<p>Preço ↑ → Receita Total ↓</p>
+<p>A perda decorrente da forte redução das vendas supera o ganho obtido com o preço maior.</p>
+<p><img src="imagens/img_3.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Elasticidade da demanda</th>
+<th style="text-align: center;">Se o preço ↑</th>
+<th style="text-align: center;">Receita Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_d &lt; 1\)</span> — <strong>Inelástica</strong></td>
+<td style="text-align: center;"><span class="math inline">\(P \uparrow\)</span></td>
+<td style="text-align: center;"><strong>RT ↑</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(E_d = 1\)</span> — <strong>Unitária</strong></td>
+<td style="text-align: center;"><span class="math inline">\(P \uparrow\)</span></td>
+<td style="text-align: center;"><strong>RT = constante</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_d &gt; 1\)</span> — <strong>Elástica</strong></td>
+<td style="text-align: center;"><span class="math inline">\(P \uparrow\)</span></td>
+<td style="text-align: center;"><strong>RT ↓</strong></td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Para memorizar</strong>:</p>
+<p>Demanda inelástica: preço e receita total caminham na mesma direção.</p>
+<p>Demanda elástica: preço e receita total caminham em direções opostas.</p>
+<p>Demanda unitária: mudanças no preço não alteram a receita total.</p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="elastrtalcd" class="slide level2 smaller scrollable">
+<h2>06 - Elasticidade e receita total ao longo da curva de demanda]</h2>
+<p><img src="imagens/img_4.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="outelasdem" class="slide level2 smaller scrollable">
+<h2>07 — Outras elasticidades de demanda</h2>
+<p>Além da elasticidade-preço da demanda, podemos medir como a quantidade demandada responde a mudanças em outras variáveis.</p>
+<p>💰 <strong>Elasticidade-renda da demanda</strong></p>
+<p>Mede quanto a quantidade demandada responde a uma variação na renda dos consumidores:</p>
+<p><span class="math display">\[ \boxed{ E_R= \frac{\%\Delta Q_d} {\%\Delta Renda} } \]</span></p>
+<p>O sinal da elasticidade permite identificar o tipo de bem:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Elasticidade-renda</th>
+<th style="text-align: center;">Tipo de bem</th>
+<th style="text-align: center;">Se a renda ↑</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_R &gt; 0\)</span></td>
+<td style="text-align: center;"><strong>Bem normal</strong></td>
+<td style="text-align: center;"><span class="math inline">\(Q_d \uparrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(E_R &lt; 0\)</span></td>
+<td style="text-align: center;"><strong>Bem inferior</strong></td>
+<td style="text-align: center;"><span class="math inline">\(Q_d \downarrow\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Entre os bens normais, a magnitude também importa:</p>
+<p>Necessidades → elasticidade-renda relativamente baixa 🍞 alimentos, 👕 roupas</p>
+<p>Bens de luxo → elasticidade-renda relativamente alta 💎 diamantes, 🥂 caviar</p>
+<p>Quanto mais sensível o consumo for à renda, maior será a elasticidade-renda.</p>
+<p>🔄 <strong>Elasticidade-preço cruzada da demanda</strong></p>
+<p>Mede quanto a quantidade demandada de um bem responde à mudança no preço de outro bem:</p>
+<p><span class="math display">\[ \boxed{ E_{xy}= \frac{\%\Delta Q_x} {\%\Delta P_y} } \]</span></p>
+<p>Aqui, o sinal revela a relação entre os dois bens:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Elasticidade cruzada</th>
+<th style="text-align: center;">Relação</th>
+<th style="text-align: center;">Exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_{xy} &gt; 0\)</span></td>
+<td style="text-align: center;"><strong>Substitutos</strong></td>
+<td style="text-align: center;">🍔 Hambúrguer × 🌭 Hot dog</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(E_{xy} &lt; 0\)</span></td>
+<td style="text-align: center;"><strong>Complementares</strong></td>
+<td style="text-align: center;">💻 Computador × Software</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_{xy} \approx 0\)</span></td>
+<td style="text-align: center;"><strong>Não relacionados</strong></td>
+<td style="text-align: center;">☕ Café × ✏️ Lápis</td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>Para memorizar</strong></p>
+<p><strong>Elasticidade-renda</strong>: <span class="math inline">\(+\)</span> → normal | <span class="math inline">\(-\)</span> → inferior</p>
+<p><strong>Elasticidade cruzada</strong>: <span class="math inline">\(+\)</span> → substitutos | <span class="math inline">\(-\)</span> → complementares</p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="JRP1" class="slide level2 smaller scrollable">
+<h2>Jogo rápido!</h2>
+<ol type="1">
+<li><p>Defina elasticidade-preço da demanda.</p></li>
+<li><p>Explique a relação entre receita total e a elasticidade-preço da demanda.</p></li>
+</ol>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="elasprecoferdet" class="slide level2 smaller scrollable">
+<h2>08 — Elasticidade-preço da oferta e seus determinantes</h2>
+<p>A <strong>Lei da Oferta</strong> estabelece que preços mais elevados tendem a aumentar a quantidade ofertada.</p>
+<p>Mas queremos saber:</p>
+<p><strong>Quanto a quantidade ofertada responde a uma mudança no preço?</strong></p>
+<p>📐 <strong>Elasticidade-preço da oferta</strong>: Mede a sensibilidade da quantidade ofertada às variações no preço:</p>
+<p><span class="math display">\[ \boxed{ E_s= \frac{\%\Delta Q_s} {\%\Delta P} } \]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Elasticidade</th>
+<th style="text-align: center;">Classificação</th>
+<th style="text-align: center;">Resposta da quantidade ofertada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_s &lt; 1\)</span></td>
+<td style="text-align: center;"><strong>Oferta inelástica</strong></td>
+<td style="text-align: center;">Responde pouco ao preço</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;"><span class="math inline">\(E_s = 1\)</span></td>
+<td style="text-align: center;"><strong>Oferta unitária</strong></td>
+<td style="text-align: center;">Responde proporcionalmente</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;"><span class="math inline">\(E_s &gt; 1\)</span></td>
+<td style="text-align: center;"><strong>Oferta elástica</strong></td>
+<td style="text-align: center;">Responde fortemente ao preço</td>
+</tr>
+</tbody>
+</table>
+<p>🏭 <strong>O que determina a elasticidade da oferta?</strong></p>
+<p>O principal fator é a capacidade dos produtores de alterar a quantidade produzida.</p>
+<p>🏖**️ Oferta inelástica*: Quando é difícil ou impossível aumentar rapidamente a quantidade disponível.</p>
+<p>Exemplo: terrenos à beira-mar</p>
+<p><span class="math display">\[ P\uparrow \quad\Rightarrow\quad Q_s \text{ aumenta pouco} \]</span></p>
+<p>A quantidade de terrenos disponíveis é praticamente fixa.</p>
+<p>🏭 <strong>Oferta elástica</strong>:</p>
+<p>Quando as empresas conseguem aumentar a produção com relativa facilidade.</p>
+<p>Exemplos: 📚 livros, 🚗 automóveis, 📺 televisores.</p>
+<p>Com preços maiores, as empresas podem ampliar turnos, utilizar mais intensamente suas fábricas e aumentar a produção.</p>
+<p>⏳ <strong>O tempo é fundamental</strong></p>
+<p>A oferta tende a ser <strong>mais elástica no longo prazo</strong>.</p>
+<p><strong>Curto prazo</strong>: capacidade produtiva praticamente fixa (temos aqui uma tautolgia)</p>
+<p>→ difícil alterar fábricas e equipamentos → oferta mais inelástica</p>
+<p><strong>Longo prazo</strong>: empresas podem construir ou fechar fábricas e firmas podem entrar ou sair do mercado</p>
+<p>→ maior capacidade de ajustar a produção → oferta mais elástica</p>
+<p>💡 <strong>Regra para lembrar</strong>: Quanto maior a capacidade e o tempo disponíveis para os produtores ajustarem a produção, maior tende a ser a elasticidade-preço da oferta.</p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="calcelastofer" class="slide level2 smaller scrollable">
+<h2>09 — Calculando a elasticidade-preço da oferta</h2>
+<p>A elasticidade-preço da oferta mede quanto a quantidade ofertada responde a uma variação no preço:</p>
+<p><span class="math display">\[ \boxed{ E_s= \frac{\%\Delta Q_s} {\%\Delta P} } \]</span> 🥛 Exemplo: mercado de leite</p>
+<p>Suponha que o preço do leite aumente de US$ 2,85 para US$ 3,15 por galão e os produtores aumentem a produção de 9.000 para 11.000 galões por mês.</p>
+<p>1️⃣o** Variação percentual do preço**</p>
+<p>O preço passa de US$ 2,85 para US$ 3,15:</p>
+<p><span class="math display">\[ \%\Delta P= \frac{3,15-2,85}{2,85}\times100 \]</span> <span class="math display">\[ \%\Delta P= \frac{0,30}{2,85}\times100 =\boxed{10,53\%} \]</span></p>
+<p>2️⃣o** Variação percentual da quantidade ofertadao**</p>
+<p>A quantidade passa de 9.000 para 11.000:</p>
+<p><span class="math display">\[ \%\Delta Q_s= \frac{11.000-9.000}{9.000}\times100 \]</span> <span class="math display">\[ \%\Delta Q_s= \frac{2.000}{9.000}\times100 =\boxed{22,22\%} \]</span></p>
+<p>3️⃣o** Elasticidade-preço da ofertao**</p>
+<p><span class="math display">\[ E_s= \frac{22,22\%}{10,53\%} \]</span> <span class="math display">\[ \boxed{E_s\approx2,11} \]</span></p>
+<p>📌o** Interpretaçãoo**</p>
+<p><span class="math display">\[ \boxed{E_s=2,11&gt;1} \]</span></p>
+<p>Portanto, a oferta é elástica.</p>
+<p>Um aumento de 1% no preço está associado, nesse intervalo e tomando os valores iniciais como base, a um aumento de aproximadamente 2,11% na quantidade ofertada.</p>
+<p>A oferta é elástica</p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="curofervar" class="slide level2 smaller scrollable">
+<h2>10 — A variedade das curvas de oferta</h2>
+<p><img src="imagens/img_5.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><img src="imagens/img_6.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="JRP2" class="slide level2 smaller scrollable">
+<h2>Jogo rápido!</h2>
+<ol type="1">
+<li><p>Defina elasticidade-preço de oferta.</p></li>
+<li><p>Explique porquê a elasticidade-preço da oferta tende a ser maior no longo prazo.</p></li>
+</ol>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="ce1" class="slide level2 smaller scrollable">
+<h2>11 — Podem boas notícias para fazendeiros ser más notícias para fazendeiros</h2>
+<p><strong>Imagine que você seja um produtor de trigo…</strong></p>
+<p>Uma universidade desenvolve uma nova variedade de trigo que aumenta a produtividade da terra em 20%.</p>
+<p>**Parece uma ótima notícia para os agricultores, certo?</p>
+<p>Mas será que eles necessariamente ficarão mais ricos?</p>
+<p>1️⃣ <strong>O que acontece no mercado?</strong></p>
+<p>A nova tecnologia permite produzir mais trigo com os mesmos recursos.</p>
+<p><span class="math display">\[ \text{Produtividade}\uparrow \quad\Rightarrow\quad \text{Oferta}\uparrow \]</span></p>
+<p>Portanto:</p>
+<p><strong>A curva de oferta desloca-se para a direita</strong>: <span class="math inline">\(S_1\rightarrow S_2\)</span></p>
+<p>A demanda permanece inalterada.</p>
+<p>O novo equilíbrio apresenta:</p>
+<p><span class="math display">\[ Q:100\rightarrow110 \]</span> <span class="math display">\[ P:\$3\rightarrow\$2 \]</span></p>
+<p>Ou seja:</p>
+<p>Quantidade ↑, mas Preço ↓</p>
+<p>🌾 <strong>E a receita dos agricultores?</strong></p>
+<p>A receita total é:</p>
+<p><span class="math display">\[ RT=P\times Q \]</span></p>
+<p><strong>Antes da inovação:</strong></p>
+<p><span class="math display">\[ RT_1=3\times100=\boxed{\$300} \]</span></p>
+<p><strong>Depois da inovação:</strong></p>
+<p><span class="math display">\[ RT_2=2\times110=\boxed{\$220} \]</span></p>
+<p><strong>Portanto:</strong></p>
+<p><span class="math display">\[ \boxed{RT:\$300\rightarrow\$220} \]</span></p>
+<p>😮 Mais produtividade → menor receita?</p>
+<p>Sim. A explicação está na elasticidade da demanda por alimentos.</p>
+<p>2️⃣ <strong>Demanda inelástica por trigo</strong></p>
+<p>Alimentos básicos tendem a apresentar demanda relativamente inelástica:</p>
+<p><span class="math display">\[ |E_d|&lt;1 \]</span></p>
+<p>Quando a oferta aumenta:</p>
+<p>Preço ↓ bastante Quantidade consumida ↑ pouco</p>
+<p>Como, sob demanda inelástica, preço e receita total caminham na mesma direção:</p>
+<p><span class="math display">\[ P\downarrow \quad\Rightarrow\quad RT\downarrow \]</span></p>
+<p><strong>O aumento das vendas não é suficiente para compensar a queda do preço.</strong></p>
+<p>🤔 <strong>O paradoxo do agricultor</strong></p>
+<p>Para cada agricultor individualmente:</p>
+<p>Adotar a tecnologia é racional → produz mais ao preço de mercado.</p>
+<p>Mas, quando todos os agricultores adotam:</p>
+<p><span class="math display">\[ \text{Produção}\uparrow \Rightarrow \text{Oferta}\rightarrow \Rightarrow P\downarrow \Rightarrow RT\downarrow \]</span></p>
+<p><strong>Resultado:</strong></p>
+<p>Individualmente racional ️ Coletivamente prejudicial aos produtores</p>
+<p>3️⃣ <strong>Tecnologia: ruim para a sociedade?</strong></p>
+<p>👨‍🌾 <strong>Para os produtores</strong></p>
+<p>Mais produtividade pode significar:</p>
+<p>Oferta ↑ → Preço ↓ → Receita agrícola ↓</p>
+<p>quando a demanda é inelástica.</p>
+<p>🛒 <strong>Para os consumidores</strong></p>
+<p><span class="math display">\[ \text{Produtividade}\uparrow \Rightarrow \text{Preço dos alimentos}\downarrow\]</span></p>
+<p>➡️ <strong>Consumidores se beneficiam.</strong></p>
+<p>O que é ruim para os produtores não é necessariamente ruim para a sociedade.</p>
+<p>💡 <strong>Aplicação: políticas agrícolas</strong></p>
+<p>Se a demanda é inelástica, uma política que reduza a oferta agrícola pode:</p>
+<p><span class="math display">\[ \text{Oferta}\downarrow \Rightarrow P\uparrow \Rightarrow RT_{\text{agricultores}}\uparrow \]</span></p>
+<p>Por isso, historicamente, algumas políticas agrícolas incentivaram a redução da área plantada.</p>
+<p>📌 Ideia central</p>
+<p>Com demanda inelástica, produzir mais pode reduzir a receita total dos produtores.</p>
+<p>Tecnologia ↑ → Oferta ↑ → Preço ↓ → Receita dos produtores ↓ → Bem-estar dos consumidores ↑</p>
+<p><img src="imagens/img_7.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="ce2" class="slide level2 smaller scrollable">
+<h2>12 — Porquê a OPEP falhou em manter o alto o preços do petróleo</h2>
+<p>Na década de 1970, os países da OPEP coordenaram uma redução da produção de petróleo:</p>
+<p><span class="math display">\[ \text{Oferta de petróleo}\downarrow \quad\Rightarrow\quad S_1\rightarrow S_2 \]</span></p>
+<p>O objetivo era provocar:</p>
+<p><span class="math display">\[ P_{\text{petróleo}}\uparrow \quad\Rightarrow\quad \text{Receita da OPEP}\uparrow \]</span></p>
+<p>A estratégia funcionou inicialmente. Entre 1973 e 1974, o preço real do petróleo subiu mais de 50%; entre 1979 e 1981, aproximadamente dobrou.</p>
+<p>⏱️ <strong>Por que funcionou no curto prazo?</strong></p>
+<p>No curto prazo, tanto a demanda quanto a oferta de petróleo são relativamente inelásticas.</p>
+<p><strong>Demanda inelástica</strong></p>
+<p>Os consumidores não conseguem mudar rapidamente seus hábitos:</p>
+<p>🚗 já possuem determinado automóvel 🏠 já escolheram onde morar 🏭 empresas utilizam equipamentos existentes</p>
+<p><strong>Oferta inelástica</strong></p>
+<p>Outros produtores também não conseguem aumentar rapidamente a produção:</p>
+<p>🛢️ reservas conhecidas são limitadas 🏗️ novas instalações levam tempo 🔎 exploração de novos campos é demorada</p>
+<p>Portanto:</p>
+<p><span class="math display">\[ \boxed{\text{Oferta ↓ pouco} \Rightarrow \text{Preço ↑ muito}} \]</span></p>
+<p>➡️ A redução da produção <strong>elevou fortemente</strong> o preço e <strong>aumentou a receita</strong> dos países da OPEP.</p>
+<p>⏳ <strong>E no longo prazo?</strong></p>
+<p>Com o passar do tempo, consumidores e produtores conseguem se adaptar.</p>
+<p><strong>Consumidores:</strong></p>
+<p>🚙 compram veículos mais eficientes 🚇 procuram alternativas de transporte ⚡ economizam energia</p>
+<p><strong>Produtores fora da OPEP:</strong></p>
+<p>🔎 exploram novas reservas 🏗️ ampliam a capacidade de extração 🛢️ desenvolvem novas tecnologias</p>
+<p>Assim:</p>
+<p><span class="math display">\[ |E_d|\uparrow \qquad\text{e}\qquad E_s\uparrow \]</span></p>
+<p>Oferta e demanda tornam-se <strong>mais elásticas</strong>.</p>
+<p>Consequentemente:</p>
+<p><span class="math display">\[ \boxed{\text{mesma redução da oferta} \Rightarrow \text{menor aumento do preço}} \]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: center;"><strong>Curto prazo</strong></th>
+<th style="text-align: center;"><strong>Longo prazo</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Demanda</strong></td>
+<td style="text-align: center;">Mais inelástica</td>
+<td style="text-align: center;">Mais elástica</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Oferta</strong></td>
+<td style="text-align: center;">Mais inelástica</td>
+<td style="text-align: center;">Mais elástica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Reação dos consumidores</strong></td>
+<td style="text-align: center;">Pequena</td>
+<td style="text-align: center;">Maior</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Reação de outros produtores</strong></td>
+<td style="text-align: center;">Pequena</td>
+<td style="text-align: center;">Maior</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Efeito da OPEP sobre o preço</strong></td>
+<td style="text-align: center;"><strong>Grande</strong></td>
+<td style="text-align: center;"><strong>Menor</strong></td>
+</tr>
+</tbody>
+</table>
+<p>💡 <strong>A lição da OPEP</strong></p>
+<p>É mais fácil para um cartel elevar o preço no curto prazo do que mantê-lo elevado no longo prazo.</p>
+<p>A própria alta do preço cria incentivos para que consumidores reduzam o consumo e outros produtores aumentem a produção, enfraquecendo progressivamente o poder do cartel.</p>
+<p><img src="imagens/img_8.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="ce3" class="slide level2 smaller scrollable">
+<h2>13 — A guerra contra as drogas aumenta ou diminui os crimes relacionados ao uso de drogas?</h2>
+<p>O modelo de oferta e demanda permite analisar por que diferentes políticas de combate às drogas podem produzir resultados bastante distintos.</p>
+<p>🚔 1. <strong>Repressão ao tráfico: redução da oferta</strong></p>
+<p>Maior fiscalização, apreensões e prisões tornam mais difícil e custoso comercializar drogas.</p>
+<p>O efeito direto ocorre sobre a oferta:</p>
+<p><span class="math display">\[ S_1\rightarrow S_2 \]</span></p>
+<p>com deslocamento da oferta para a esquerda.</p>
+<p>O novo equilíbrio apresenta:</p>
+<p><span class="math display">\[ P\uparrow \qquad Q\downarrow \]</span></p>
+<p>Portanto, a política consegue reduzir a quantidade consumida, mas aumenta o preço.</p>
+<p>💰 <strong>E o gasto total dos consumidores?</strong></p>
+<p>Suponha que a demanda seja inelástica no curto prazo:</p>
+<p><span class="math display">\[ |E_d|&lt;1 \]</span></p>
+<p>Nesse caso:</p>
+<p><span class="math display">\[ P\uparrow \text{ muito} \qquad Q\downarrow \text{ pouco} \]</span></p>
+<p>Como:</p>
+<p><span class="math display">\[ RT=P\times Q \]</span></p>
+<p>temos:</p>
+<p><span class="math display">\[ \boxed{P\uparrow\Rightarrow RT\uparrow} \]</span></p>
+<p>A repressão reduz o consumo, mas pode aumentar o gasto total dos consumidores com drogas.</p>
+<p>Isso poderia ampliar os incentivos para crimes cometidos com o objetivo de financiar o consumo.</p>
+<p>📚 2. <strong>Educação e prevenção: redução da demanda</strong></p>
+<p>Uma política de prevenção bem-sucedida atua diretamente sobre a disposição das pessoas em consumir:</p>
+<p><span class="math display">\[ D_1\rightarrow D_2 \]</span></p>
+<p>A demanda desloca-se para a esquerda.</p>
+<p>O resultado é:</p>
+<p><span class="math display">\[ P\downarrow \qquad Q\downarrow \]</span></p>
+<p>e, consequentemente:</p>
+<p><span class="math display">\[ \boxed{RT\downarrow} \]</span></p>
+<p>Assim, nesse modelo, a política reduz simultaneamente a quantidade consumida e o gasto total no mercado.</p>
+<p>📌 Comparando as políticas</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 16%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Política</th>
+<th style="text-align: center;">Curva afetada</th>
+<th style="text-align: center;">Preço</th>
+<th style="text-align: center;">Quantidade</th>
+<th style="text-align: center;">Gasto total*</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">🚔 <strong>Repressão ao tráfico</strong></td>
+<td style="text-align: center;">Oferta <span class="math inline">\(\leftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\uparrow\)</span></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">📚 <strong>Educação / prevenção</strong></td>
+<td style="text-align: center;">Demanda <span class="math inline">\(\leftarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+<td style="text-align: center;"><span class="math inline">\(\downarrow\)</span></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Supondo demanda inelástica no caso da repressão.</li>
+</ul>
+<p>⏳ <strong>Curto prazo × Longo prazo</strong></p>
+<p>O resultado da repressão também depende do horizonte temporal.</p>
+<p><strong>Curto prazo</strong>: Consumidores já dependentes respondem pouco ao aumento do preço:</p>
+<p><span class="math display">\[ |E_d|&lt;1 \]</span></p>
+<p>Preço ↑ → gasto total ↑</p>
+<p><strong>Longo prazo</strong>: Preços elevados podem desencorajar a iniciação e permitir maior ajuste do comportamento:</p>
+<p><span class="math display">\[ |E_d|\uparrow \]</span></p>
+<p>A demanda torna-se mais elástica, alterando os efeitos da política sobre o gasto total.</p>
+<p>💡 <strong>Ideia central</strong></p>
+<p>Uma política pode reduzir a quantidade consumida e, ainda assim, produzir efeitos indesejados se não considerarmos a elasticidade da demanda.</p>
+<p>É justamente por isso que elasticidade é tão importante: saber apenas que <span class="math inline">\(Q\downarrow\)</span> não é suficiente — precisamos saber quanto ela diminui em relação à mudança no preço.</p>
+<p><img src="imagens/img_9.png" style="width: 1350px !important; max-width: none !important; height: auto !important;"></p>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="JRP3" class="slide level2 smaller scrollable">
+<h2>Jogo rápido!</h2>
+<ol type="1">
+<li><p>Como uma seca que destrua metade de todas as plantações pode ser boa para os fazendeiros?</p></li>
+<li><p>Se a seca é boa para os fazendeiros, porquê eles mesmos não destroem metade de suas plantações na ausência de uma seca?</p></li>
+</ol>
+<p><a href="#/menu">← menu</a></p>
+</section>
+<section id="conclusao" class="slide level2 smaller scrollable">
+<h2>Conclusão</h2>
+<p>Existe uma velha piada entre economistas:</p>
+<p>“Até um papagaio pode se tornar economista se aprender a dizer duas palavras: oferta e demanda.”</p>
+<p>Depois destes capítulos, fica claro que há alguma verdade nessa brincadeira.</p>
+<p>Com apenas algumas ferramentas fundamentais:</p>
+<p><span class="math display">\[ \boxed{\text{Oferta + Demanda + Elasticidade}} \]</span></p>
+<p>conseguimos analisar uma enorme variedade de fenômenos:</p>
+<p>Mudanças tecnológicas → deslocamentos da oferta Mudanças nas preferências → deslocamentos da demanda Impostos e políticas públicas → novos equilíbrios Choques de petróleo → efeitos distintos no curto e longo prazo Elasticidade → determina a magnitude desses efeitos</p>
+<p>💡 <strong>A grande lição</strong></p>
+<p>Não basta perguntar:</p>
+<p>“A oferta ou a demanda mudou?”</p>
+<p>O economista também precisa perguntar:</p>
+<p>“Quanto consumidores e produtores conseguem responder a essa mudança?”</p>
+<p>E é aí que entra a elasticidade.</p>
+<p><strong>Questões de Concurso — Elasticidade</strong></p>
+<p><strong>1. CEBRASPE — FUNPRESP-JUD — Analista — 2026</strong></p>
+<p>Julgue o item a seguir.</p>
+<p>Um bem com demanda inelástica é aquele cuja quantidade demandada reage pouco ou quase nada a variações no preço.</p>
+<ul>
+<li>( ) Certo</li>
+<li>( ) Errado</li>
+</ul>
+<p><strong>2. FGV — ALE-GO — Economista — 2026</strong></p>
+<p>Considerando o valor absoluto da elasticidade-preço da demanda e desconsiderando bens de Giffen, avalie as afirmativas:</p>
+<p>I. A demanda perfeitamente inelástica tem elasticidade igual a 1.</p>
+<ol start="2" type="I">
+<li><p>A demanda perfeitamente elástica tem elasticidade igual a 0.</p></li>
+<li><p>A demanda elástica, não perfeitamente elástica, apresenta elasticidade maior que 1 e menor que infinito.</p></li>
+<li><p>A demanda inelástica, não perfeitamente inelástica, apresenta elasticidade maior que 0 e menor que 1.</p></li>
+</ol>
+<p>As afirmativas são, respectivamente:</p>
+<ol type="a">
+<li>V – V – V – V<br>
+</li>
+<li>F – V – V – V<br>
+</li>
+<li>F – F – V – V<br>
+</li>
+<li>F – V – F – V<br>
+</li>
+<li>F – F – F – F</li>
+</ol>
+<p><strong>3. FGV — EPE — Analista de Pesquisa Energética — 2024</strong></p>
+<p>Em relação à elasticidade-preço da demanda, avalie as afirmativas:</p>
+<p>I. A elasticidade-preço da demanda mede a variação percentual da quantidade demandada em relação à variação percentual do preço.</p>
+<ol start="2" type="I">
+<li><p>Quanto mais vertical for a curva de demanda, maior será a variação da quantidade demandada diante de uma variação do preço.</p></li>
+<li><p>Bens que possuem substitutos próximos tendem a apresentar demanda mais elástica, enquanto bens considerados essenciais tendem a apresentar menor elasticidade-preço.</p></li>
+</ol>
+<p>As afirmativas são, respectivamente:</p>
+<ol type="a">
+<li>V – V – V<br>
+</li>
+<li>V – V – F<br>
+</li>
+<li>V – F – F<br>
+</li>
+<li>V – F – V<br>
+</li>
+<li>F – F – V</li>
+</ol>
+<p><strong>4. FGV — Prefeitura de São José dos Campos — Economista — 2025</strong></p>
+<p>Considere os mercados de impressoras e cartuchos de tinta.</p>
+<p>Suponha que o preço das impressoras aumente significativamente, <em>ceteris paribus</em>.</p>
+<p>Qual será o efeito esperado sobre a demanda por cartuchos e qual será o sinal da elasticidade-preço cruzada?</p>
+<ol type="a">
+<li><p>A demanda por cartuchos diminui e a elasticidade cruzada é negativa.</p></li>
+<li><p>A demanda por cartuchos aumenta e a elasticidade cruzada é positiva.</p></li>
+<li><p>A demanda por cartuchos permanece constante e a elasticidade cruzada é nula.</p></li>
+<li><p>A demanda por cartuchos aumenta e a elasticidade cruzada é negativa.</p></li>
+<li><p>A demanda por cartuchos diminui e a elasticidade cruzada é positiva.</p></li>
+</ol>
+<p><strong>5. Aplicação — Elasticidade e Receita Total</strong></p>
+<p>Considere um produto cuja elasticidade-preço da demanda, em valor absoluto, seja:</p>
+<p><span class="math display">\[
+E_d = 0,5
+\]</span></p>
+<p>Se o vendedor aumentar o preço do produto, <em>ceteris paribus</em>, espera-se que:</p>
+<ol type="a">
+<li><p>a quantidade demandada aumente e a receita total aumente.</p></li>
+<li><p>a quantidade demandada diminua e a receita total diminua.</p></li>
+<li><p>a quantidade demandada diminua e a receita total aumente.</p></li>
+<li><p>a quantidade demandada permaneça constante.</p></li>
+<li><p>a receita total permaneça constante.</p></li>
+</ol>
+<p><strong>6. Aplicação — Elasticidade-renda</strong></p>
+<p>Suponha que um aumento de 10% na renda dos consumidores provoque uma redução de 5% na quantidade demandada de determinado bem.</p>
+<p>A elasticidade-renda da demanda será:</p>
+<p><span class="math display">\[
+E_R = \frac{-5\%}{10\%}=-0,5
+\]</span></p>
+<p>Logo, o bem é classificado como:</p>
+<ol type="a">
+<li><p>normal e necessário.</p></li>
+<li><p>normal e de luxo.</p></li>
+<li><p>substituto.</p></li>
+<li><p>complementar.</p></li>
+<li><p>inferior.</p></li>
+</ol>
+<p><strong>7. Aplicação — Elasticidade da Oferta</strong></p>
+<p>A oferta de determinado produto apresenta elasticidade-preço:</p>
+<p><span class="math display">\[
+E_s=2
+\]</span></p>
+<p>Se o preço aumentar 10%, espera-se, aproximadamente, que a quantidade ofertada:</p>
+<ol type="a">
+<li><p>aumente 5%.</p></li>
+<li><p>aumente 10%.</p></li>
+<li><p>aumente 20%.</p></li>
+<li><p>diminua 10%.</p></li>
+<li><p>diminua 20%.</p></li>
+</ol>
+<p><strong>8. Aplicação — Petróleo e Horizonte Temporal</strong></p>
+<p>A demanda por petróleo tende a apresentar maior elasticidade-preço no longo prazo do que no curto prazo.</p>
+<p>Isso ocorre principalmente porque:</p>
+<ol type="a">
+<li><p>a lei da demanda deixa de funcionar no curto prazo.</p></li>
+<li><p>os consumidores não respondem a preços no curto prazo.</p></li>
+<li><p><strong>com o passar do tempo, consumidores conseguem alterar hábitos, equipamentos e tecnologias utilizados.</strong></p></li>
+<li><p>a oferta torna-se perfeitamente inelástica no longo prazo.</p></li>
+<li><p>petróleo passa a ser um bem inferior.</p></li>
+</ol>
+<p><strong>Questão 1 — CEBRASPE — FUNPRESP-JUD — Analista — 2026</strong></p>
+<p>Julgue o item a seguir.</p>
+<blockquote>
+<p>Um bem com demanda inelástica é aquele cuja quantidade demandada reage pouco ou quase nada a variações no preço.</p>
+</blockquote>
+<ul>
+<li>( ) Certo</li>
+<li>( ) Errado</li>
+</ul>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: CERTO</strong></p>
+<p>Uma demanda é classificada como <strong>inelástica</strong> quando a quantidade demandada reage proporcionalmente menos do que o preço.</p>
+<p>Em valor absoluto:</p>
+<p><span class="math display">\[
+0&lt;|E_d|&lt;1
+\]</span></p>
+<p>Isso significa que uma determinada variação percentual no preço provoca uma variação percentual menor na quantidade demandada.</p>
+<p>Por exemplo, se:</p>
+<p><span class="math display">\[
+|E_d|=0,4
+\]</span></p>
+<p>e o preço aumenta 10%, a quantidade demandada tende a cair aproximadamente 4%.</p>
+<p>A expressão “pouco ou quase nada” é compatível com a ideia de baixa sensibilidade ao preço.</p>
+<p>No caso extremo de demanda <strong>perfeitamente inelástica</strong>:</p>
+<p><span class="math display">\[
+|E_d|=0
+\]</span></p>
+<p>a quantidade demandada não reage à variação do preço.</p>
+<p><strong>Ideia-chave:</strong> demanda inelástica → quantidade demandada relativamente pouco sensível a alterações no preço.</p>
+</div>
+</div>
+</div>
+<p><strong>Questão 2 — FGV — ALE-GO — Economista — 2026</strong></p>
+<p>Considerando o valor absoluto da elasticidade-preço da demanda e desconsiderando bens de Giffen, avalie as afirmativas:</p>
+<p>I. A demanda perfeitamente inelástica tem elasticidade igual a 1.</p>
+<ol start="2" type="I">
+<li><p>A demanda perfeitamente elástica tem elasticidade igual a 0.</p></li>
+<li><p>A demanda elástica, não perfeitamente elástica, apresenta elasticidade maior que 1 e menor que infinito.</p></li>
+<li><p>A demanda inelástica, não perfeitamente inelástica, apresenta elasticidade maior que 0 e menor que 1.</p></li>
+</ol>
+<p>As afirmativas são, respectivamente:</p>
+<ol type="a">
+<li>V – V – V – V<br>
+</li>
+<li>F – V – V – V<br>
+</li>
+<li>F – F – V – V<br>
+</li>
+<li>F – V – F – V<br>
+</li>
+<li>F – F – F – F</li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: C — F – F – V – V</strong></p>
+<p>Considerando a elasticidade-preço da demanda em <strong>valor absoluto</strong>, temos a seguinte classificação:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Elasticidade</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(|E_d|=0\)</span></td>
+<td>Perfeitamente inelástica</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(0&lt;|E_d|&lt;1\)</span></td>
+<td>Inelástica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(|E_d|=1\)</span></td>
+<td>Unitária</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span class="math inline">\(1&lt;|E_d|&lt;\infty\)</span></td>
+<td>Elástica</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span class="math inline">\(|E_d|\rightarrow\infty\)</span></td>
+<td>Perfeitamente elástica</td>
+</tr>
+</tbody>
+</table>
+<p><strong>I. FALSA.</strong></p>
+<p>A demanda perfeitamente inelástica apresenta:</p>
+<p><span class="math display">\[
+|E_d|=0
+\]</span></p>
+<p>e não 1.</p>
+<p>Elasticidade igual a 1 caracteriza demanda <strong>unitária</strong>.</p>
+<p><strong>II. FALSA.</strong></p>
+<p>A demanda perfeitamente elástica apresenta elasticidade tendendo ao infinito:</p>
+<p><span class="math display">\[
+|E_d|\rightarrow\infty
+\]</span></p>
+<p>e não zero.</p>
+<p><strong>III. VERDADEIRA.</strong></p>
+<p>Uma demanda elástica, mas não perfeitamente elástica, apresenta:</p>
+<p><span class="math display">\[
+1&lt;|E_d|&lt;\infty
+\]</span></p>
+<p><strong>IV. VERDADEIRA.</strong></p>
+<p>Uma demanda inelástica, mas não perfeitamente inelástica, apresenta:</p>
+<p><span class="math display">\[
+0&lt;|E_d|&lt;1
+\]</span></p>
+<p>Portanto:</p>
+<p><strong>F – F – V – V → alternativa C.</strong></p>
+<p><strong>Ideia-chave:</strong> memorize os três pontos de referência: <span class="math inline">\(0\)</span>, <span class="math inline">\(1\)</span> e <span class="math inline">\(\infty\)</span>.</p>
+</div>
+</div>
+</div>
+<p><strong>Questão 3 — FGV — EPE — Analista de Pesquisa Energética — 2024</strong></p>
+<p>Em relação à elasticidade-preço da demanda, avalie as afirmativas:</p>
+<p>I. A elasticidade-preço da demanda mede a variação percentual da quantidade demandada em relação à variação percentual do preço.</p>
+<ol start="2" type="I">
+<li><p>Quanto mais vertical for a curva de demanda, maior será a variação da quantidade demandada diante de uma variação do preço.</p></li>
+<li><p>Bens que possuem substitutos próximos tendem a apresentar demanda mais elástica, enquanto bens considerados essenciais tendem a apresentar menor elasticidade-preço.</p></li>
+</ol>
+<p>As afirmativas são, respectivamente:</p>
+<ol type="a">
+<li>V – V – V<br>
+</li>
+<li>V – V – F<br>
+</li>
+<li>V – F – F<br>
+</li>
+<li>V – F – V<br>
+</li>
+<li>F – F – V</li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: D — V – F – V</strong></p>
+<p>A elasticidade-preço da demanda é dada por:</p>
+<p><span class="math display">\[
+E_d=
+\frac{\%\Delta Q_D}{\%\Delta P}
+\]</span></p>
+<p><strong>I. VERDADEIRA.</strong></p>
+<p>A elasticidade-preço mede exatamente a sensibilidade percentual da quantidade demandada em relação a uma alteração percentual do preço.</p>
+<p><strong>II. FALSA.</strong></p>
+<p>Quanto mais vertical é a curva de demanda, <strong>menor</strong> tende a ser a reação da quantidade diante de alterações no preço.</p>
+<p>No caso extremo de demanda perfeitamente inelástica, a curva é vertical e:</p>
+<p><span class="math display">\[
+|E_d|=0
+\]</span></p>
+<p>A quantidade permanece constante mesmo diante de alterações no preço.</p>
+<p><strong>III. VERDADEIRA.</strong></p>
+<p>A existência de <strong>substitutos próximos</strong> facilita a substituição do produto quando seu preço aumenta, tornando a demanda mais elástica.</p>
+<p>Já bens essenciais tendem, em geral, a apresentar demanda relativamente mais inelástica, pois os consumidores possuem menor capacidade de reduzir seu consumo.</p>
+<p>Portanto:</p>
+<p><strong>V – F – V → alternativa D.</strong></p>
+<p><strong>Ideia-chave:</strong></p>
+<ul>
+<li>mais substitutos → maior elasticidade;</li>
+<li>maior essencialidade → menor elasticidade;</li>
+<li>mais tempo para adaptação → maior elasticidade.</li>
+</ul>
+</div>
+</div>
+</div>
+<p><strong>Questão 4 — FGV — Prefeitura de São José dos Campos — Economista — 2025</strong></p>
+<p>Considere os mercados de impressoras e cartuchos de tinta.</p>
+<p>Suponha que o preço das impressoras aumente significativamente, <em>ceteris paribus</em>.</p>
+<p>Qual será o efeito esperado sobre a demanda por cartuchos e qual será o sinal da elasticidade-preço cruzada?</p>
+<ol type="a">
+<li><p>A demanda por cartuchos diminui e a elasticidade cruzada é negativa.</p></li>
+<li><p>A demanda por cartuchos aumenta e a elasticidade cruzada é positiva.</p></li>
+<li><p>A demanda por cartuchos permanece constante e a elasticidade cruzada é nula.</p></li>
+<li><p>A demanda por cartuchos aumenta e a elasticidade cruzada é negativa.</p></li>
+<li><p>A demanda por cartuchos diminui e a elasticidade cruzada é positiva.</p></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: A</strong></p>
+<p>Impressoras e cartuchos de tinta são <strong>bens complementares</strong>.</p>
+<p>Quando o preço das impressoras aumenta, espera-se uma redução na quantidade demandada de impressoras.</p>
+<p>Como cartuchos são utilizados juntamente com impressoras, a demanda por cartuchos também tende a diminuir.</p>
+<p>A elasticidade-preço cruzada pode ser representada por:</p>
+<p><span class="math display">\[
+E_{xy}=
+\frac{\%\Delta Q_x}{\%\Delta P_y}
+\]</span></p>
+<p>No caso de bens complementares, um aumento no preço de um dos bens reduz a demanda pelo outro.</p>
+<p>Logo:</p>
+<p><span class="math display">\[
+E_{xy}&lt;0
+\]</span></p>
+<p><strong>A) CORRETA.</strong> A demanda por cartuchos diminui e a elasticidade cruzada é negativa.</p>
+<p><strong>B) ERRADA.</strong> Elasticidade cruzada positiva caracteriza bens substitutos.</p>
+<p><strong>C) ERRADA.</strong> A relação econômica entre impressoras e cartuchos faz com que a demanda por um seja afetada pelo preço do outro.</p>
+<p><strong>D) ERRADA.</strong> O sinal negativo está correto, mas a demanda por cartuchos tende a diminuir.</p>
+<p><strong>E) ERRADA.</strong> A redução da demanda está correta, mas a elasticidade cruzada é negativa.</p>
+<p><strong>Ideia-chave:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Relação entre os bens</th>
+<th style="text-align: right;">Elasticidade cruzada</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Substitutos</td>
+<td style="text-align: right;"><span class="math inline">\(E_{xy}&gt;0\)</span></td>
+</tr>
+<tr class="even">
+<td>Complementares</td>
+<td style="text-align: right;"><span class="math inline">\(E_{xy}&lt;0\)</span></td>
+</tr>
+<tr class="odd">
+<td>Independentes</td>
+<td style="text-align: right;"><span class="math inline">\(E_{xy}\approx0\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>Questão 5 — Aplicação — Elasticidade e Receita Total</strong></p>
+<p>Considere um produto cuja elasticidade-preço da demanda, em valor absoluto, seja:</p>
+<p><span class="math display">\[
+E_d = 0,5
+\]</span></p>
+<p>Se o vendedor aumentar o preço do produto, <em>ceteris paribus</em>, espera-se que:</p>
+<ol type="a">
+<li><p>a quantidade demandada aumente e a receita total aumente.</p></li>
+<li><p>a quantidade demandada diminua e a receita total diminua.</p></li>
+<li><p>a quantidade demandada diminua e a receita total aumente.</p></li>
+<li><p>a quantidade demandada permaneça constante.</p></li>
+<li><p>a receita total permaneça constante.</p></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: C</strong></p>
+<p>Como:</p>
+<p><span class="math display">\[
+|E_d|=0,5&lt;1
+\]</span></p>
+<p>a demanda é <strong>inelástica</strong>.</p>
+<p>Isso significa que a quantidade demandada varia proporcionalmente menos que o preço.</p>
+<p>Quando o preço aumenta:</p>
+<p><span class="math display">\[
+P\uparrow
+\]</span></p>
+<p>a quantidade demandada diminui:</p>
+<p><span class="math display">\[
+Q_D\downarrow
+\]</span></p>
+<p>mas essa redução é proporcionalmente menor que o aumento do preço.</p>
+<p>Como a receita total é:</p>
+<p><span class="math display">\[
+RT=P\times Q
+\]</span></p>
+<p>o efeito do aumento do preço predomina sobre a redução da quantidade.</p>
+<p>Portanto:</p>
+<p><span class="math display">\[
+P\uparrow
+\Rightarrow
+Q_D\downarrow
+\Rightarrow
+RT\uparrow
+\]</span></p>
+<p><strong>A) ERRADA.</strong> Pela lei da demanda, a quantidade demandada tende a diminuir quando o preço aumenta.</p>
+<p><strong>B) ERRADA.</strong> Com demanda inelástica, o aumento do preço tende a aumentar a receita total.</p>
+<p><strong>C) CORRETA.</strong> A quantidade cai, mas a receita total aumenta.</p>
+<p><strong>D) ERRADA.</strong> A quantidade permaneceria constante apenas no caso de demanda perfeitamente inelástica.</p>
+<p><strong>E) ERRADA.</strong> Receita total constante diante de pequenas alterações de preço está associada à elasticidade unitária.</p>
+<p><strong>Ideia-chave:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Elasticidade</th>
+<th>Preço ↑</th>
+<th>Receita Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(|E_d|&lt;1\)</span></td>
+<td>↑</td>
+<td><strong>↑</strong></td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(|E_d|=1\)</span></td>
+<td>↑</td>
+<td><strong>constante</strong></td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(|E_d|&gt;1\)</span></td>
+<td>↑</td>
+<td><strong>↓</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>Questão 6 — Aplicação — Elasticidade-renda</strong></p>
+<p>Suponha que um aumento de 10% na renda dos consumidores provoque uma redução de 5% na quantidade demandada de determinado bem.</p>
+<p>A elasticidade-renda da demanda será:</p>
+<p><span class="math display">\[
+E_R = \frac{-5\%}{10\%}=-0,5
+\]</span></p>
+<p>Logo, o bem é classificado como:</p>
+<ol type="a">
+<li><p>normal e necessário.</p></li>
+<li><p>normal e de luxo.</p></li>
+<li><p>substituto.</p></li>
+<li><p>complementar.</p></li>
+<li><p>inferior.</p></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: E</strong></p>
+<p>A elasticidade-renda da demanda é dada por:</p>
+<p><span class="math display">\[
+E_R=
+\frac{\%\Delta Q_D}{\%\Delta R}
+\]</span></p>
+<p>Neste caso:</p>
+<p><span class="math display">\[
+E_R=
+\frac{-5\%}{10\%}
+=-0,5
+\]</span></p>
+<p>Como:</p>
+<p><span class="math display">\[
+E_R&lt;0
+\]</span></p>
+<p>o aumento da renda provoca uma <strong>redução da quantidade demandada</strong>.</p>
+<p>Essa é justamente a característica de um <strong>bem inferior</strong>.</p>
+<p><strong>A) ERRADA.</strong> Bens normais apresentam elasticidade-renda positiva.</p>
+<p><strong>B) ERRADA.</strong> Bens de luxo também são bens normais e apresentam elasticidade-renda positiva, normalmente superior a 1.</p>
+<p><strong>C) ERRADA.</strong> Substituição entre bens é analisada pela elasticidade-preço cruzada, não pela elasticidade-renda.</p>
+<p><strong>D) ERRADA.</strong> Complementaridade também é identificada pela elasticidade-preço cruzada.</p>
+<p><strong>E) CORRETA.</strong> Elasticidade-renda negativa caracteriza bem inferior.</p>
+<p><strong>Ideia-chave:</strong></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Elasticidade-renda</th>
+<th>Classificação</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(E_R&lt;0\)</span></td>
+<td>Bem inferior</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(0&lt;E_R&lt;1\)</span></td>
+<td>Bem normal necessário</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(E_R&gt;1\)</span></td>
+<td>Bem normal de luxo</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p><strong>Questão 7 — Aplicação — Elasticidade da Oferta</strong></p>
+<p>A oferta de determinado produto apresenta elasticidade-preço:</p>
+<p><span class="math display">\[
+E_s=2
+\]</span></p>
+<p>Se o preço aumentar 10%, espera-se, aproximadamente, que a quantidade ofertada:</p>
+<ol type="a">
+<li><p>aumente 5%.</p></li>
+<li><p>aumente 10%.</p></li>
+<li><p>aumente 20%.</p></li>
+<li><p>diminua 10%.</p></li>
+<li><p>diminua 20%.</p></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: C</strong></p>
+<p>A elasticidade-preço da oferta é dada por:</p>
+<p><span class="math display">\[
+E_s=
+\frac{\%\Delta Q_S}{\%\Delta P}
+\]</span></p>
+<p>Sabemos que:</p>
+<p><span class="math display">\[
+E_s=2
+\]</span></p>
+<p>e que:</p>
+<p><span class="math display">\[
+\%\Delta P=10\%
+\]</span></p>
+<p>Portanto:</p>
+<p><span class="math display">\[
+2=
+\frac{\%\Delta Q_S}{10\%}
+\]</span></p>
+<p>Multiplicando ambos os lados por 10%:</p>
+<p><span class="math display">\[
+\%\Delta Q_S=20\%
+\]</span></p>
+<p>Assim, a quantidade ofertada deve aumentar aproximadamente <strong>20%</strong>.</p>
+<p><strong>A) ERRADA.</strong> Um aumento de 5% corresponderia a uma elasticidade de 0,5.</p>
+<p><strong>B) ERRADA.</strong> Um aumento proporcional de 10% corresponderia a elasticidade unitária.</p>
+<p><strong>C) CORRETA.</strong> Com <span class="math inline">\(E_s=2\)</span>, uma alta de 10% no preço provoca aproximadamente alta de 20% na quantidade ofertada.</p>
+<p><strong>D) ERRADA.</strong> Pela lei da oferta, preço e quantidade ofertada normalmente variam no mesmo sentido.</p>
+<p><strong>E) ERRADA.</strong> Além de apresentar sinal incorreto, a magnitude não corresponde ao cálculo.</p>
+<p><strong>Ideia-chave:</strong> elasticidade igual a 2 significa que a quantidade ofertada varia, aproximadamente, <strong>duas vezes a variação percentual do preço</strong>.</p>
+</div>
+</div>
+</div>
+<p><strong>Questão 8 — Aplicação — Petróleo e Horizonte Temporal</strong></p>
+<p>A demanda por petróleo tende a apresentar maior elasticidade-preço no longo prazo do que no curto prazo.</p>
+<p>Isso ocorre principalmente porque:</p>
+<ol type="a">
+<li><p>a lei da demanda deixa de funcionar no curto prazo.</p></li>
+<li><p>os consumidores não respondem a preços no curto prazo.</p></li>
+<li><p>com o passar do tempo, consumidores conseguem alterar hábitos, equipamentos e tecnologias utilizados.</p></li>
+<li><p>a oferta torna-se perfeitamente inelástica no longo prazo.</p></li>
+<li><p>petróleo passa a ser um bem inferior.</p></li>
+</ol>
+<div class="callout callout-tip callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Tip</strong></p>
+</div>
+<div class="callout-content">
+<p><strong>Gabarito: C</strong></p>
+<p>O <strong>horizonte temporal</strong> é um dos principais determinantes da elasticidade-preço da demanda.</p>
+<p>No curto prazo, os consumidores possuem menor capacidade de adaptação.</p>
+<p>Por exemplo, diante de um aumento no preço dos combustíveis, uma pessoa que utiliza diariamente um automóvel pode não conseguir alterar imediatamente:</p>
+<ul>
+<li>seu local de residência;</li>
+<li>seu local de trabalho;</li>
+<li>seu automóvel;</li>
+<li>sua forma de deslocamento;</li>
+<li>a tecnologia utilizada.</li>
+</ul>
+<p>No longo prazo, porém, existem mais possibilidades de ajuste.</p>
+<p>Os consumidores podem:</p>
+<ul>
+<li>adquirir veículos mais eficientes;</li>
+<li>utilizar transporte coletivo;</li>
+<li>mudar padrões de deslocamento;</li>
+<li>alterar equipamentos;</li>
+<li>adotar novas tecnologias;</li>
+<li>substituir fontes de energia.</li>
+</ul>
+<p>Por isso, a quantidade demandada tende a reagir mais às alterações de preço no longo prazo.</p>
+<p>Consequentemente:</p>
+<p><span class="math display">\[
+|E_d^{LP}|&gt;|E_d^{CP}|
+\]</span></p>
+<p><strong>A) ERRADA.</strong> A lei da demanda continua válida no curto prazo.</p>
+<p><strong>B) ERRADA.</strong> Os consumidores podem responder aos preços no curto prazo; apenas possuem menor capacidade de ajuste.</p>
+<p><strong>C) CORRETA.</strong> O tempo amplia as possibilidades de substituição e adaptação.</p>
+<p><strong>D) ERRADA.</strong> A afirmação trata da elasticidade da demanda, e não de uma suposta oferta perfeitamente inelástica.</p>
+<p><strong>E) ERRADA.</strong> A classificação entre bem normal e inferior depende da relação entre renda e demanda, não do horizonte temporal.</p>
+<p><strong>Ideia-chave:</strong> quanto maior o horizonte temporal, maiores as possibilidades de adaptação e, em geral, <strong>maior a elasticidade-preço da demanda</strong>.</p>
+</div>
+</div>
+</div>
+<p><a href="#/menu">← menu</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Aula 5_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Aula 5_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Aula 5_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Aula 5_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

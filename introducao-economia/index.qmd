@@ -19,3 +19,5 @@ title: "Introdução à Economia"
 ## Unidade 2 - Como funcionam os mercados
 
 [**Aula 4 - As forças de mercado da oferta e da demanda**](aulas/aulas_4/Aula%204.html){target="_blank"}
+
+[**Aula 5 - Elasticidade e suas aplicações**](aulas/aulas_5/Aula%205.html){target="_blank"}
