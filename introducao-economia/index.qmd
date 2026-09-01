@@ -21,3 +21,5 @@ title: "Introdução à Economia"
 [**Aula 4 - As forças de mercado da oferta e da demanda**](aulas/aulas_4/Aula%204.html){target="_blank"}
 
 [**Aula 5 - Elasticidade e suas aplicações**](aulas/aulas_5/Aula%205.html){target="_blank"}
+
+[**Aula 6 - Oferta, demanda e políticas do governo**](aulas/aulas_6/Aula%206.html){target="_blank"}
