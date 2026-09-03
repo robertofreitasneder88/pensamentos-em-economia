@@ -23,3 +23,7 @@ title: "Introdução à Economia"
 [**Aula 5 - Elasticidade e suas aplicações**](aulas/aulas_5/Aula%205.html){target="_blank"}
 
 [**Aula 6 - Oferta, demanda e políticas do governo**](aulas/aulas_6/Aula%206.html){target="_blank"}
+
+[**Aula 7 - Consumidores, Produtores e a eficiência do mercado**](aulas/aulas_7/Aula%207.html){target="_blank"}
+
+## Unidade 3 - Firma
