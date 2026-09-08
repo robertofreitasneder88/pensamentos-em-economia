@@ -27,3 +27,5 @@ title: "Introdução à Economia"
 [**Aula 7 - Consumidores, Produtores e a eficiência do mercado**](aulas/aulas_7/Aula%207.html){target="_blank"}
 
 ## Unidade 3 - Firma
+
+[**Aula 8 - Custos de Produção**](aulas/aulas_8/Aula%208.html){target="_blank"}
