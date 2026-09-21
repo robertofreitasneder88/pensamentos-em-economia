@@ -1,0 +1,1746 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Aula_12_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Aula_12_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Aula_12_files/libs/quarto-html/popper.min.js"></script>
+<script src="Aula_12_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Aula_12_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Aula_12_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Aula_12_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <title>Introdução à economia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Aula_12_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Aula_12_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Aula_12_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link href="Aula_12_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Aula_12_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Aula_12_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Aula_12_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Introdução à economia</h1>
+  <p class="subtitle">Aula 12 - Oligopólio</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="menu" class="slide level2 smaller scrollable">
+<h2>Oligopólio</h2>
+<h3 id="poucos-vendedores-e-decisões-interdependentes">Poucos vendedores e decisões interdependentes</h3>
+<p><a href="#/intro">01 - Poucas firmas e interdependência</a></p>
+<p><a href="#/agua">02 - O duopólio dos produtores de água</a></p>
+<p><a href="#/referencias">03 - As referências competitiva e monopolista</a></p>
+<p><a href="#/cartel">04 - Conluio, cartel e divisão do mercado</a></p>
+<p><a href="#/desvio">05 - O incentivo para descumprir o acordo</a></p>
+<p><a href="#/nash">06 - O equilíbrio de Nash</a></p>
+<p><a href="#/numerofirmas">07 - Número de firmas, efeito produção e efeito preço</a></p>
+<p><a href="#/comercio">08 - Comércio internacional e concorrência</a></p>
+<p><a href="#/modelos">09 - Cournot, Bertrand e Stackelberg</a></p>
+<p><a href="#/JRP1">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="cooperação-e-teoria-dos-jogos">Cooperação e teoria dos jogos</h3>
+<p><a href="#/jogos">10 - Estratégias, resultados e melhores respostas</a></p>
+<p><a href="#/prisioneiros">11 - O dilema dos prisioneiros</a></p>
+<p><a href="#/dominancia">12 - Equilíbrio e resultado coletivo</a></p>
+<p><a href="#/jogocartel">13 - O cartel como dilema dos prisioneiros</a></p>
+<p><a href="#/opep">14 - OPEP e o mercado de petróleo</a></p>
+<p><a href="#/JRP2">🏆 Vamos a um jogo rápido!</a></p>
+<p><a href="#/armamentos">15 - A corrida armamentista</a></p>
+<p><a href="#/recursoscomuns">16 - Recursos comuns e perfuração de poços</a></p>
+<p><a href="#/bemestar">17 - Cooperação e bem-estar da sociedade</a></p>
+<p><a href="#/repeticao">18 - Jogos repetidos e o valor do futuro</a></p>
+<p><a href="#/reciprocidade">19 - Reciprocidade e a estratégia tit-for-tat</a></p>
+<p><a href="#/JRP3">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="política-de-concorrência-e-controvérsias">Política de concorrência e controvérsias</h3>
+<p><a href="#/politica">20 - Política de concorrência</a></p>
+<p><a href="#/telefonema">21 - O telefonema entre companhias aéreas</a></p>
+<p><a href="#/revenda">22 - Fixação de preço de revenda</a></p>
+<p><a href="#/predacao">23 - Preços predatórios</a></p>
+<p><a href="#/vinculacao">24 - Vinculação de produtos e poder de mercado</a></p>
+<p><a href="#/pacote">25 - Dois cinemas e dois filmes</a></p>
+<p><a href="#/microsoft">26 - O caso histórico da Microsoft</a></p>
+<p><a href="#/google">27 - O caso Google no recorte de 2015</a></p>
+<h3 id="conclusão-e-exercícios">Conclusão e exercícios</h3>
+<p><a href="#/conclusao">28 - Conclusão: incentivos individuais e concorrência</a></p>
+<p><a href="#/concursos">29 - Exercícios de concursos públicos</a></p>
+</section>
+<section id="intro" class="slide level2 smaller scrollable">
+<h2>01 - Poucas firmas e interdependência</h2>
+<p>⛽ Imagine uma cidade atendida por apenas dois postos de combustível. Uma redução de preço em um posto pode atrair clientes do outro. O concorrente pode responder reduzindo seu próprio preço.</p>
+<p>Um <strong>oligopólio</strong> é uma estrutura de mercado com poucos vendedores relevantes, oferecendo produtos semelhantes ou idênticos. Também pode haver diferenciação entre suas ofertas. O ponto central é a <strong>interdependência estratégica</strong>: a decisão de uma firma afeta o resultado das outras, e cada uma precisa considerar as possíveis respostas dos rivais.</p>
+<p>O capítulo apresenta o mercado de bolas de tênis como exemplo de poucos produtores. Essa descrição pertence à época do livro, não a um levantamento atual da estrutura desse mercado.</p>
+<p><strong>Teoria dos jogos</strong> é o estudo das decisões em situações estratégicas. Ela ajuda a compreender preços, quantidades, publicidade, entrada e outras decisões cujo resultado depende das escolhas de mais de um agente.</p>
+<p><strong>Pergunta da aula:</strong> por que firmas que ganhariam mais coordenando suas decisões podem acabar competindo entre si?</p>
+<p><strong>Base:</strong> Mankiw, capítulo 17, <em>Oligopoly</em>. A abertura está na página 365 do PDF. O título e o texto começam na 366 e o capítulo termina na 387, incluindo os exercícios. No livro, são as páginas impressas 337 a 358.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="agua" class="slide level2 smaller scrollable">
+<h2>02 - O duopólio dos produtores de água</h2>
+<p>💧 Um <strong>duopólio</strong> é um oligopólio com dois vendedores. No exemplo do capítulo, dois proprietários de poços abastecem uma cidade. Vamos chamá-los de <strong>João e Maria</strong>, adaptando os nomes Jack e Jill.</p>
+<p>Para isolar a decisão estratégica, o exemplo supõe custo total de produção igual a zero. Assim, receita e lucro coincidem. Essa hipótese simplifica o exercício e não descreve os custos reais de abastecimento de água.</p>
+<p>Se <span class="math inline">\(q_J\)</span> e <span class="math inline">\(q_M\)</span> são as quantidades dos produtores:</p>
+<p><span class="math display">\[Q=q_J+q_M,\qquad P=120-Q.\]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Quantidade total <span class="math inline">\(Q\)</span></th>
+<th style="text-align: right;">Preço <span class="math inline">\(P\)</span></th>
+<th style="text-align: right;">Receita e lucro conjunto <span class="math inline">\(PQ\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">2.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">3.200</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">3.600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">3.200</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">2.000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+<p><em>Pontos selecionados da tabela do capítulo. Quantidades em galões e valores monetários na unidade do exemplo.</em></p>
+<p><strong>O preço depende da produção total.</strong> Cada produtor recebe o preço de mercado multiplicado pela quantidade que ele próprio vende: <span class="math inline">\(\pi_J=(120-q_J-q_M)q_J\)</span> e <span class="math inline">\(\pi_M=(120-q_J-q_M)q_M\)</span>.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="referencias" class="slide level2 smaller scrollable">
+<h2>03 - As referências competitiva e monopolista</h2>
+<p>Na concorrência perfeita, a referência é <span class="math inline">\(P=CMg\)</span>. Como o custo marginal do exercício é zero, o resultado competitivo é <span class="math inline">\(P=0\)</span> e <span class="math inline">\(Q=120\)</span>.</p>
+<p>Um monopolista escolheria a quantidade que maximiza o lucro conjunto:</p>
+<p><span class="math display">\[\pi(Q)=(120-Q)Q=120Q-Q^2.\]</span></p>
+<p><span class="math display">\[RMg=120-2Q=CMg=0\quad\Rightarrow\quad Q_m=60,\quad P_m=60.\]</span></p>
+<p><img src="imagens/img_00.png" alt="Demanda P igual a 120 menos Q. O cartel escolhe Q 60 e P 60, o duopólio de Cournot escolhe Q 80 e P 40, e a referência competitiva é Q 120 e P zero." style="width: 900px; height: auto;"></p>
+<p>O monopolista obteria lucro de <span class="math inline">\(60\times60=3.600\)</span>. Sua produção é menor que a quantidade eficiente do exemplo, pois algumas unidades com disposição a pagar positiva deixam de ser consumidas mesmo tendo custo zero.</p>
+<p>O ponto de Cournot, indicado no gráfico, será explicado pelas decisões individuais dos dois produtores. Ele não resulta de uma escolha conjunta.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="cartel" class="slide level2 smaller scrollable">
+<h2>04 - Conluio, cartel e divisão do mercado</h2>
+<p>Um acordo entre firmas sobre preços ou quantidades é chamado de <strong>conluio</strong>. O grupo que coordena sua atuação por esse acordo forma um <strong>cartel</strong>.</p>
+<p>Se João e Maria conseguirem agir como um monopolista, escolherão <span class="math inline">\(Q=60\)</span> e <span class="math inline">\(P=60\)</span>, obtendo lucro conjunto de 3.600.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Divisão igual do acordo</th>
+<th style="text-align: right;">João</th>
+<th style="text-align: right;">Maria</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Quantidade</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Preço recebido</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Lucro</td>
+<td style="text-align: right;">1.800</td>
+<td style="text-align: right;">1.800</td>
+<td style="text-align: right;">3.600</td>
+</tr>
+</tbody>
+</table>
+<p>O acordo precisa definir <strong>quanto cada firma produzirá</strong> e como verificar se cada uma cumpre sua parte. Quanto maior a parcela atribuída a uma firma, maior seu lucro dentro do acordo.</p>
+<p>As dificuldades incluem disputas sobre a divisão do mercado, diferenças de custos, monitoramento e incentivos para descumprir as cotas. A política de concorrência também pode impedir acordos que restrinjam a competição.</p>
+<p><strong>Interesse coletivo dos vendedores:</strong> limitar a quantidade para sustentar o preço. <strong>Interesse individual:</strong> vender mais, aproveitando o preço sustentado pela contenção dos demais.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="desvio" class="slide level2 smaller scrollable">
+<h2>05 - O incentivo para descumprir o acordo</h2>
+<p>Suponha que Maria mantenha sua produção em 30. João compara duas escolhas:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Escolha de João</th>
+<th style="text-align: right;">Quantidade total</th>
+<th style="text-align: right;">Preço</th>
+<th style="text-align: right;">Lucro de João</th>
+<th style="text-align: right;">Lucro de Maria</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Produzir 30</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">60</td>
+<td style="text-align: right;">1.800</td>
+<td style="text-align: right;">1.800</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Produzir 40</td>
+<td style="text-align: right;">70</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">2.000</td>
+<td style="text-align: right;">1.500</td>
+</tr>
+</tbody>
+</table>
+<p>João ganha 200 ao expandir suas vendas, embora o lucro conjunto caia de 3.600 para 3.500. Parte do custo da redução de preço recai sobre Maria.</p>
+<p><img src="imagens/img_01.png" alt="Curvas do lucro de João para duas quantidades de Maria. Com Maria em 30, produzir 40 rende mais que produzir 30. Com Maria em 40, a melhor resposta é produzir 40." style="width: 900px; height: auto;"></p>
+<p>Maria tem o mesmo incentivo. Se ambos produzirem 40, o preço cairá para 40 e cada um ganhará 1.600.</p>
+<p><strong>Precisão do exemplo:</strong> passar de 30 para 40 demonstra um desvio lucrativo. Se qualquer quantidade contínua for permitida, a melhor resposta a 30 será 45. Já a melhor resposta a 40 será exatamente 40.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="nash" class="slide level2 smaller scrollable">
+<h2>06 - O equilíbrio de Nash</h2>
+<p>No <strong>equilíbrio de Nash</strong>, cada agente escolhe sua melhor resposta às estratégias dos demais. Ninguém consegue melhorar seu próprio resultado mudando sozinho de decisão, mantendo as escolhas dos outros.</p>
+<p>No exemplo, com Maria produzindo 40, João compara:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Produção de João</th>
+<th style="text-align: right;">Preço de mercado</th>
+<th style="text-align: right;">Lucro de João</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1.500</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1.600</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">1.500</td>
+</tr>
+</tbody>
+</table>
+<p>O argumento é simétrico para Maria. O equilíbrio é <span class="math inline">\(q_J=q_M=40\)</span>, <span class="math inline">\(Q=80\)</span> e <span class="math inline">\(P=40\)</span>.</p>
+<p><img src="imagens/img_02.png" alt="As curvas de melhor resposta dos dois produtores se cruzam no par de quantidades 40 e 40. O acordo 30 e 30 não está nesse cruzamento." style="width: 900px; height: auto;"></p>
+<p><strong>Complemento algébrico:</strong> a maximização de <span class="math inline">\(\pi_J=(120-q_J-q_M)q_J\)</span> fornece <span class="math inline">\(q_J=(120-q_M)/2\)</span>. Para Maria, <span class="math inline">\(q_M=(120-q_J)/2\)</span>. Resolvendo as duas equações, encontramos 40 para cada um.</p>
+<p>Equilíbrio não significa o maior lucro conjunto. Ambos prefeririam o resultado do cartel se conseguissem impedir desvios.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="numerofirmas" class="slide level2 smaller scrollable">
+<h2>07 - Número de firmas, efeito produção e efeito preço</h2>
+<p>Ao ampliar sua produção, a firma compara dois efeitos:</p>
+<ul>
+<li><strong>Efeito produção:</strong> vender mais a um preço acima do custo marginal aumenta sua receita líquida.</li>
+<li><strong>Efeito preço:</strong> a maior quantidade total reduz o preço recebido nas unidades que a própria firma já vendia.</li>
+</ul>
+<p>Com mais firmas semelhantes, cada uma responde por uma parcela menor do mercado. No modelo de escolha de quantidades, o efeito preço sobre as vendas de cada firma perde importância e o resultado se aproxima da referência competitiva.</p>
+<p><img src="imagens/img_03.png" alt="No modelo simétrico de Cournot, o preço cai e a quantidade total sobe quando aumenta o número de firmas." style="width: 900px; height: auto;"></p>
+<p><strong>Complemento ao exemplo do livro:</strong> com <span class="math inline">\(n\)</span> firmas idênticas, <span class="math inline">\(P=120-Q\)</span> e custo zero, o equilíbrio de Cournot é:</p>
+<p><span class="math display">\[q_i=\frac{120}{n+1},\qquad Q=\frac{120n}{n+1},\qquad P=\frac{120}{n+1}.\]</span></p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Firmas</th>
+<th style="text-align: right;">Preço</th>
+<th style="text-align: right;">Quantidade total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">80</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">96</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">108</td>
+</tr>
+</tbody>
+</table>
+<p>Esse resultado depende das hipóteses do modelo. Contar firmas, isoladamente, não determina o grau de competição de qualquer mercado real.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="comercio" class="slide level2 smaller scrollable">
+<h2>08 - Comércio internacional e concorrência</h2>
+<p>O capítulo usa um exemplo hipotético em que três países possuem dois fabricantes de automóveis cada. Sem comércio entre eles, os consumidores de cada país escolhem entre apenas duas firmas.</p>
+<p>Com comércio, os compradores passam a considerar os seis produtores. O acesso a mais alternativas pode limitar o poder de mercado dos fabricantes nacionais e aproximar o preço do custo marginal.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Mercado fechado do exemplo</th>
+<th style="text-align: left;">Mercado integrado do exemplo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dois produtores disponíveis por país</td>
+<td style="text-align: left;">Até seis produtores disponíveis ao consumidor</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Menor possibilidade de substituição entre fornecedores</td>
+<td style="text-align: left;">Maior conjunto de alternativas</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Maior espaço para restringir a produção no modelo</td>
+<td style="text-align: left;">Pressão competitiva potencialmente maior</td>
+</tr>
+</tbody>
+</table>
+<p>Esse benefício é adicional ao argumento das <strong>vantagens comparativas</strong>. O comércio pode melhorar o resultado também por intensificar a concorrência.</p>
+<p><strong>Condições relevantes:</strong> custos de transporte, tarifas, capacidade, diferenciação e acordos entre empresas podem limitar o efeito. A integração de mercados não garante automaticamente concorrência perfeita.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="modelos" class="slide level2 smaller scrollable">
+<h2>09 - Cournot, Bertrand e Stackelberg</h2>
+<p><strong>Complemento para os concursos:</strong> o capítulo desenvolve a escolha individual de quantidades. As provas também costumam comparar modelos em que mudam a variável estratégica e a ordem das decisões.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Modelo</th>
+<th style="text-align: left;">Decisão das firmas</th>
+<th style="text-align: left;">Ideia central</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cournot</td>
+<td style="text-align: left;">Quantidades escolhidas simultaneamente</td>
+<td style="text-align: left;">Cada uma escolhe a melhor quantidade dada a quantidade rival</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Bertrand</td>
+<td style="text-align: left;">Preços escolhidos simultaneamente</td>
+<td style="text-align: left;">Com bem homogêneo, custos marginais iguais e capacidade suficiente, a disputa pode levar a <span class="math inline">\(P=CMg\)</span></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Stackelberg</td>
+<td style="text-align: left;">Uma firma escolhe a quantidade antes da outra</td>
+<td style="text-align: left;">A líder antecipa a reação da seguidora</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cartel</td>
+<td style="text-align: left;">Coordenação de quantidades ou preços</td>
+<td style="text-align: left;">As firmas procuram maximizar o lucro conjunto</td>
+</tr>
+</tbody>
+</table>
+<p><img src="imagens/img_04.png" alt="No exemplo com demanda P igual a 120 menos Q e custo zero, cartel, Cournot, Stackelberg e Bertrand geram quantidades totais de 60, 80, 90 e 120, respectivamente." style="width: 900px; height: auto;"></p>
+<p>Em Stackelberg, a seguidora reage com <span class="math inline">\(q_S=(120-q_L)/2\)</span>. A líder considera essa reação e escolhe <span class="math inline">\(q_L=60\)</span>. A seguidora produz 30, o preço fica em 30 e os lucros são 1.800 e 900, respectivamente.</p>
+<p>Assim, nesse exemplo, a líder ganha mais que os 1.600 de Cournot. A vantagem de liderança é um resultado das hipóteses clássicas, não uma regra sobre toda situação em que alguém decide primeiro.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP1" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Retome <span class="math inline">\(P=120-q_J-q_M\)</span> e custo total zero.</p>
+<p><strong>a)</strong> Se os dois produtores combinarem produzir 30 cada, qual será o preço e quanto cada um ganhará?</p>
+<p><strong>b)</strong> Se João produzir 40 e Maria mantiver 30, quem ganha com o desvio?</p>
+<p><strong>c)</strong> Se ambos produzirem 40, João deve aumentar sozinho para 50?</p>
+<h3 id="respostas-comentadas">Respostas comentadas</h3>
+<p><strong>a)</strong> <span class="math inline">\(Q=60\)</span>, <span class="math inline">\(P=60\)</span> e lucro individual de <span class="math inline">\(30\times60=1.800\)</span>.</p>
+<p><strong>b)</strong> O preço cai para 50. João ganha <span class="math inline">\(40\times50=2.000\)</span>, e Maria, <span class="math inline">\(30\times50=1.500\)</span>. João melhora sua situação e reduz a de Maria.</p>
+<p><strong>c)</strong> Não. Ao produzir 50, João levaria a produção total a 90 e o preço a 30. Seu lucro cairia de 1.600 para <span class="math inline">\(50\times30=1.500\)</span>.</p>
+<p><strong>Lição:</strong> um acordo pode ser desejável para o grupo e vulnerável à decisão individual. No equilíbrio, a melhor resposta depende da escolha do rival.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="jogos" class="slide level2 smaller scrollable">
+<h2>10 - Estratégias, resultados e melhores respostas</h2>
+<p>Um jogo identifica os <strong>jogadores</strong>, suas <strong>estratégias</strong>, os <strong>resultados</strong> de cada combinação e as informações disponíveis quando decidem.</p>
+<p>Em uma matriz de resultados, precisamos saber:</p>
+<ol type="1">
+<li>Quem escolhe a linha e quem escolhe a coluna.</li>
+<li>De quem é o primeiro número de cada par.</li>
+<li>Se o jogador prefere números maiores, como lucros, ou menores, como custos e anos de prisão.</li>
+</ol>
+<p><strong>Melhor resposta:</strong> escolha mais vantajosa diante de uma estratégia específica do outro jogador.</p>
+<p><strong>Estratégia dominante:</strong> escolha que é melhor independentemente da estratégia do outro. Uma firma pode ter melhores respostas diferentes para decisões diferentes do rival e, portanto, não ter estratégia dominante.</p>
+<p>Para identificar um equilíbrio de Nash em estratégias puras, procuramos uma combinação em que <strong>as duas escolhas sejam melhores respostas ao mesmo tempo</strong>. Alguns jogos têm mais de um desses equilíbrios. Outros não possuem equilíbrio em estratégias puras.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="prisioneiros" class="slide level2 smaller scrollable">
+<h2>11 - O dilema dos prisioneiros</h2>
+<p>Na parábola do livro, Bonnie e Clyde decidem separadamente se confessam ou permanecem em silêncio. Cada um procura minimizar seu próprio tempo de prisão.</p>
+<p><img src="imagens/img_05.png" alt="Matriz de anos de prisão de Bonnie e Clyde. Se ambos confessam, recebem 8 anos cada. Se ambos ficam em silêncio, recebem 1 ano cada. Quem confessa sozinho recebe zero e o outro recebe 20." style="width: 900px; height: auto;"></p>
+<p>Observe a decisão de Bonnie:</p>
+<ul>
+<li>Se Clyde ficar em silêncio, confessar gera zero ano, contra um ano se ela também ficar em silêncio.</li>
+<li>Se Clyde confessar, confessar gera oito anos, contra vinte anos se ela ficar em silêncio.</li>
+</ul>
+<p><strong>Confessar é a estratégia dominante de Bonnie.</strong> O mesmo raciocínio vale para Clyde. O resultado é que ambos confessam e recebem oito anos, embora ambos preferissem a combinação de um ano para cada um.</p>
+<p><em>Situação hipotética de teoria dos jogos, com as penas do exemplo de Mankiw. O exercício não descreve regras processuais ou penais reais.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="dominancia" class="slide level2 smaller scrollable">
+<h2>12 - Equilíbrio e resultado coletivo</h2>
+<p>No dilema dos prisioneiros, confessar é melhor para cada um em qualquer escolha do outro. Por isso, a combinação de duas confissões é também um equilíbrio de Nash.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Critério</th>
+<th style="text-align: left;">Pergunta</th>
+<th style="text-align: left;">Resposta na parábola</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Dominância</td>
+<td style="text-align: left;">Minha melhor decisão muda quando o outro muda?</td>
+<td style="text-align: left;">Não. Confessar continua sendo melhor</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Equilíbrio de Nash</td>
+<td style="text-align: left;">Alguém ganha mudando sozinho, dado o que o outro fez?</td>
+<td style="text-align: left;">Não, quando ambos confessam</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Melhora para os dois</td>
+<td style="text-align: left;">Existe outra combinação que ambos preferem?</td>
+<td style="text-align: left;">Sim, os dois ficarem em silêncio</td>
+</tr>
+</tbody>
+</table>
+<p>O equilíbrio não é eficiente no sentido de Pareto <strong>entre os dois jogadores</strong>, pois o silêncio conjunto reduziria a pena dos dois. Esse julgamento considera seus resultados, não todos os efeitos sobre terceiros.</p>
+<p>Um acordo anterior de silêncio não resolve, sozinho, o problema. Quando chega a hora de decidir, o incentivo individual para confessar permanece.</p>
+<p><strong>Relação importante:</strong> quando todos possuem estratégias dominantes e as escolhem, temos um equilíbrio de Nash. A existência de um equilíbrio de Nash não exige que todos possuam estratégias dominantes.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="jogocartel" class="slide level2 smaller scrollable">
+<h2>13 - O cartel como dilema dos prisioneiros</h2>
+<p>Agora cada produtor escolhe apenas entre <strong>30 e 40 unidades</strong>, como no jogo apresentado no capítulo.</p>
+<p><img src="imagens/img_06.png" alt="Matriz dos lucros de João e Maria com escolhas de 30 ou 40 unidades. Ambos em 30 recebem 1800 cada. Ambos em 40 recebem 1600 cada. Quem produz 40 contra 30 recebe 2000, e o rival recebe 1500." style="width: 900px; height: auto;"></p>
+<p>Para João:</p>
+<ul>
+<li>Se Maria produzir 30, produzir 40 rende 2.000, contra 1.800.</li>
+<li>Se Maria produzir 40, produzir 40 rende 1.600, contra 1.500.</li>
+</ul>
+<p>Maria enfrenta os mesmos incentivos. <strong>Produzir 40 é dominante neste jogo com duas opções.</strong> O resultado é <span class="math inline">\((40,40)\)</span>, com lucro de 1.600 para cada um.</p>
+<p>O acordo <span class="math inline">\((30,30)\)</span> maximiza o lucro conjunto, mas cada firma consegue ganhar mais se for a única a descumpri-lo.</p>
+<p><strong>Distinção:</strong> quando qualquer quantidade contínua é permitida, 40 não é uma estratégia dominante. É a melhor resposta a 40. A dominância afirmada aqui depende do conjunto restrito de escolhas da matriz.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="opep" class="slide level2 smaller scrollable">
+<h2>14 - OPEP e o mercado de petróleo</h2>
+<p>O capítulo apresenta a <strong>Organização dos Países Exportadores de Petróleo (OPEP)</strong> como caso de coordenação entre produtores. O problema econômico é semelhante ao dos poços de água: conter a oferta pode sustentar o preço, mas cada participante tem incentivo para vender uma parcela maior.</p>
+<p>A organização surgiu em 1960, com Irã, Iraque, Kuwait, Arábia Saudita e Venezuela. Essa é a composição fundadora, não uma lista de membros atuais.</p>
+<p><img src="imagens/img_07.png" alt="Preços históricos do petróleo citados no capítulo: 3 dólares em 1972, 11 em 1974, 35 em 1981 e 13 em 1986." style="width: 900px; height: auto;"></p>
+<p>O livro associa a coordenação mais forte entre 1973 e 1985 à capacidade de sustentar preços elevados. Também relata disputas sobre níveis de produção e dificuldades de coordenação em meados dos anos 1980.</p>
+<p><strong>Leitura do caso:</strong> o cumprimento das cotas e os incentivos individuais afetam o acordo. Os preços também dependem da demanda, da oferta de outros produtores e de outros acontecimentos. A série não atribui toda variação de preço ao cartel.</p>
+<p><em>Recorte histórico do capítulo, página impressa 345. Valores nominais da época.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP2" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Duas firmas escolhem entre preço alto e preço baixo. Os pares mostram os lucros de <strong>A e B</strong>, nessa ordem, em unidades monetárias.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">A escolhe / B escolhe</th>
+<th style="text-align: center;">Preço alto</th>
+<th style="text-align: center;">Preço baixo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Preço alto</strong></td>
+<td style="text-align: center;">8, 8</td>
+<td style="text-align: center;">2, 10</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Preço baixo</strong></td>
+<td style="text-align: center;">10, 2</td>
+<td style="text-align: center;">4, 4</td>
+</tr>
+</tbody>
+</table>
+<p><strong>a)</strong> Qual é a melhor resposta de A se B escolher preço alto? E se B escolher preço baixo?</p>
+<p><strong>b)</strong> Qual é o equilíbrio de Nash?</p>
+<p><strong>c)</strong> O resultado que maximiza o lucro conjunto é estável diante de um desvio unilateral?</p>
+<h3 id="respostas-comentadas-1">Respostas comentadas</h3>
+<p><strong>a)</strong> Preço baixo nos dois casos: <span class="math inline">\(10&gt;8\)</span> e <span class="math inline">\(4&gt;2\)</span>.</p>
+<p><strong>b)</strong> Ambas escolhem preço baixo e recebem <span class="math inline">\((4,4)\)</span>. A estratégia é dominante para cada uma.</p>
+<p><strong>c)</strong> Não. Com dois preços altos, o lucro conjunto seria 16, mas uma firma poderia aumentar seu próprio lucro de 8 para 10 baixando sozinha o preço.</p>
+<p><em>Jogo autoral para praticar a leitura da matriz. Não é uma questão de concurso.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="armamentos" class="slide level2 smaller scrollable">
+<h2>15 - A corrida armamentista</h2>
+<p>O capítulo aplica a lógica do dilema dos prisioneiros à corrida armamentista entre Estados Unidos e União Soviética durante a Guerra Fria.</p>
+<p>No modelo simplificado, cada país escolhe entre armar-se e desarmar-se. Cada um prefere evitar a vulnerabilidade diante de um rival armado e também valoriza a vantagem relativa de poder.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">País A / País B</th>
+<th style="text-align: left;">B se arma</th>
+<th style="text-align: left;">B se desarma</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>A se arma</strong></td>
+<td style="text-align: left;">Ambos ficam expostos ao arsenal rival</td>
+<td style="text-align: left;">A ganha vantagem de poder, B fica vulnerável</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>A se desarma</strong></td>
+<td style="text-align: left;">A fica vulnerável, B ganha vantagem de poder</td>
+<td style="text-align: left;">Ambos evitam a ameaça dos arsenais do exemplo</td>
+</tr>
+</tbody>
+</table>
+<p>Sob as preferências descritas na parábola, armar-se é a melhor decisão individual em qualquer escolha do rival. O equilíbrio deixa ambos expostos ao risco, embora o desarmamento conjunto fosse preferível para os dois.</p>
+<p>Acordos enfrentam dificuldades de verificação e receio de descumprimento. A estrutura dos incentivos é semelhante à do cartel, mas os efeitos sobre terceiros e o bem-estar são diferentes.</p>
+<p><em>Aplicação histórica e simplificada do modelo do livro, sem pretensão de explicar toda a política internacional do período.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="recursoscomuns" class="slide level2 smaller scrollable">
+<h2>16 - Recursos comuns e perfuração de poços</h2>
+<p>Duas firmas exploram um reservatório comum de petróleo que vale <strong>12 milhões</strong>. Cada poço custa <strong>1 milhão</strong>. Na parábola, a parcela extraída por cada empresa é proporcional ao número de poços que possui.</p>
+<p>Se cada uma abrir um poço, cada firma obtém metade do petróleo e lucro de <span class="math inline">\(6-1=5\)</span> milhões. Se apenas uma abrir um segundo poço, ela obtém <span class="math inline">\(8-2=6\)</span> milhões e a rival, <span class="math inline">\(4-1=3\)</span> milhões.</p>
+<p><img src="imagens/img_08.png" alt="Matriz de lucros com um ou dois poços. Um poço para cada firma gera 5 milhões para cada. Dois para cada geram 4 milhões para cada. A firma que abre dois contra um recebe 6 milhões e a rival recebe 3 milhões." style="width: 900px; height: auto;"></p>
+<p>Abrir dois poços é dominante: <span class="math inline">\(6&gt;5\)</span> e <span class="math inline">\(4&gt;3\)</span>. O equilíbrio gera lucro conjunto de 8 milhões, contra 10 milhões com apenas um poço para cada.</p>
+<p>Os poços adicionais não aumentam o valor total do petróleo disponível. Eles ampliam o gasto para disputar o mesmo recurso. Esse é o desperdício presente no exemplo de <strong>recurso comum</strong>.</p>
+<p><em>Parábola adaptada do capítulo. Os valores não representam uma avaliação real de campos petrolíferos ou de empresas específicas.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="bemestar" class="slide level2 smaller scrollable">
+<h2>17 - Cooperação e bem-estar da sociedade</h2>
+<p>Cooperar pode melhorar o resultado dos participantes e produzir efeitos diferentes sobre quem está fora do jogo.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Situação</th>
+<th style="text-align: left;">Efeito da cooperação no modelo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cartel de produtores</td>
+<td style="text-align: left;">Aumenta lucros, restringe vendas e prejudica consumidores</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Exploração de recurso comum</td>
+<td style="text-align: left;">Evita gastos redundantes e preserva o excedente total</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Corrida armamentista</td>
+<td style="text-align: left;">Pode reduzir gastos e riscos compartilhados</td>
+</tr>
+</tbody>
+</table>
+<p>No exemplo da água, é possível calcular o excedente do consumidor e compará-lo com o lucro dos produtores:</p>
+<p><span class="math display">\[EC=\frac{(120-P)Q}{2},\qquad EP=PQ,\qquad ET=EC+EP.\]</span></p>
+<p><img src="imagens/img_09.png" alt="Comparação de excedentes: cartel tem excedente do consumidor 1800, lucro 3600 e peso morto 1800. Cournot tem 3200, 3200 e 800. Concorrência tem excedente do consumidor 7200 e peso morto zero." style="width: 900px; height: auto;"></p>
+<p>A competição entre os dois produtores reduz o peso morto de 1.800 para 800. Nesse modelo, a dificuldade de manter o cartel beneficia consumidores e aumenta o excedente total.</p>
+<p><strong>Pergunta essencial:</strong> cooperação entre quais agentes e com quais efeitos sobre terceiros? O interesse conjunto das firmas não mede todo o bem-estar.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="repeticao" class="slide level2 smaller scrollable">
+<h2>18 - Jogos repetidos e o valor do futuro</h2>
+<p>Quando as firmas voltam a interagir, um desvio hoje pode afetar lucros futuros. No jogo com escolhas de 30 ou 40, o livro considera esta resposta: depois de um desvio, ambos passam a produzir 40 nas rodadas seguintes.</p>
+<p><img src="imagens/img_10.png" alt="Cumprir o acordo gera 1800 em cada rodada. Desviar gera 2000 na primeira rodada e 1600 nas seguintes. A sexta rodada é apenas o limite do desenho, não o fim do jogo." style="width: 900px; height: auto;"></p>
+<p>O desvio traz ganho imediato de 200, mas a punição reduz os lucros posteriores em 200 por rodada. A punição é compatível com a melhor resposta a um rival que produz 40.</p>
+<p><strong>Aprofundamento:</strong> em um horizonte indefinido, com fator de desconto <span class="math inline">\(0\leq\delta&lt;1\)</span>, o acordo pode ser sustentado se:</p>
+<p><span class="math display">\[\frac{1.800}{1-\delta}\geq2.000+\frac{1.600\delta}{1-\delta}
+\quad\Rightarrow\quad\delta\geq\frac{1}{2}.\]</span></p>
+<p>O cálculo vale para <strong>as duas opções da matriz</strong>, desvio observável e a punição descrita. Se qualquer quantidade contínua for permitida, o melhor desvio é diferente e o limiar também muda.</p>
+<p>Repetir um jogo não garante cooperação. A duração esperada da relação, a observação dos desvios e a importância dos ganhos futuros afetam os incentivos.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="reciprocidade" class="slide level2 smaller scrollable">
+<h2>19 - Reciprocidade e a estratégia tit-for-tat</h2>
+<p>O capítulo relata os torneios de Robert Axelrod com programas que jogavam repetidamente o dilema dos prisioneiros.</p>
+<p>A estratégia <strong>tit-for-tat</strong>, também chamada de reciprocidade, apresentou bom desempenho no torneio descrito:</p>
+<ol type="1">
+<li>Começar cooperando.</li>
+<li>Nas rodadas seguintes, repetir a escolha do outro jogador na rodada anterior.</li>
+</ol>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Rodada</th>
+<th style="text-align: left;">Escolha anterior do rival</th>
+<th style="text-align: left;">Resposta da estratégia</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">Ainda não existe</td>
+<td style="text-align: left;">Cooperar</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">Cooperou na rodada 1</td>
+<td style="text-align: left;">Cooperar</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">Não cooperou na rodada 2</td>
+<td style="text-align: left;">Não cooperar</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">Voltou a cooperar na rodada 3</td>
+<td style="text-align: left;">Cooperar</td>
+</tr>
+</tbody>
+</table>
+<p>A estratégia reage ao descumprimento e permite retomar a cooperação. Ela difere de uma punição que dura para sempre após o primeiro desvio.</p>
+<p>O resultado do torneio não estabelece uma estratégia universalmente melhor. O desempenho depende dos oponentes, das regras, da duração e da possibilidade de erros na observação ou na execução.</p>
+<p><strong>Ligação com o oligopólio:</strong> a expectativa de interações futuras pode ajudar a sustentar coordenação, apesar do incentivo a desviar em uma rodada.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP3" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p><strong>Julgue as afirmações e justifique.</strong></p>
+<p><strong>a)</strong> Se cooperar aumenta o lucro conjunto dos produtores, a sociedade necessariamente fica melhor.</p>
+<p><strong>b)</strong> Na parábola do reservatório comum, os dois poços adicionais aumentam o lucro conjunto porque permitem extrair uma parcela maior.</p>
+<p><strong>c)</strong> O ganho de um desvio pode ser menor que a perda esperada de lucros futuros, permitindo cooperação em um jogo repetido.</p>
+<h3 id="respostas-comentadas-2">Respostas comentadas</h3>
+<p><strong>a) Falsa.</strong> Um cartel pode elevar os lucros restringindo a oferta e reduzindo o excedente do consumidor. Precisamos considerar os terceiros.</p>
+<p><strong>b) Falsa.</strong> O reservatório continua valendo 12 milhões. Com quatro poços, o custo total sobe de 2 para 4 milhões e o lucro conjunto cai de 10 para 8 milhões.</p>
+<p><strong>c) Verdadeira.</strong> No exemplo, o desvio rende 200 uma vez, mas a resposta dos rivais reduz o lucro nas rodadas futuras. O resultado depende da importância dessas rodadas e da credibilidade da resposta.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="politica" class="slide level2 smaller scrollable">
+<h2>20 - Política de concorrência</h2>
+<p>O objetivo econômico da política de concorrência é limitar práticas que reduzam a competição e prejudiquem o bem-estar. No caso do cartel, o problema é a coordenação para restringir oferta e elevar preços.</p>
+<p>O capítulo apresenta o desenvolvimento histórico da política antitruste nos Estados Unidos:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Marco histórico</th>
+<th style="text-align: left;">Papel na exposição do livro</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Recusa judicial de exigir o cumprimento de acordos restritivos</td>
+<td style="text-align: left;">Reduzir a capacidade de usar contratos para sustentar combinações de preços e produção</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Sherman Act, 1890</td>
+<td style="text-align: left;">Reforçar a repressão a acordos restritivos e à monopolização</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Clayton Act, 1914</td>
+<td style="text-align: left;">Fortalecer a política antitruste, incluindo incentivos à reparação privada dos danos</td>
+</tr>
+</tbody>
+</table>
+<p>O livro destaca a possibilidade de reparação civil em valor triplo no contexto norte-americano. A ideia econômica é ampliar o incentivo para que os prejudicados contestem práticas anticompetitivas.</p>
+<p>A política também examina fusões que possam elevar excessivamente o poder de mercado. A avaliação precisa considerar eventuais eficiências e os efeitos sobre a concorrência.</p>
+<p><em>Contexto histórico e institucional apresentado no capítulo. Os exemplos norte-americanos não constituem uma descrição da legislação brasileira.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="telefonema" class="slide level2 smaller scrollable">
+<h2>21 - O telefonema entre companhias aéreas</h2>
+<p>O capítulo relata uma conversa entre <strong>Robert Crandall, da American Airlines, e Howard Putnam, da Braniff</strong>, divulgada pelo <em>New York Times</em> em fevereiro de 1983.</p>
+<p>Na conversa, Crandall propôs que a concorrente aumentasse suas tarifas em 20% e indicou que acompanharia o aumento no dia seguinte. Putnam reagiu à proposta de discutir a fixação de preços e entregou a gravação ao Departamento de Justiça dos Estados Unidos.</p>
+<p>O episódio levou a uma ação e, posteriormente, a um acordo que restringiu certas condutas e contatos de Crandall com executivos de outras companhias.</p>
+<h3 id="o-mecanismo-econômico">O mecanismo econômico</h3>
+<p>O aumento coordenado permitiria evitar que a empresa que elevasse o preço perdesse clientes para a concorrente que mantivesse a tarifa. O ganho conjunto das empresas viria da redução da concorrência por preço.</p>
+<p>O caso ilustra a diferença entre <strong>decidir individualmente</strong>, considerando a possível reação de rivais, e <strong>propor uma coordenação explícita de preços</strong>.</p>
+<p><em>Síntese do caso histórico apresentado por Mankiw, página impressa 350. Não se trata de uma descrição das práticas atuais das empresas.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="revenda" class="slide level2 smaller scrollable">
+<h2>22 - Fixação de preço de revenda</h2>
+<p>Imagine um fabricante que vende um equipamento às lojas por 50 e exige que elas o revendam por 75. Essa prática é chamada de <strong>fixação de preço de revenda</strong> no exemplo do capítulo.</p>
+<p>À primeira vista, ela limita a concorrência de preços entre os varejistas. O livro apresenta também um possível argumento de eficiência:</p>
+<ol type="1">
+<li>Uma loja investe em demonstrações e vendedores preparados.</li>
+<li>O cliente usa esse atendimento para conhecer o produto.</li>
+<li>Depois compra em outra loja, que cobra menos e não oferece o serviço.</li>
+</ol>
+<p>A segunda loja pode aproveitar o investimento da primeira. Esse problema de <strong>carona</strong> reduz o incentivo para oferecer demonstração e atendimento.</p>
+<p>Ao preservar uma margem, o fabricante pode tentar sustentar o serviço prestado pelas lojas. O capítulo também observa que o fabricante deseja vender seus produtos e não necessariamente ganha com uma redução das vendas causada pela coordenação entre varejistas.</p>
+<p><strong>Questão de análise:</strong> a restrição protege um serviço útil, facilita uma coordenação prejudicial ou produz ambos os efeitos? A existência de uma possível justificativa não prova benefício líquido em todo caso.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="predacao" class="slide level2 smaller scrollable">
+<h2>23 - Preços predatórios</h2>
+<p>Uma empresa pode reduzir preços para competir por consumidores. A hipótese de <strong>preço predatório</strong> envolve uma estratégia diferente: aceitar perdas para afastar um concorrente e recuperar essas perdas posteriormente com preços maiores.</p>
+<p>O capítulo usa duas companhias aéreas hipotéticas. A incumbente tem 80% do mercado, e a entrante, 20%. Uma guerra de preços pode impor perdas importantes à incumbente, que atende a maior parte dos consumidores.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Etapa da hipótese</th>
+<th style="text-align: left;">Pergunta econômica</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Preços baixos e perdas iniciais</td>
+<td style="text-align: left;">A firma consegue financiar a estratégia?</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Saída ou enfraquecimento do rival</td>
+<td style="text-align: left;">O rival precisa sair ou pode reduzir temporariamente sua operação?</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Aumento posterior de preços</td>
+<td style="text-align: left;">A firma conseguirá recuperar as perdas sem atrair nova entrada?</td>
+</tr>
+</tbody>
+</table>
+<p>O livro apresenta o ceticismo de economistas sobre a rentabilidade da estratégia em certas situações. Um rival menor pode reduzir sua oferta durante a disputa, enquanto a incumbente arca com uma parcela maior das perdas.</p>
+<p><strong>Desafio da política:</strong> distinguir descontos que beneficiam consumidores de uma estratégia de exclusão com dano futuro. Observar apenas um preço baixo não resolve essa distinção.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="vinculacao" class="slide level2 smaller scrollable">
+<h2>24 - Vinculação de produtos e poder de mercado</h2>
+<p>Na <strong>vinculação de produtos</strong>, ou <em>tying</em>, a aquisição de um produto fica associada à de outro. O capítulo discute o caso de um estúdio que oferece dois filmes conjuntamente, em vez de vendê-los separadamente.</p>
+<p>Uma crítica é que o vendedor aproveita a procura pelo produto desejado para impor a compra de outro produto. O livro mostra por que uma versão simples desse argumento exige cuidado.</p>
+<p>Se um cinema está disposto a pagar 20 mil por um filme e zero pelo outro, sua disposição total a pagar pelo pacote continua sendo 20 mil. Acrescentar um item sem valor para o comprador não cria, por si só, mais disposição a pagar.</p>
+<p>Isso não encerra a análise. A venda conjunta pode:</p>
+<ul>
+<li>Facilitar a captura de receitas quando compradores valorizam os componentes de maneira diferente.</li>
+<li>Gerar conveniência ou economias de integração.</li>
+<li>Em determinadas condições, dificultar o acesso de rivais ao mercado.</li>
+</ul>
+<p><strong>Conclusão do debate no capítulo:</strong> a avaliação depende do mecanismo econômico e de seus efeitos. A simples presença de um pacote não revela automaticamente o resultado para o bem-estar.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="pacote" class="slide level2 smaller scrollable">
+<h2>25 - Dois cinemas e dois filmes</h2>
+<p>Considere as disposições a pagar da parábola do capítulo, em milhares de unidades monetárias:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Comprador</th>
+<th style="text-align: right;">Filme A</th>
+<th style="text-align: right;">Filme B</th>
+<th style="text-align: right;">Pacote A + B</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Cinema da cidade</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">20</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Cinema do interior</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">20</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Venda separada:</strong> cobrar 15 por filme faz cada cinema comprar seu título preferido. A receita total é <span class="math inline">\(15+15=30\)</span> mil. Cobrar 5 por filme e vender os dois a ambos geraria apenas 20 mil.</p>
+<p><strong>Venda conjunta:</strong> cobrar 20 pelo pacote faz cada cinema adquirir os dois filmes. A receita total passa a <span class="math inline">\(20+20=40\)</span> mil.</p>
+<p><img src="imagens/img_11.png" alt="Receita total de 30 mil com preços separados e de 40 mil com a venda do pacote aos dois cinemas." style="width: 900px; height: auto;"></p>
+<p>O pacote reduz a diferença entre as disposições totais a pagar e permite ao vendedor capturar mais receita. O capítulo relaciona esse mecanismo à <strong>discriminação de preços</strong>.</p>
+<p>O exercício omite custos e supõe que a compra acontece na igualdade entre preço e disposição a pagar. O aumento de receita do vendedor, sozinho, não determina a variação do bem-estar total.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="microsoft" class="slide level2 smaller scrollable">
+<h2>26 - O caso histórico da Microsoft</h2>
+<p>O capítulo examina o processo iniciado pelo governo dos Estados Unidos contra a Microsoft em <strong>1998</strong>, envolvendo o poder de mercado da empresa e a integração do navegador ao Windows.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Argumento do governo, no caso descrito</th>
+<th style="text-align: left;">Argumento da empresa</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">A integração e outras práticas poderiam dificultar a entrada de concorrentes e proteger o poder de mercado</td>
+<td style="text-align: left;">A inclusão de novas funções faria parte da evolução do produto e poderia melhorar a compatibilidade e a facilidade de uso</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">A elevada participação nos sistemas operacionais indicava poder de mercado</td>
+<td style="text-align: left;">Mudanças tecnológicas e concorrentes existentes limitariam esse poder</td>
+</tr>
+</tbody>
+</table>
+<h3 id="cronologia-apresentada-no-livro">Cronologia apresentada no livro</h3>
+<ul>
+<li><strong>1999:</strong> decisão de primeira instância reconheceu poder de monopólio e abuso desse poder.</li>
+<li><strong>2000:</strong> o juiz determinou a divisão da empresa.</li>
+<li><strong>2001:</strong> a instância de apelação derrubou a ordem de divisão.</li>
+<li><strong>2002:</strong> um acordo impôs restrições a práticas comerciais e permitiu que o navegador permanecesse integrado ao sistema.</li>
+</ul>
+<p><strong>Problema econômico:</strong> distinguir integração que melhora o produto de práticas que excluem rivais e dificultam a inovação. O livro não reduz toda a controvérsia a uma única característica técnica do produto.</p>
+<p><em>Recorte histórico das páginas impressas 352 e 353, sem atualização dos processos posteriores mencionados pelo livro.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="google" class="slide level2 smaller scrollable">
+<h2>27 - O caso Google no recorte de 2015</h2>
+<p>O quadro de notícias do capítulo reproduz uma reportagem de <strong>15 de abril de 2015</strong> sobre a atuação da Comissão Europeia em relação ao Google.</p>
+<p>O foco era a acusação de favorecer o próprio serviço de comparação de compras nos resultados de busca. A reportagem também mencionava uma investigação sobre o sistema Android.</p>
+<h3 id="perguntas-econômicas-ilustradas-pelo-caso">Perguntas econômicas ilustradas pelo caso</h3>
+<ul>
+<li>Uma plataforma pode usar uma posição relevante em um serviço para dificultar a competição em outro?</li>
+<li>Como distinguir uma melhoria na apresentação do produto de um tratamento que prejudica injustificadamente concorrentes?</li>
+<li>Que efeitos aparecem para consumidores, empresas que dependem da plataforma e novos entrantes?</li>
+</ul>
+<p>O quadro também mostra que autoridades de países diferentes podem analisar uma mesma prática de forma distinta, considerando seus marcos institucionais e as condições dos mercados.</p>
+<p><strong>Data do relato:</strong> este slide explica a notícia histórica incluída no livro. As acusações e investigações descritas são as daquele momento, sem afirmar que continuam pendentes hoje.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="conclusao" class="slide level2 smaller scrollable">
+<h2>28 - Conclusão: incentivos individuais e concorrência</h2>
+<p>O oligopólio combina poucos vendedores relevantes com decisões interdependentes. Para entender seu resultado, precisamos conhecer as escolhas disponíveis e como cada firma responde às demais.</p>
+<p>No exemplo de quantidades do capítulo:</p>
+<p><span class="math display">\[Q_{cartel}=60&lt;Q_{Cournot}=80&lt;Q_{competitivo}=120,\]</span></p>
+<p><span class="math display">\[P_{cartel}=60&gt;P_{Cournot}=40&gt;P_{competitivo}=0.\]</span></p>
+<p>O cartel maximiza o lucro conjunto, mas os participantes têm incentivo para desviar. O equilíbrio de Nash descreve uma combinação de melhores respostas, sem garantir o melhor resultado coletivo.</p>
+<p>Jogos repetidos podem sustentar cooperação quando os ganhos futuros são suficientemente importantes. O efeito social dessa cooperação depende de quem participa e de quem arca com seus efeitos.</p>
+<p>A política de concorrência procura enfrentar práticas que restringem a competição. Nos casos mais controversos, precisa distinguir danos de possíveis eficiências, considerando preços, qualidade, entrada e inovação.</p>
+<p><strong>Para analisar um caso:</strong> identifique os jogadores, suas escolhas e os resultados. Encontre as melhores respostas e, depois, avalie os efeitos sobre consumidores e terceiros.</p>
+<p><em>Referência: Mankiw, capítulo 17, seções 17-1 a 17-4. A comparação formal entre Cournot, Bertrand e Stackelberg e os cálculos adicionais foram incluídos como complementos didáticos para os exercícios.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="concursos" class="slide level2 smaller scrollable">
+<h2>29 - Exercícios de concursos públicos</h2>
+<p><strong>12 exercícios: 6 questões de múltipla escolha e 6 itens de verdadeiro ou falso, com gabarito e resolução comentada.</strong></p>
+<p>Seleção de provas da <strong>FGV</strong> e do <strong>Cebraspe</strong>, com as adaptações indicadas. As questões 7 a 10 desmembram as quatro proposições de uma questão da FGV, mantendo o sentido e o julgamento da sequência oficial. As demais questões mantêm o formato da prova de origem.</p>
+<p>Nos itens de julgamento, <strong>verdadeiro corresponde a Certo</strong> e <strong>falso, a Errado</strong>. Nas questões de múltipla escolha, as letras e a ordem das alternativas seguem os gabaritos originais.</p>
+<p><a href="#/gabarito-concursos">Ir ao gabarito</a> · <a href="#/resolucoes-concursos">Ir às resoluções</a></p>
+<h3 id="questão-1-duas-firmas-e-estrutura-de-mercado">Questão 1 | Duas firmas e estrutura de mercado</h3>
+<p><strong>Cebraspe | Caesb | Analista de Suporte ao Negócio, Economista | 2025 | questão original 38.</strong> Adaptação e abreviação. Aplicação em 22/06/2025.</p>
+<p>Uma cidade tem dois postos que atendem toda a demanda local por combustíveis, com participações semelhantes. A instalação de um terceiro posto não seria economicamente viável, e os dois estabelecimentos têm alguma liberdade para escolher seus preços. Qual é a classificação <strong>mais específica</strong> dessa estrutura?</p>
+<ol type="A">
+<li><p>Concorrência perfeita.</p></li>
+<li><p>Concorrência imperfeita.</p></li>
+<li><p>Monopólio.</p></li>
+<li><p>Oligopólio.</p></li>
+<li><p>Concorrência monopolística.</p></li>
+</ol>
+<p><em>A expressão “mais específica” explicita o critério de classificação na adaptação, pois concorrência imperfeita é uma categoria mais ampla.</em></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Prova oficial com justificativas</a> · <a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-2-nash-e-melhora-para-os-dois-jogadores">Questão 2 | Nash e melhora para os dois jogadores</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 53.</strong> Adaptação. Aplicação em 08/02/2026.</p>
+<p>Os resultados de A e B, nessa ordem, são:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">A / B</th>
+<th style="text-align: center;">Cooperar</th>
+<th style="text-align: center;">Trair</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cooperar</strong></td>
+<td style="text-align: center;">3, 3</td>
+<td style="text-align: center;">0, 5</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Trair</strong></td>
+<td style="text-align: center;">5, 0</td>
+<td style="text-align: center;">1, 1</td>
+</tr>
+</tbody>
+</table>
+<p>Indique, respectivamente, o equilíbrio de Nash em estratégias puras e uma combinação eficiente que melhora o resultado de ambos em relação a ele.</p>
+<ol type="A">
+<li><p>(Cooperar, Cooperar) e (Trair, Trair).</p></li>
+<li><p>(Trair, Trair) e (Cooperar, Cooperar).</p></li>
+<li><p>(Trair, Cooperar) e (Cooperar, Trair).</p></li>
+<li><p>(Cooperar, Trair) e (Trair, Cooperar).</p></li>
+<li><p>(Cooperar, Cooperar) e (Trair, Cooperar).</p></li>
+</ol>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-3-preços-e-incentivo-ao-desvio">Questão 3 | Preços e incentivo ao desvio</h3>
+<p><strong>FGV | CAGE-RS | Auditor do Estado | 2025 | manhã, tipo 1 | questão original 42.</strong> Adaptação e abreviação. Aplicação em 12/01/2025.</p>
+<p>Duas empresas escolhem seus preços simultaneamente. Os pares mostram os lucros de A e B, respectivamente, em milhões de reais:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">A / B</th>
+<th style="text-align: center;">Preço alto</th>
+<th style="text-align: center;">Preço baixo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Preço alto</strong></td>
+<td style="text-align: center;">10, 10</td>
+<td style="text-align: center;">2, 15</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Preço baixo</strong></td>
+<td style="text-align: center;">15, 2</td>
+<td style="text-align: center;">5, 5</td>
+</tr>
+</tbody>
+</table>
+<p>Qual alternativa identifica corretamente o equilíbrio e a dificuldade de alcançar o resultado cooperativo?</p>
+<ol type="A">
+<li><p>Ambas escolhem preço baixo. O acordo de preços altos renderia <span class="math inline">\((10,10)\)</span>, mas cada uma tem incentivo para descumpri-lo.</p></li>
+<li><p>Ambas escolhem preço baixo. O acordo de preços altos não acontece simplesmente porque a cooperação é proibida pelas regras desse jogo.</p></li>
+<li><p>A escolhe preço alto e B, baixo. O resultado cooperativo seria <span class="math inline">\((15,2)\)</span> por maximizar o lucro de A.</p></li>
+<li><p>Ambas escolhem preço baixo. O resultado cooperativo seria <span class="math inline">\((5,5)\)</span>, mas não é alcançado porque só maximiza lucros no curto prazo.</p></li>
+<li><p>Não existe equilíbrio, pois sempre vale a pena mudar de estratégia.</p></li>
+</ol>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-do-estado-manhacns101-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_cagers_sdfisddsui.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-4-a-liderança-em-stackelberg">Questão 4 | A liderança em Stackelberg</h3>
+<p><strong>FGV | COMPESA | Analista de Gestão, Economista | 2016 | tipo 1 | questão original 35.</strong> Adaptação e abreviação.</p>
+<p>Nos modelos clássicos comparáveis de duopólio, qual afirmação descreve Stackelberg? Considere demanda linear e custos marginais constantes e iguais entre as firmas, como no exemplo da aula.</p>
+<ol type="A">
+<li><p>A liderança corresponde à fixação inicial do preço.</p></li>
+<li><p>As duas firmas escolhem suas quantidades simultaneamente.</p></li>
+<li><p>Ambas teriam lucro maior se apenas uma delas atendesse todo o mercado como monopolista, sem transferência de lucro à outra.</p></li>
+<li><p>A firma líder obtém lucro maior que o que obteria em Cournot.</p></li>
+<li><p>A seguidora escolhe primeiro, dando vantagem à líder.</p></li>
+</ol>
+<p><em>As condições de comparação foram explicitadas para evitar generalizar a vantagem de liderança para qualquer tecnologia ou jogo.</em></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/compesa2016/201605_Analista_de_Gestao_(Economista)_(NS011)_Tipo_1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/compesa2016/compesa_gabarito_definitivo_RETIFICADO.pdf">Gabarito definitivo retificado</a></p>
+<h3 id="questão-5-comparação-entre-modelos-de-oligopólio">Questão 5 | Comparação entre modelos de oligopólio</h3>
+<p><strong>FGV | Senado Federal | Consultor Legislativo, Assessoramento Legislativo, Economia do Trabalho, Renda e Previdência | 2022 | tipo 1 | questão original 72.</strong> Adaptação com explicitação das hipóteses usuais.</p>
+<p>Julgue as proposições:</p>
+<p>I. Nas condições clássicas de demanda linear e custos marginais constantes e iguais, a líder de Stackelberg obtém lucro superior ao de Cournot.</p>
+<ol start="2" type="I">
+<li><p>Em Bertrand, com produto homogêneo, custos marginais iguais e capacidade suficiente, o preço de equilíbrio iguala o custo marginal.</p></li>
+<li><p>No Cournot simétrico, a entrada de firmas idênticas reduz a participação individual e aproxima o preço do nível competitivo, mantidas as demais condições.</p></li>
+</ol>
+<ol type="A">
+<li><p>V, V, V.</p></li>
+<li><p>V, V, F.</p></li>
+<li><p>F, V, V.</p></li>
+<li><p>F, V, F.</p></li>
+<li><p>F, F, F.</p></li>
+</ol>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/assessoramento_legislativo_economia_do_trabalho_renda_e_previdenciae4cns14_tipo_1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/senado2022_gabarito_definitivo_edital04.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-6-o-resultado-monopolista-como-referência-do-cartel">Questão 6 | O resultado monopolista como referência do cartel</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 51.</strong> Adaptação e abreviação.</p>
+<p>Considere o modelo usual de monopólio com preço uniforme e ótimo interior. Julgue:</p>
+<p>I. A condição marginal de máximo é <span class="math inline">\(RMg=CMg\)</span>.</p>
+<ol start="2" type="I">
+<li><p>A margem sobre o custo marginal depende da elasticidade da demanda.</p></li>
+<li><p>O preço superior ao custo marginal restringe a produção e gera peso morto.</p></li>
+</ol>
+<ol type="A">
+<li><p>F, F, F.</p></li>
+<li><p>F, V, F.</p></li>
+<li><p>V, F, V.</p></li>
+<li><p>V, V, F.</p></li>
+<li><p>V, V, V.</p></li>
+</ol>
+<p><em>Aplicação ao capítulo: um cartel que maximiza o lucro conjunto procura reproduzir o resultado monopolista. Essa relação será usada na resolução.</em></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-7-verdadeiro-ou-falso-equilíbrio-de-cournot">Questão 7 | Verdadeiro ou falso: equilíbrio de Cournot</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 52, primeira proposição.</strong> Adaptação para julgamento individual.</p>
+<p>Em Cournot, cada firma maximiza seu lucro tomando a quantidade rival como dada. No equilíbrio, as escolhas são melhores respostas recíprocas.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da questão 52</a></p>
+<h3 id="questão-8-verdadeiro-ou-falso-preço-de-bertrand">Questão 8 | Verdadeiro ou falso: preço de Bertrand</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 52, segunda proposição.</strong> Adaptação para julgamento individual.</p>
+<p>No Bertrand clássico, com produto homogêneo, custos marginais idênticos e ausência de restrições de capacidade, o preço de equilíbrio é igual ao custo marginal.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da questão 52</a></p>
+<h3 id="questão-9-verdadeiro-ou-falso-estabilidade-do-cartel">Questão 9 | Verdadeiro ou falso: estabilidade do cartel</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 52, terceira proposição.</strong> Adaptação para julgamento individual.</p>
+<p>Um cartel tende a ser estável porque, uma vez definidas as cotas, nenhuma firma tem incentivo para vender além do combinado.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da questão 52</a></p>
+<h3 id="questão-10-verdadeiro-ou-falso-reação-da-seguidora">Questão 10 | Verdadeiro ou falso: reação da seguidora</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 52, quarta proposição.</strong> Adaptação para julgamento individual.</p>
+<p>Em Stackelberg, a líder escolhe a quantidade primeiro e considera a reação da seguidora ao tomar sua decisão.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da questão 52</a></p>
+<h3 id="questão-11-verdadeiro-ou-falso-lucro-da-líder">Questão 11 | Verdadeiro ou falso: lucro da líder</h3>
+<p><strong>Cebraspe | FUB | Economista | 2018 | item original 59.</strong> Adaptação.</p>
+<p>Uma firma ganha mais em Cournot do que em Stackelberg, mesmo quando ocupa a posição de líder neste último modelo.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><em>Considere a comparação clássica entre os modelos, com as mesmas condições de demanda e custo.</em></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/MATRIZ_433_FUB003__PAG_3.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/19.GAB_DEFINITIVO_MATRIZ_433_FUB003__PAG_3.PDF">Gabarito definitivo</a></p>
+<h3 id="questão-12-verdadeiro-ou-falso-decisão-do-banco-seguidor">Questão 12 | Verdadeiro ou falso: decisão do banco seguidor</h3>
+<p><strong>Cebraspe | Banco Central do Brasil | Analista, Economia e Finanças | 2024 | item original 72.</strong> Adaptação da representação gráfica para tabela.</p>
+<p>O banco B1 decide primeiro se mantém ou reduz sua taxa de juros. B2 observa essa decisão e então escolhe. Os resultados são os mesmos da árvore da prova, em milhões de unidades monetárias, na ordem <strong>B1, B2</strong>:</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Decisão de B1</th>
+<th style="text-align: center;">B2 mantém</th>
+<th style="text-align: center;">B2 reduz</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Mantém</strong></td>
+<td style="text-align: center;">30, 20</td>
+<td style="text-align: center;">18, 30</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Reduz</strong></td>
+<td style="text-align: center;">40, 8</td>
+<td style="text-align: center;">35, 25</td>
+</tr>
+</tbody>
+</table>
+<p>Julgue: <strong>reduzir a taxa de juros é uma estratégia dominante para B2.</strong></p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><em>A tabela organiza os resultados. A ordem sequencial das decisões e a observação da ação de B1 por B2 permanecem as mesmas da prova.</em></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/bcb_24/arquivos/959_BCB_001_01.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/bcb_24/arquivos/Gab_Definitivo_959_BCB_001_01.PDF">Gabarito definitivo</a></p>
+<h3 id="gabarito-concursos">Gabarito resumido</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">Questão</th>
+<th style="text-align: center;">Resposta</th>
+<th style="text-align: right;">Questão</th>
+<th style="text-align: center;">Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: right;">7</td>
+<td style="text-align: center;"><strong>Certo</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: center;"><strong>B</strong></td>
+<td style="text-align: right;">8</td>
+<td style="text-align: center;"><strong>Certo</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: right;">9</td>
+<td style="text-align: center;"><strong>Errado</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: center;"><strong>D</strong></td>
+<td style="text-align: right;">10</td>
+<td style="text-align: center;"><strong>Certo</strong></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: center;"><strong>A</strong></td>
+<td style="text-align: right;">11</td>
+<td style="text-align: center;"><strong>Errado</strong></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: center;"><strong>E</strong></td>
+<td style="text-align: right;">12</td>
+<td style="text-align: center;"><strong>Certo</strong></td>
+</tr>
+</tbody>
+</table>
+<p>As respostas dos itens 7 a 10 correspondem à sequência <strong>V, V, F, V</strong>, alternativa <strong>D</strong> da questão original 52 da ALEGO. Não são seis questões originais independentes de certo ou errado: quatro dos seis itens desse formato foram desmembrados, conforme a identificação acima.</p>
+<h3 id="resolucoes-concursos">Resoluções comentadas</h3>
+<h4 id="alternativa-d-oligopólio-mais-precisamente-duopólio">1. Alternativa D: oligopólio, mais precisamente duopólio</h4>
+<p>Duas firmas dividem o mercado e possuem alguma capacidade de definir preços. Uma decisão de uma delas pode afetar a procura pela outra. Isso caracteriza um duopólio, que é um caso de oligopólio.</p>
+<p><strong>A</strong> não se ajusta ao poder de mercado e ao número de vendedores. <strong>C</strong> pressuporia um único fornecedor. <strong>E</strong> envolve muitos vendedores diferenciados e livre entrada no modelo básico.</p>
+<p><strong>B</strong> é uma classificação ampla que inclui o oligopólio. Por isso, a adaptação pede a categoria mais específica. O gabarito oficial é D. Não se deve concluir que um oligopólio deixa de ser concorrência imperfeita.</p>
+<h4 id="alternativa-b-trair-é-dominante-cooperar-melhora-os-dois">2. Alternativa B: trair é dominante, cooperar melhora os dois</h4>
+<p>Para A, trair gera 5 quando B coopera, contra 3 se A também cooperar. Quando B trai, trair gera 1, contra zero. Logo, trair é dominante para A. O mesmo vale para B.</p>
+<p>O equilíbrio de Nash é <strong>(Trair, Trair)</strong>, com resultados <span class="math inline">\((1,1)\)</span>. Em <strong>(Cooperar, Cooperar)</strong>, os resultados são <span class="math inline">\((3,3)\)</span>, melhores para ambos.</p>
+<p>Essa melhora conjunta não é estável no jogo de uma rodada: diante da cooperação do outro, cada um pode elevar seu resultado de 3 para 5 traindo. As demais alternativas confundem o equilíbrio com o resultado desejável ou indicam combinações em que um jogador tem incentivo para mudar.</p>
+<h4 id="alternativa-a-os-incentivos-individuais-impedem-o-acordo">3. Alternativa A: os incentivos individuais impedem o acordo</h4>
+<p>Para A, o preço baixo rende 15 se B cobra alto, contra 10 com preço alto. Se B cobra baixo, A recebe 5 cobrando baixo, contra 2 cobrando alto. O preço baixo é dominante para A e, por simetria, para B.</p>
+<p>O equilíbrio é <strong>(Preço baixo, Preço baixo)</strong>, com <span class="math inline">\((5,5)\)</span> e lucro conjunto de 10 milhões. Com ambos cobrando alto, cada um receberia 10, e o lucro conjunto seria 20 milhões. Um desvio unilateral elevaria o lucro do desviante de 10 para 15.</p>
+<p><strong>B</strong> substitui a explicação dos incentivos por uma proibição não estabelecida no enunciado. <strong>C</strong> troca os resultados e confunde lucro individual com lucro conjunto. <strong>D</strong> descreve incorretamente a cooperação. <strong>E</strong> ignora que, quando ambos cobram baixo, nenhum ganha mudando sozinho.</p>
+<h4 id="alternativa-d-a-líder-antecipa-a-reação-da-outra-firma">4. Alternativa D: a líder antecipa a reação da outra firma</h4>
+<p>Em Stackelberg, a líder compromete-se com uma quantidade antes da rival e incorpora a função de reação da seguidora ao seu problema de maximização. Nas condições clássicas explicitadas, essa posição gera vantagem.</p>
+<p><strong>Cálculo complementar usando o exemplo da aula:</strong></p>
+<p><span class="math display">\[q_S=\frac{120-q_L}{2}.\]</span></p>
+<p>Substituindo na demanda:</p>
+<p><span class="math display">\[P=120-q_L-\frac{120-q_L}{2}=60-\frac{q_L}{2}.\]</span></p>
+<p>O lucro da líder é <span class="math inline">\(\pi_L=60q_L-q_L^2/2\)</span>. Sua condição marginal dá <span class="math inline">\(60-q_L=0\)</span>, de modo que:</p>
+<p><span class="math display">\[q_L=60,\qquad q_S=30,\qquad P=30.\]</span></p>
+<p><span class="math display">\[\pi_L=1.800&gt;1.600=\pi_i^{Cournot}.\]</span></p>
+<p><strong>A</strong> confunde a variável estratégica, pois o modelo em questão é de liderança em quantidade. <strong>B</strong> descreve Cournot. <strong>C</strong> ignora que a firma excluída do mercado não teria o lucro do monopolista. <strong>E</strong> inverte a ordem das decisões.</p>
+<h4 id="alternativa-a-as-três-proposições-são-verdadeiras">5. Alternativa A: as três proposições são verdadeiras</h4>
+<p><strong>I.</strong> A líder de Stackelberg antecipa a reação da seguidora. O cálculo anterior ilustra a vantagem de lucro nas condições descritas.</p>
+<p><strong>II.</strong> Em Bertrand, um preço acima do custo marginal oferece espaço para um rival cobrar um pouco menos e atrair a demanda do produto homogêneo. Com custos iguais e capacidade suficiente, a competição leva ao preço igual ao custo marginal no modelo clássico.</p>
+<p><strong>III.</strong> No exemplo simétrico, <span class="math inline">\(P=120/(n+1)\)</span>. Assim, aumentar <span class="math inline">\(n\)</span> reduz o preço e o aproxima do custo marginal zero.</p>
+<p>As conclusões não devem ser transferidas sem suas hipóteses. Diferenciação, limites de capacidade, custos distintos ou outra ordem de decisões podem mudar os resultados.</p>
+<h4 id="alternativa-e-v-v-v">6. Alternativa E: V, V, V</h4>
+<p><strong>I.</strong> Em um ótimo interior, a variação marginal do lucro é <span class="math inline">\(RMg-CMg=0\)</span>, observadas as condições de máximo.</p>
+<p><strong>II.</strong> No modelo de preço uniforme, a margem relativa é:</p>
+<p><span class="math display">\[\frac{P-CMg}{P}=\frac{1}{|\varepsilon|}.\]</span></p>
+<p><strong>III.</strong> O preço acima do custo marginal exclui unidades cujo benefício marginal supera seu custo. Isso gera peso morto no modelo usual.</p>
+<p><strong>Aplicação complementar ao cartel da água:</strong> os dois produtores, agindo conjuntamente, escolhem <span class="math inline">\(Q=60\)</span> e <span class="math inline">\(P=60\)</span>. A quantidade eficiente seria 120. A perda de excedente é:</p>
+<p><span class="math display">\[\text{Peso morto}=\frac{(120-60)(60-0)}{2}=1.800.\]</span></p>
+<p>O lucro conjunto de 3.600 não é, inteiro, peso morto. Uma parte da redução do excedente do consumidor corresponde à apropriação de receita pelos produtores. O peso morto é o ganho das trocas que deixam de ocorrer.</p>
+<h4 id="certo-melhores-respostas-recíprocas">7. Certo: melhores respostas recíprocas</h4>
+<p>Cada firma escolhe a quantidade mais lucrativa dada a produção rival. No equilíbrio, as decisões tomadas correspondem às quantidades que cada uma considerava ao resolver seu problema.</p>
+<p><strong>No exemplo:</strong> <span class="math inline">\(q_J=(120-q_M)/2\)</span> e <span class="math inline">\(q_M=(120-q_J)/2\)</span>. O par <span class="math inline">\((40,40)\)</span> satisfaz as duas condições. A produção de 40 é uma melhor resposta a 40, sem ser dominante para todas as possíveis quantidades do rival.</p>
+<h4 id="certo-resultado-de-bertrand-depende-das-hipóteses">8. Certo: resultado de Bertrand depende das hipóteses</h4>
+<p>Com produtos idênticos, os consumidores preferem o fornecedor que cobra menos. Se houver margem positiva e capacidade para atender a demanda, uma pequena redução de preço pode atrair clientes da outra firma.</p>
+<p>Esse incentivo elimina a margem no equilíbrio clássico. Cobrar abaixo do custo marginal geraria perda nas unidades vendidas, e cobrar acima do rival que já pratica o custo marginal não atrairia os consumidores.</p>
+<p><strong>Limite:</strong> produtos diferenciados ou capacidade limitada podem impedir esse resultado. Poucas firmas, por si só, não implicam necessariamente preço acima do custo marginal em todos os modelos.</p>
+<h4 id="errado-definir-cotas-não-elimina-o-incentivo-para-desviar">9. Errado: definir cotas não elimina o incentivo para desviar</h4>
+<p>O erro está em supor que a existência do acordo elimina o ganho privado de vender mais. Se os demais restringirem sua oferta, uma firma pode aproveitar o preço elevado e aumentar suas próprias vendas.</p>
+<p><strong>Correção:</strong> a estabilidade do cartel depende dos incentivos, da possibilidade de monitoramento e de mecanismos que tornem o desvio menos vantajoso. O acordo isolado não garante cumprimento.</p>
+<p><strong>No exemplo:</strong> contra uma rival que produz 30, passar de 30 para 40 eleva o lucro individual de 1.800 para 2.000. É um ganho de 200 para o desviante, apesar da redução do lucro conjunto.</p>
+<h4 id="certo-a-reação-faz-parte-da-decisão-da-líder">10. Certo: a reação faz parte da decisão da líder</h4>
+<p>A líder sabe que a seguidora decidirá depois de observar sua quantidade. Por isso, considera a resposta <span class="math inline">\(q_S(q_L)\)</span> ao escolher a própria produção.</p>
+<p>No exemplo, uma expansão de uma unidade da líder reduz em meia unidade a melhor resposta da seguidora, pois <span class="math inline">\(q_S=(120-q_L)/2\)</span>. Essa reação modifica o efeito da decisão inicial sobre preço e lucro.</p>
+<p>Em Cournot, cada firma toma a quantidade da outra como dada ao decidir simultaneamente. Essa diferença de ordem e compromisso distingue os modelos.</p>
+<h4 id="errado-a-comparação-clássica-favorece-a-líder">11. Errado: a comparação clássica favorece a líder</h4>
+<p>A afirmação inverte o resultado usual de Stackelberg em relação a Cournot. Nas condições clássicas de comparação, a líder usa o compromisso inicial e a antecipação da reação para obter lucro maior.</p>
+<p><strong>Correção:</strong> a líder de Stackelberg obtém lucro superior ao que teria em Cournot, mantidas as hipóteses clássicas do exercício. A seguidora não recebe a mesma vantagem.</p>
+<p><strong>No exemplo da aula:</strong> Cournot gera 1.600 para cada firma. Stackelberg gera 1.800 para a líder e 900 para a seguidora. A afirmação da prova não se torna verdadeira pelo fato de a seguidora ter um resultado menor.</p>
+<h4 id="certo-reduzir-é-melhor-em-qualquer-decisão-de-b1">12. Certo: reduzir é melhor em qualquer decisão de B1</h4>
+<p>Como B2 é o segundo jogador, devemos comparar o <strong>segundo número</strong> de cada par:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+<col style="width: 25%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Decisão observada de B1</th>
+<th style="text-align: right;">B2 mantém</th>
+<th style="text-align: right;">B2 reduz</th>
+<th style="text-align: left;">Melhor decisão de B2</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Mantém</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: left;">Reduzir</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Reduz</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: left;">Reduzir</td>
+</tr>
+</tbody>
+</table>
+<p>B2 prefere reduzir nos dois cenários: <span class="math inline">\(30&gt;20\)</span> e <span class="math inline">\(25&gt;8\)</span>. Isso sustenta o julgamento <strong>Certo</strong> do gabarito oficial.</p>
+<p><strong>Passo complementar:</strong> sabendo dessa resposta, B1 compara 18, caso mantenha, com 35, caso reduza. Ele escolhe reduzir. A análise de trás para frente leva ao resultado <span class="math inline">\((35,25)\)</span>, com os dois bancos reduzindo.</p>
+<p>Essa conclusão usa os resultados e a ordem informada no enunciado. Não é uma afirmação sobre o efeito de qualquer redução de juros em mercados bancários reais.</p>
+<h3 id="fontes-oficiais">Fontes oficiais</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Exercícios da aula</th>
+<th style="text-align: left;">Prova original</th>
+<th style="text-align: left;">Gabarito conferido</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Cebraspe, Caesb, Economista, 2025</a></td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">38-D</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2 e 6</td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">FGV, ALEGO, Economista, tipo 1, 2026</a></td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">53-B e 51-E</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-do-estado-manhacns101-tipo-1.pdf">FGV, CAGE-RS, Auditor do Estado, manhã, tipo 1, 2025</a></td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_cagers_sdfisddsui.pdf">42-A</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/compesa2016/201605_Analista_de_Gestao_(Economista)_(NS011)_Tipo_1.pdf">FGV, COMPESA, Economista, tipo 1, 2016</a></td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/compesa2016/compesa_gabarito_definitivo_RETIFICADO.pdf">35-D, definitivo retificado</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">5</td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/assessoramento_legislativo_economia_do_trabalho_renda_e_previdenciae4cns14_tipo_1.pdf">FGV, Senado, Economia do Trabalho, Renda e Previdência, tipo 1, 2022</a></td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/senado2022_gabarito_definitivo_edital04.pdf">72-A: V, V, V</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">7 a 10</td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">FGV, ALEGO, Economista, questão 52, proposições I a IV</a></td>
+<td style="text-align: left;"><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">52-D: V, V, F, V</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">11</td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/MATRIZ_433_FUB003__PAG_3.PDF">Cebraspe, FUB, Economista, 2018</a></td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/19.GAB_DEFINITIVO_MATRIZ_433_FUB003__PAG_3.PDF">59-Errado</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">12</td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/bcb_24/arquivos/959_BCB_001_01.PDF">Cebraspe, BCB, Analista, Economia e Finanças, 2024</a></td>
+<td style="text-align: left;"><a href="https://cdn.cebraspe.org.br/concursos/bcb_24/arquivos/Gab_Definitivo_959_BCB_001_01.PDF">72-Certo</a></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Referência teórica:</strong> N. Gregory Mankiw, <em>Principles of Economics</em>, 8ª edição, capítulo 17, <em>Oligopoly</em>, páginas impressas 337 a 358. No arquivo fornecido, páginas 366 a 387 do PDF, com abertura ilustrada na 365.</p>
+<p><a href="#/menu">← Menu</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Aula_12_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Aula_12_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Aula_12_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Aula_12_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

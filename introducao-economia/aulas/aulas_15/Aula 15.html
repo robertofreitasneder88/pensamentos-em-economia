@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Aula_15_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Aula_15_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Aula_15_files/libs/quarto-html/popper.min.js"></script>
+<script src="Aula_15_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Aula_15_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Aula_15_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Aula_15_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <title>Introdução à economia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Aula_15_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Aula_15_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Aula_15_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link href="Aula_15_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Aula_15_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Aula_15_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Aula_15_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Introdução à economia</h1>
+  <p class="subtitle">Aula 15 - Bens públicos e recursos comuns</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="menu" class="slide level2 smaller scrollable">
+<h2>Bens públicos e recursos comuns</h2>
+<h3 id="classificação-e-bens-públicos">Classificação e bens públicos</h3>
+<p><a href="#/intro">01 - Introdução: quem usa e quem paga?</a></p>
+<p><a href="#/criterios">02 - Exclusão e rivalidade</a></p>
+<p><a href="#/tipos">03 - Os quatro tipos de bens</a></p>
+<p><a href="#/contexto">04 - A classificação depende das condições de uso</a></p>
+<p><a href="#/JRP1">🏆 Vamos a um jogo rápido!</a></p>
+<p><a href="#/carona">05 - O problema do carona</a></p>
+<p><a href="#/fogos">06 - Fogos de artifício: benefício e financiamento</a></p>
+<p><a href="#/exemplos">07 - Defesa nacional, pesquisa básica e combate à pobreza</a></p>
+<p><a href="#/farois">08 - Faróis: quem financia e quem produz?</a></p>
+<p><a href="#/avaliacao">09 - Análise de custo-benefício</a></p>
+<p><a href="#/seguranca">10 - Segurança no trânsito: um exemplo resolvido</a></p>
+<p><a href="#/JRP2">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="recursos-comuns-e-políticas-públicas">Recursos comuns e políticas públicas</h3>
+<p><a href="#/comuns">11 - O que são recursos comuns?</a></p>
+<p><a href="#/tragedia">12 - A tragédia dos recursos comuns</a></p>
+<p><a href="#/grafico">13 - Uso privado e custo social</a></p>
+<p><a href="#/solucoes">14 - Como reduzir o uso excessivo</a></p>
+<p><a href="#/estradas">15 - Estradas: pedágio e congestionamento</a></p>
+<p><a href="#/pesca">16 - Pesca, animais e incentivos à preservação</a></p>
+<p><a href="#/direitos">17 - Direitos de uso e ação coletiva</a></p>
+<p><a href="#/conclusao">18 - Conclusão: oferecer e preservar</a></p>
+<p><a href="#/concursos">19 - Exercícios de concursos públicos</a></p>
+</section>
+<section id="intro" class="slide level2 smaller scrollable">
+<h2>01 - Introdução: quem usa e quem paga?</h2>
+<p><strong>Por que algumas coisas valiosas são pouco oferecidas e outras são usadas em excesso?</strong></p>
+<ul>
+<li>Todos podem assistir a uma queima de fogos, mesmo sem pagar por ela.</li>
+<li>Um peixe capturado deixa de estar disponível para outros pescadores.</li>
+<li>Uma estrada pode atender muita gente, até que o congestionamento faça cada novo veículo aumentar o tempo de viagem dos demais.</li>
+</ul>
+<p>Nesta aula, vamos <strong>classificar os bens</strong>, entender o <strong>problema do carona</strong> e explicar a <strong>tragédia dos recursos comuns</strong>.</p>
+<p>A ligação com a aula anterior é direta: quem decide pode deixar de considerar benefícios ou custos impostos a outras pessoas.</p>
+<p><strong>Base:</strong> Mankiw, capítulo 11, <em>Public Goods and Common Resources</em>. Páginas 240 a 254 do PDF, correspondentes às páginas impressas 211 a 225. A abertura ilustrada está na página 239 do PDF.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="criterios" class="slide level2 smaller scrollable">
+<h2>02 - Exclusão e rivalidade</h2>
+<h3 id="é-possível-impedir-alguém-de-usar">É possível impedir alguém de usar?</h3>
+<p>Um bem é <strong>excluível</strong> quando é possível impedir seu uso, por exemplo, cobrando pelo acesso ou exigindo uma senha.</p>
+<p>Um ingresso permite controlar a entrada. Já o benefício da defesa nacional alcança também quem não contribuiu voluntariamente para ela.</p>
+<h3 id="o-uso-por-uma-pessoa-reduz-a-disponibilidade-para-outras">O uso por uma pessoa reduz a disponibilidade para outras?</h3>
+<p>Um bem é <strong>rival no consumo</strong> quando o uso de uma unidade por alguém reduz a possibilidade de outras pessoas utilizarem essa mesma unidade.</p>
+<p>Uma fatia de pizza é rival. Uma informação de acesso aberto pode ser consultada por muitas pessoas sem se esgotar.</p>
+<p><strong>Para a prova:</strong> não rivalidade não significa custo de produção zero. Produzir conhecimento pode custar muito, embora compartilhá-lo não o retire de quem já o utiliza.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="tipos" class="slide level2 smaller scrollable">
+<h2>03 - Os quatro tipos de bens</h2>
+<p><img src="imagens/img_00.png" alt="Matriz: bens privados são excluíveis e rivais; bens de clube são excluíveis e não rivais; recursos comuns são não excluíveis e rivais; bens públicos são não excluíveis e não rivais." style="width: 100%; max-width: 950px; height: auto;"></p>
+<p><strong>Bens públicos e recursos comuns têm em comum a dificuldade de exclusão. O que os diferencia é a rivalidade.</strong></p>
+<p>Nos bens de clube, a não rivalidade vale enquanto o uso estiver dentro da capacidade. Lotação ou congestionamento podem alterar a análise.</p>
+<p><em>Figura de elaboração didática baseada na classificação do capítulo 11.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="contexto" class="slide level2 smaller scrollable">
+<h2>04 - A classificação depende das condições de uso</h2>
+<p><strong>O nome do bem e a identidade de quem o oferece não bastam.</strong> Examine as regras de acesso e a capacidade disponível.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação</th>
+<th>O que observar</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Wi-Fi aberto e sem congestionamento</td>
+<td>Um usuário adicional não prejudica os demais: aproxima-se de um bem público.</td>
+</tr>
+<tr class="even">
+<td>O mesmo Wi-Fi aberto, agora saturado</td>
+<td>O uso de um reduz a qualidade para outros: aproxima-se de um recurso comum.</td>
+</tr>
+<tr class="odd">
+<td>Acesso controlado por senha</td>
+<td>A exclusão torna-se possível; ainda é preciso verificar a rivalidade.</td>
+</tr>
+<tr class="even">
+<td>Merenda oferecida gratuitamente</td>
+<td>Uma porção consumida não pode alimentar outro aluno: há rivalidade.</td>
+</tr>
+</tbody>
+</table>
+<p>Um serviço <strong>gratuito</strong> pode ter acesso restrito. Um bem <strong>oferecido pelo governo</strong> pode ser rival e excluível.</p>
+<p>Aqui, “bem público” é uma <strong>classificação econômica</strong>, distinta da classificação jurídica dos bens pertencentes ao poder público.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP1" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Em duplas, classifiquem cada situação e expliquem os dois critérios.</p>
+<ol type="1">
+<li>Um sanduíche vendido na cantina.</li>
+<li>A defesa nacional.</li>
+<li>Peixes em uma área de pesca de livre acesso.</li>
+<li>TV por assinatura, com acesso controlado e sem congestionamento.</li>
+<li>A conexão aberta do aeroporto fica lenta quando muitos passageiros passam a utilizá-la. O que mudou?</li>
+</ol>
+<details>
+<summary>
+Conferir respostas
+</summary>
+<ol type="1">
+<li><strong>Bem privado:</strong> o vendedor pode excluir quem não paga; o sanduíche consumido deixa de estar disponível para outro consumidor.</li>
+<li><strong>Bem público:</strong> não exclusão e não rivalidade, no modelo do capítulo.</li>
+<li><strong>Recurso comum:</strong> dificuldade de excluir e rivalidade na captura.</li>
+<li><strong>Bem de clube:</strong> exclusão possível e não rivalidade dentro da capacidade.</li>
+<li>Surgiu <strong>rivalidade pelo congestionamento</strong>. Mantido o livre acesso, a conexão passa a se aproximar de um recurso comum.</li>
+</ol>
+</details>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="carona" class="slide level2 smaller scrollable">
+<h2>05 - O problema do carona</h2>
+<p><strong>Carona, ou <em>free rider</em>, é quem recebe o benefício de um bem sem contribuir para seu financiamento.</strong></p>
+<p>Quando não é possível excluir quem não paga, cada pessoa pode esperar que as outras assumam o custo. Se muitos fizerem isso, a arrecadação voluntária pode não sustentar uma oferta socialmente desejável.</p>
+<ul>
+<li>O benefício total para a sociedade pode ser maior que o custo.</li>
+<li>O produtor consegue cobrar apenas uma parte desses benefícios.</li>
+<li>O resultado pode ser <strong>oferta insuficiente de bens públicos</strong>.</li>
+</ul>
+<p>A dificuldade central é a <strong>não exclusão</strong>. A não rivalidade também significa que compartilhar o benefício não exige, necessariamente, produzir uma nova unidade para cada usuário.</p>
+<p><strong>Uma resposta possível:</strong> financiamento coletivo por tributos. Isso não elimina a necessidade de escolher bem os projetos e controlar custos.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="fogos" class="slide level2 smaller scrollable">
+<h2>06 - Fogos de artifício: benefício e financiamento</h2>
+<p>Considere o exemplo hipotético do livro, expresso em unidades monetárias: <strong>500 moradores</strong>, cada um atribuindo benefício de <strong>10 u.m.</strong> ao evento, e custo total de <strong>1.000 u.m.</strong></p>
+<p><img src="imagens/img_01.png" alt="O benefício total do evento é 5.000 unidades monetárias, o custo é 1.000 e o benefício líquido é 4.000. A divisão do custo entre 500 moradores corresponde a 2 por pessoa." style="width: 100%; max-width: 950px; height: auto;"></p>
+<p><strong>Por que vender ingressos pode falhar?</strong> Os fogos são visíveis também para quem não compra ingresso.</p>
+<p>Se todos financiarem igualmente o custo, cada um pagará <strong>2 u.m.</strong> e terá benefício líquido de <strong>8 u.m.</strong> Esse resultado depende da hipótese de que todos atribuem o mesmo benefício de 10 u.m.</p>
+<p><strong>Benefício social positivo não garante receita privada suficiente.</strong></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="exemplos" class="slide level2 smaller scrollable">
+<h2>07 - Defesa nacional, pesquisa básica e combate à pobreza</h2>
+<p>O livro discute três aplicações importantes:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aplicação</th>
+<th>Por que entra na discussão?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Defesa nacional</td>
+<td>A proteção de uma pessoa não costuma diminuir a das demais, e é difícil excluir beneficiários.</td>
+</tr>
+<tr class="even">
+<td>Pesquisa básica</td>
+<td>O conhecimento divulgado pode beneficiar muitas pessoas e empresas, além de quem financiou a descoberta.</td>
+</tr>
+<tr class="odd">
+<td>Combate à pobreza</td>
+<td>Viver em uma sociedade com menos pobreza pode produzir um benefício coletivo, inclusive para quem não contribuiu diretamente.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Duas distinções importantes:</strong></p>
+<ul>
+<li>Nem toda pesquisa tem as mesmas condições de acesso. Patentes e sigilo podem permitir a exclusão; o conhecimento básico aberto é o exemplo central.</li>
+<li>O argumento sobre pobreza trata do <strong>benefício coletivo da redução da pobreza</strong>. A comida ou o dinheiro entregues a uma pessoa não se tornam, por isso, bens públicos puros.</li>
+</ul>
+<p>O financiamento público pode enfrentar o carona, mas os projetos ainda precisam ser avaliados quanto a seus custos e benefícios.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="farois" class="slide level2 smaller scrollable">
+<h2>08 - Faróis: quem financia e quem produz?</h2>
+<p><strong>A luz de um farol pode orientar muitos navios ao mesmo tempo.</strong> Impedir que um navio em passagem veja a luz é difícil.</p>
+<p>Mankiw apresenta o caso histórico de faróis ingleses financiados por interessados nos portos. A possibilidade de cobrar dos navios que utilizavam o porto ajudava a financiar o serviço de orientação.</p>
+<p>O caso mostra que é preciso perguntar:</p>
+<ol type="1">
+<li>Quem recebe o benefício?</li>
+<li>Existe alguma forma viável de cobrar desses beneficiários?</li>
+<li>Quem financia e quem efetivamente produz o serviço?</li>
+</ol>
+<p><strong>Financiamento público não exige produção diretamente estatal.</strong> Um evento pode ser pago coletivamente e executado por uma empresa contratada.</p>
+<p>Também podem existir doações, associações e outras formas de provisão privada. A dificuldade do carona <strong>não significa impossibilidade absoluta</strong> de qualquer iniciativa privada.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="avaliacao" class="slide level2 smaller scrollable">
+<h2>09 - Análise de custo-benefício</h2>
+<p><strong>A pergunta é se os benefícios sociais justificam os custos sociais.</strong></p>
+<p><span class="math display">\[
+\text{Benefício líquido social} = \text{benefício social total}
+- \text{custo social total}
+\]</span></p>
+<p>A avaliação deve considerar as pessoas afetadas, os custos de operação e manutenção e o <strong>custo de oportunidade</strong> dos recursos utilizados.</p>
+<p>Em um bem público, o mesmo serviço beneficia várias pessoas. Por isso, avaliamos o benefício que ele proporciona ao conjunto dos beneficiários.</p>
+<p><strong>Por que é difícil?</strong></p>
+<ul>
+<li>Muitos benefícios não têm um preço diretamente observável.</li>
+<li>As pessoas podem exagerar o benefício declarado se esperam que outros paguem, ou minimizá-lo se sua resposta influenciar a cobrança.</li>
+<li>Há incerteza sobre custos, resultados e efeitos futuros.</li>
+</ul>
+<p>Um projeto ter benefício líquido positivo é relevante para a eficiência. <strong>Quem paga e quem se beneficia</strong> também importa para a decisão coletiva.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="seguranca" class="slide level2 smaller scrollable">
+<h2>10 - Segurança no trânsito: um exemplo resolvido</h2>
+<p>No exemplo hipotético do capítulo, um semáforo custa <strong>10.000 u.m.</strong> e reduz o risco considerado de acidente fatal de <strong>1,6% para 1,1%</strong>.</p>
+<p>A avaliação adota <strong>10 milhões de u.m. por vida estatística</strong>. Esse é um valor ilustrativo do livro, não uma estimativa oficial atual.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Etapa</th>
+<th style="text-align: right;">Cálculo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Redução do risco</td>
+<td style="text-align: right;"><span class="math inline">\(1{,}6\% - 1{,}1\% = 0{,}5\)</span> ponto percentual</td>
+</tr>
+<tr class="even">
+<td>Redução em forma decimal</td>
+<td style="text-align: right;"><span class="math inline">\(0{,}005\)</span></td>
+</tr>
+<tr class="odd">
+<td>Benefício esperado</td>
+<td style="text-align: right;"><span class="math inline">\(0{,}005 \times 10.000.000 = 50.000\)</span> u.m.</td>
+</tr>
+<tr class="even">
+<td>Benefício líquido</td>
+<td style="text-align: right;"><span class="math inline">\(50.000 - 10.000 = 40.000\)</span> u.m.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nas hipóteses do exemplo, o benefício esperado supera o custo.</strong></p>
+<p>“Vida estatística” expressa a valoração de <strong>pequenas reduções de risco</strong> em uma população. Não é o preço de uma pessoa identificada. Considerar somente a renda que alguém produziria deixaria de fora muitos benefícios de preservar a vida.</p>
+<p><em>Em uma avaliação real, custos e benefícios precisam usar um horizonte temporal consistente e incluir manutenção e outras consequências.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP2" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<ol type="1">
+<li>“Se um bem é não rival, produzi-lo não custa nada.” Verdadeiro ou falso?</li>
+<li>“O carona ajuda a explicar por que a oferta privada pode ser menor que a socialmente desejável.” Verdadeiro ou falso?</li>
+<li>“Todo bem financiado pelo governo precisa ser produzido por uma repartição pública.” Verdadeiro ou falso?</li>
+<li>No exemplo dos fogos, qual é a contribuição por morador necessária para dividir igualmente o custo?</li>
+<li>Reduzir um risco de 1,6% para 1,1% corresponde a reduzir <strong>0,5 ponto percentual</strong> ou <strong>50 pontos percentuais</strong>?</li>
+</ol>
+<details>
+<summary>
+Conferir respostas
+</summary>
+<ol type="1">
+<li><strong>Falso.</strong> Não rivalidade trata do uso compartilhado, não do custo inicial de produzir o bem.</li>
+<li><strong>Verdadeiro.</strong> Parte dos beneficiários pode não pagar, reduzindo a receita que financia o serviço.</li>
+<li><strong>Falso.</strong> Financiamento e produção são decisões distintas.</li>
+<li><strong>2 u.m.:</strong> <span class="math inline">\(1.000/500 = 2\)</span>.</li>
+<li><strong>0,5 ponto percentual</strong>, ou 0,005 em forma decimal. É essa redução decimal que entra no cálculo do benefício esperado.</li>
+</ol>
+</details>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="comuns" class="slide level2 smaller scrollable">
+<h2>11 - O que são recursos comuns?</h2>
+<p><strong>Recursos comuns são rivais no uso e apresentam dificuldade de exclusão.</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Exemplo</th>
+<th>Onde está a rivalidade?</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Peixes em área de livre acesso</td>
+<td>O peixe capturado por um pescador não pode ser capturado por outro.</td>
+</tr>
+<tr class="even">
+<td>Pastagem compartilhada sem controle eficaz</td>
+<td>Mais animais reduzem o alimento disponível e podem degradar o pasto.</td>
+</tr>
+<tr class="odd">
+<td>Estrada gratuita congestionada</td>
+<td>Um veículo adicional aumenta o tempo de viagem de outros usuários.</td>
+</tr>
+<tr class="even">
+<td>Qualidade do ar e da água</td>
+<td>A poluição consome a capacidade ambiental de absorver resíduos e reduz a qualidade disponível aos demais.</td>
+</tr>
+</tbody>
+</table>
+<p>No caso ambiental, a rivalidade relevante está na <strong>qualidade e na capacidade limitada do ambiente</strong>, não na ideia de que uma respiração individual necessariamente esgota o ar de outra pessoa.</p>
+<p><strong>Diferença central:</strong> no bem público, o problema típico é financiar a oferta; no recurso comum, é evitar o uso excessivo e a degradação.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="tragedia" class="slide level2 smaller scrollable">
+<h2>12 - A tragédia dos recursos comuns</h2>
+<p>O livro imagina uma comunidade em que os moradores criam ovelhas em uma pastagem compartilhada.</p>
+<p>Enquanto há poucos animais, o pasto é abundante. Com a expansão dos rebanhos, cada ovelha adicional passa a retirar alimento dos demais animais e pode comprometer a recuperação da vegetação.</p>
+<p><strong>O incentivo individual:</strong> o criador recebe o benefício de acrescentar uma ovelha, mas divide com todos os outros o dano ao pasto.</p>
+<p><strong>O resultado coletivo:</strong> muitos criadores ampliam os rebanhos, e o uso total pode ultrapassar o nível que preserva o valor do recurso.</p>
+<p>Essa é a <strong>tragédia dos recursos comuns</strong>: incentivos individuais podem levar ao uso excessivo de um recurso compartilhado.</p>
+<p>Não é um destino inevitável de toda propriedade coletiva. <strong>Regras de acesso, limites de uso e fiscalização eficaz</strong> podem mudar os incentivos.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="grafico" class="slide level2 smaller scrollable">
+<h2>13 - Uso privado e custo social</h2>
+<p><img src="imagens/img_02.png" alt="O custo marginal social está acima do custo marginal privado. O uso decidido sem considerar o dano aos demais é maior que o uso eficiente, obtido ao comparar benefício marginal e custo marginal social." style="width: 100%; max-width: 950px; height: auto;"></p>
+<p><strong>Como ler:</strong> o usuário compara o benefício adicional com o custo que paga. A sociedade também precisa considerar o prejuízo aos outros usuários.</p>
+<p><span class="math display">\[
+CMg_{social} = CMg_{privado} + CMg_{externo}
+\]</span></p>
+<p>Ao ignorar esse custo externo, a intensidade de uso fica <strong>acima da socialmente eficiente</strong>. É a mesma lógica da externalidade negativa da Aula 14, aplicada ao uso de um recurso comum.</p>
+<p><em>A figura é uma ilustração didática autoral, sem escala empírica. Para a prova, o essencial é compreender a direção do efeito.</em></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="solucoes" class="slide level2 smaller scrollable">
+<h2>14 - Como reduzir o uso excessivo</h2>
+<p><strong>A solução precisa fazer cada usuário considerar a escassez e o dano que provoca aos demais.</strong></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Instrumento</th>
+<th>Como atua</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Regras e limites</td>
+<td>Restringem quantidade, locais, períodos ou formas de uso.</td>
+</tr>
+<tr class="even">
+<td>Cobrança pelo uso</td>
+<td>Faz o usuário enfrentar parte do custo social de sua decisão.</td>
+</tr>
+<tr class="odd">
+<td>Permissões limitadas e negociáveis</td>
+<td>Fixam um limite total e permitem transferir direitos de uso.</td>
+</tr>
+<tr class="even">
+<td>Direitos de propriedade ou de uso bem definidos</td>
+<td>Atribuem responsabilidade e aproximam os incentivos individuais dos efeitos sobre o recurso.</td>
+</tr>
+<tr class="odd">
+<td>Acordos entre usuários</td>
+<td>Estabelecem compromissos de uso e mecanismos de acompanhamento.</td>
+</tr>
+</tbody>
+</table>
+<p>No exemplo da pastagem, podem existir limites por criador, cobrança por animal ou direitos delimitados de utilização.</p>
+<p><strong>Definir uma regra não basta:</strong> ela precisa ser viável, monitorada e cumprida. Nenhum instrumento é automaticamente o melhor para todo recurso.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="estradas" class="slide level2 smaller scrollable">
+<h2>15 - Estradas: pedágio e congestionamento</h2>
+<p>A mesma infraestrutura pode aparecer em <strong>quatro classificações</strong>:</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Condição da estrada</th>
+<th>Sem pedágio e de livre acesso</th>
+<th>Com pedágio e acesso controlado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sem congestionamento</td>
+<td>Bem público</td>
+<td>Bem de clube</td>
+</tr>
+<tr class="even">
+<td>Congestionada</td>
+<td>Recurso comum</td>
+<td>Bem privado, na classificação econômica</td>
+</tr>
+</tbody>
+</table>
+<p><strong>O pedágio altera a possibilidade de exclusão. O congestionamento altera a rivalidade.</strong></p>
+<p>Um pedágio associado ao congestionamento pode incentivar mudanças de horário, trajeto ou modo de transporte. A cobrança pode ser maior quando o custo imposto aos outros motoristas é maior.</p>
+<p>Um imposto sobre a gasolina é um instrumento menos preciso para esse objetivo: também encarece viagens em locais e horários sem congestionamento.</p>
+<p>A avaliação da política inclui os custos de cobrança e a distribuição dos efeitos entre usuários, considerando as alternativas de transporte.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="pesca" class="slide level2 smaller scrollable">
+<h2>16 - Pesca, animais e incentivos à preservação</h2>
+<p><strong>Na pesca de livre acesso, capturar hoje pode reduzir o estoque que outros pescadores encontrarão amanhã.</strong></p>
+<p>O capítulo apresenta instrumentos como limites de captura, licenças, restrições de temporada e proteção de animais jovens. A ideia é conter o uso que compromete a reprodução e a disponibilidade futura.</p>
+<p>Em áreas compartilhadas por vários países, <strong>cooperação e fiscalização</strong> tornam-se mais difíceis. A existência formal de uma regra não garante que ela seja cumprida.</p>
+<h3 id="por-que-o-livro-compara-animais-silvestres-e-gado">Por que o livro compara animais silvestres e gado?</h3>
+<p>Quem cria gado tem incentivo para manter o rebanho porque pode obter os benefícios futuros de sua preservação. Na captura sem controle, quem preserva um animal pode não receber esses benefícios, pois outro pode capturá-lo antes.</p>
+<p><strong>A lição é sobre incentivos e direitos de uso.</strong> O contraste não prova que a propriedade privada, isoladamente, resolva qualquer problema de conservação. A adequação da política depende do recurso e das condições locais.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="direitos" class="slide level2 smaller scrollable">
+<h2>17 - Direitos de uso e ação coletiva</h2>
+<p><strong>Direitos bem definidos ajudam a identificar quem pode usar, quem pode excluir e quem responde pelos efeitos de uma decisão.</strong></p>
+<p>Quando benefícios ou custos relevantes não entram na transação, o mercado pode não alcançar uma alocação eficiente.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problema</th>
+<th>Resposta possível</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Benefício coletivo difícil de cobrar individualmente</td>
+<td>Financiar a provisão de um bem público.</td>
+</tr>
+<tr class="even">
+<td>Uso que degrada um recurso compartilhado</td>
+<td>Estabelecer limites, cobranças ou regras de acesso.</td>
+</tr>
+<tr class="odd">
+<td>Direitos de uso indefinidos</td>
+<td>Delimitar direitos e responsabilidades, quando viável.</td>
+</tr>
+</tbody>
+</table>
+<p>O governo pode atuar na <strong>função alocativa</strong>, procurando melhorar a oferta e o uso dos recursos. Isso inclui decidir quais bens oferecer e como financiar essa oferta.</p>
+<p>A atuação precisa ser bem planejada e executada. <strong>Reconhecer uma falha de mercado não garante que qualquer intervenção trará benefício líquido.</strong></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="conclusao" class="slide level2 smaller scrollable">
+<h2>18 - Conclusão: oferecer e preservar</h2>
+<p><strong>Comece sempre por exclusão e rivalidade.</strong></p>
+<ul>
+<li><strong>Bens privados:</strong> excluíveis e rivais.</li>
+<li><strong>Bens de clube:</strong> excluíveis e não rivais dentro da capacidade.</li>
+<li><strong>Bens públicos:</strong> não excluíveis e não rivais. O carona pode dificultar o financiamento e levar à oferta insuficiente.</li>
+<li><strong>Recursos comuns:</strong> não excluíveis e rivais. O custo imposto aos demais pode ser ignorado, levando ao uso excessivo.</li>
+</ul>
+<p>A análise de custo-benefício orienta a escolha de projetos. Regras, cobranças e direitos de uso podem melhorar os incentivos à preservação.</p>
+<p><strong>Para a prova:</strong> não confunda bem público com propriedade do governo; não confunda não rivalidade com custo zero; e não classifique uma estrada sem verificar acesso e congestionamento.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="concursos" class="slide level2 smaller scrollable">
+<h2>19 - Exercícios de concursos públicos</h2>
+<p><strong>12 exercícios: 4 de múltipla escolha e 8 de verdadeiro ou falso.</strong> Primeiro, resolva os enunciados. Depois, consulte o gabarito e as resoluções no fim deste slide.</p>
+<p>As questões têm origem em provas oficiais da <strong>FGV e do Cebraspe</strong>. A redação foi adaptada para a aula, preservando o conteúdo avaliado. Nos exercícios 9 a 12, uma afirmativa ou alternativa de uma questão original foi transformada em item de julgamento; essa conversão é explicitamente identificada. Não são itens originais autônomos da banca.</p>
+<p><strong>Cebraspe:</strong> verdadeiro corresponde a certo; falso corresponde a errado.</p>
+<h3 id="questão-1-múltipla-escolha-identificar-um-bem-público">Questão 1 | Múltipla escolha: identificar um bem público</h3>
+<p><strong>Cebraspe | Caesb | Analista de Suporte ao Negócio, Economista | 2025 | questão original 41.</strong> Redação adaptada.</p>
+<p>Na classificação econômica, um bem público combina não rivalidade e não exclusão. Qual exemplo corresponde a essa definição?</p>
+<p>A. Eletricidade fornecida ao consumidor.</p>
+<p>B. Porção de merenda oferecida na escola.</p>
+<p>C. Serviço de transporte coletivo.</p>
+<p>D. Parque de diversões particular.</p>
+<p>E. Edição on-line do Diário Oficial da União, disponível para consulta aberta.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-2-múltipla-escolha-provisão-de-bens-públicos">Questão 2 | Múltipla escolha: provisão de bens públicos</h3>
+<p><strong>FGV | TCE-RR | Auditor Substituto de Conselheiro | 2025 | tipo 1 | questão original 67.</strong> Redação adaptada.</p>
+<p>Qual alternativa explica corretamente uma dificuldade de alocação associada à provisão de bens públicos?</p>
+<p>A. Esses bens são rivais: o consumo de uma pessoa impede o de outra.</p>
+<p>B. A exclusão de consumidores é uma característica necessária desses bens.</p>
+<p>C. A não exclusão e a não rivalidade, como na defesa nacional, dificultam que o fornecedor privado capture os benefícios em forma de receita.</p>
+<p>D. Esses bens produzem, inevitavelmente, externalidades negativas.</p>
+<p>E. As duas características garantem que sua provisão inteiramente pelo mercado seja eficiente.</p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-substituto-de-conselheirocns201-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_tcerr_auditor-e-analista_ap01.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-3-múltipla-escolha-tragédia-dos-recursos-comuns">Questão 3 | Múltipla escolha: tragédia dos recursos comuns</h3>
+<p><strong>Cebraspe | Caesb | Analista de Suporte ao Negócio, Economista | 2025 | questão original 66.</strong> Redação adaptada.</p>
+<p>Sobre a tragédia dos bens comuns, assinale a alternativa correta.</p>
+<p>A. Sua causa é exclusivamente a má gestão de órgãos ambientais.</p>
+<p>B. Ela resulta da conservação dos recursos de livre acesso.</p>
+<p>C. Ela decorre de ações públicas, sem relação com decisões individuais.</p>
+<p>D. Regras de utilização ou direitos de propriedade definidos podem contribuir para mitigá-la.</p>
+<p>E. Trata-se de um problema apenas ambiental, sem dimensão econômica ou social.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-4-múltipla-escolha-rivalidade-e-meio-ambiente">Questão 4 | Múltipla escolha: rivalidade e meio ambiente</h3>
+<p><strong>Cebraspe | Caesb | Analista de Suporte ao Negócio, Economista | 2025 | questão original 61.</strong> Redação adaptada.</p>
+<p>Na abordagem da economia ambiental, assinale a alternativa correta.</p>
+<p>A. A sustentabilidade forte, que rejeita a substituição dos recursos naturais por soluções tecnológicas, caracteriza essa abordagem.</p>
+<p>B. A escassez dos recursos naturais não implica que devam ser considerados seu valor econômico e seu uso alternativo.</p>
+<p>C. A rivalidade distingue bens públicos dos recursos de acesso livre tratados na questão: nesses recursos, o uso de um reduz a disponibilidade para outro; nos bens públicos, isso não ocorre.</p>
+<p>D. A solução por impostos é associada a Coase, enquanto a definição de direitos é associada a Pigou.</p>
+<p>E. A gestão eficiente pode desconsiderar a escassez dos recursos naturais.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">Gabarito definitivo</a></p>
+<h3 id="questão-5-verdadeiro-ou-falso-regulação-e-classificação">Questão 5 | Verdadeiro ou falso: regulação e classificação</h3>
+<p><strong>Cebraspe | MPO | Analista de Planejamento e Orçamento, especialidade Geral | 2024 | prova P2, item original 74.</strong> Redação adaptada; contexto preservado.</p>
+<p>Uma cidade é atendida por uma única concessionária de distribuição de energia. Por ser regulada pelo Estado, a eletricidade distribuída passa a ser um bem público na classificação econômica.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/958_MPO_ANALISTA_001_01.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/GAB_DEFINITIVO_958_MPO_ANALISTA_001_01.PDF">Gabarito definitivo</a></p>
+<h3 id="questão-6-verdadeiro-ou-falso-pedágio-e-carona">Questão 6 | Verdadeiro ou falso: pedágio e carona</h3>
+<p><strong>Cebraspe | MPO | Analista de Planejamento e Orçamento, especialidade Geral | 2024 | prova P2, item original 75.</strong> Redação adaptada.</p>
+<p>Em rodovia operada por concessionária privada, a instalação de cobrança logo depois de cada entrada permite resolver o problema do carona, independentemente dos custos de transação dessa cobrança.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/958_MPO_ANALISTA_001_01.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/GAB_DEFINITIVO_958_MPO_ANALISTA_001_01.PDF">Gabarito definitivo</a></p>
+<h3 id="questão-7-verdadeiro-ou-falso-estrada-gratuita">Questão 7 | Verdadeiro ou falso: estrada gratuita</h3>
+<p><strong>Cebraspe | MPO | Analista de Planejamento e Orçamento, especialidade Geral | 2024 | prova P2, item original 76.</strong> Redação adaptada.</p>
+<p>Uma rodovia administrada pela União e sem pedágio é sempre um bem público.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/958_MPO_ANALISTA_001_01.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/GAB_DEFINITIVO_958_MPO_ANALISTA_001_01.PDF">Gabarito definitivo</a></p>
+<h3 id="questão-8-verdadeiro-ou-falso-quem-oferece-o-bem">Questão 8 | Verdadeiro ou falso: quem oferece o bem?</h3>
+<p><strong>Cebraspe | MPO | Analista de Planejamento e Orçamento, especialidade Geral | 2024 | prova P2, item original 92.</strong> Redação adaptada.</p>
+<p>Bens que apresentam não rivalidade e não exclusão precisam, necessariamente, ser fornecidos pelo Estado.</p>
+<p><strong>( ) Certo / verdadeiro ( ) Errado / falso</strong></p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/958_MPO_ANALISTA_001_01.PDF">Prova oficial</a> · <a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/GAB_DEFINITIVO_958_MPO_ANALISTA_001_01.PDF">Gabarito definitivo</a></p>
+<h3 id="questão-9-verdadeiro-ou-falso-financiamento-coletivo">Questão 9 | Verdadeiro ou falso: financiamento coletivo</h3>
+<p><strong>FGV | CAGE-RS | Auditor do Estado | 2025 | manhã, tipo 1 | questão original 41, terceira afirmativa.</strong> Recorte e adaptação para julgamento.</p>
+<p>O financiamento público da defesa nacional, um bem não rival e não excluível, procura enfrentar a falha associada ao comportamento de carona.</p>
+<p><strong>( ) Verdadeiro ( ) Falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-do-estado-manhacns101-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_cagers_sdfisddsui.pdf">Gabarito definitivo da questão de origem</a></p>
+<h3 id="questão-10-verdadeiro-ou-falso-função-alocativa">Questão 10 | Verdadeiro ou falso: função alocativa</h3>
+<p><strong>FGV | CGE-SC | Auditor do Estado, Economia | 2023 | tarde, tipo 1 | questão original 25, alternativa A.</strong> Conversão em afirmativa para julgamento.</p>
+<p>Decidir quais bens públicos oferecer e em que quantidade é uma das atribuições relacionadas à função alocativa do governo.</p>
+<p><strong>( ) Verdadeiro ( ) Falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/cns205_-_auditor_do_estado_-_economia_tardecns205_tipo_1_0.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/cgesc2022_gabarito_definitivo_retificado_20230327.pdf">Gabarito definitivo da questão de origem</a></p>
+<h3 id="questão-11-verdadeiro-ou-falso-uso-dos-recursos-comuns">Questão 11 | Verdadeiro ou falso: uso dos recursos comuns</h3>
+<p><strong>FGV | ALEGO | Analista Legislativo, Economista | 2026 | tipo 1 | questão original 57, alternativa D.</strong> Adaptação de alternativa para julgamento.</p>
+<p>A tragédia dos recursos comuns ocorre quando um recurso não excluível e rival é subutilizado.</p>
+<p><strong>( ) Verdadeiro ( ) Falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da questão de origem</a></p>
+<h3 id="questão-12-verdadeiro-ou-falso-provisão-privada-e-rivalidade">Questão 12 | Verdadeiro ou falso: provisão privada e rivalidade</h3>
+<p><strong>FGV | AGENERSA | Especialista em Regulação | 2023 | tipo 1 | questão original 41, alternativa E.</strong> Conversão e adaptação para julgamento.</p>
+<p>Impor que um bem seja fornecido pela iniciativa privada é suficiente para fazer seu consumo apresentar rivalidade.</p>
+<p><strong>( ) Verdadeiro ( ) Falso</strong></p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/cns002-especialista-em-regulacaocns002-tipo-1.pdf">Prova oficial</a> · <a href="https://conhecimento.fgv.br/sites/default/files/concursos/agenersa-gabaritos-definitivos.pdf">Gabarito definitivo da questão de origem</a></p>
+<h3 id="gabarito-resumido">Gabarito resumido</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Questão</th>
+<th>Resposta</th>
+<th>Questão</th>
+<th>Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>E</td>
+<td>7</td>
+<td>Errado / falso</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>C</td>
+<td>8</td>
+<td>Errado / falso</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>D</td>
+<td>9</td>
+<td>Verdadeiro</td>
+</tr>
+<tr class="even">
+<td>4</td>
+<td>C</td>
+<td>10</td>
+<td>Verdadeiro</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td>Errado / falso</td>
+<td>11</td>
+<td>Falso</td>
+</tr>
+<tr class="even">
+<td>6</td>
+<td>Certo / verdadeiro</td>
+<td>12</td>
+<td>Falso</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resoluções-comentadas">Resoluções comentadas</h3>
+<h4 id="alternativa-e-informação-de-acesso-aberto">1. Alternativa E: informação de acesso aberto</h4>
+<p>A consulta de uma pessoa ao conteúdo aberto do DOU não retira a informação disponível para as outras. No contexto da questão, também não há barreira de acesso à informação. As duas propriedades sustentam a classificação como bem público.</p>
+<p>A eletricidade consumida e a porção de merenda são rivais. O transporte tem capacidade limitada, e um parque privado pode controlar a entrada. <strong>A oferta pública ou gratuita não substitui a análise das propriedades econômicas.</strong></p>
+<h4 id="alternativa-c-dificuldade-de-transformar-benefício-em-receita">2. Alternativa C: dificuldade de transformar benefício em receita</h4>
+<p>A não exclusão permite que alguém receba o benefício sem pagar. O fornecedor pode arrecadar menos do que o necessário para oferecer a quantidade socialmente desejável.</p>
+<p>A e B invertem as propriedades dos bens públicos. D erra ao afirmar que esses bens necessariamente produzem danos externos. E transforma uma possível falha de mercado em garantia de eficiência.</p>
+<p><strong>Não rivalidade não implica custo de produção zero</strong>, e o carona não significa impossibilidade absoluta de toda provisão privada.</p>
+<h4 id="alternativa-d-modificar-os-incentivos-de-utilização">3. Alternativa D: modificar os incentivos de utilização</h4>
+<p>Regras de acesso, limites, fiscalização e direitos definidos podem reduzir a sobreutilização. A intervenção procura fazer cada usuário considerar o efeito de sua decisão sobre os demais e sobre o futuro do recurso.</p>
+<p>A e C ignoram a relação entre escolhas individuais e resultado coletivo. B troca degradação por conservação. E ignora consequências econômicas e sociais, como perda de renda, escassez e conflitos de acesso.</p>
+<h4 id="alternativa-c-a-diferença-está-na-rivalidade">4. Alternativa C: a diferença está na rivalidade</h4>
+<p>Ambas as categorias consideradas têm dificuldade de exclusão. No recurso comum, a unidade utilizada deixa de estar disponível para outro usuário; no bem público, o benefício pode ser compartilhado sem essa redução.</p>
+<p>A questão emprega “bens de acesso livre” no sentido de <strong>recursos comuns</strong>. Livre acesso, isoladamente, não define rivalidade: é preciso verificar como o uso afeta os demais.</p>
+<p><strong>Sobre as demais alternativas:</strong> na distinção adotada pela banca, a economia ambiental admite possibilidades de substituição e considera escassez e valor econômico. A formulação de sustentabilidade forte da alternativa A não caracteriza essa abordagem. B e E retiram elementos centrais da decisão econômica. D inverte a associação: imposto corretivo é ligado a <strong>Pigou</strong>; negociação com direitos definidos e custos de transação suficientemente baixos é ligada a <strong>Coase</strong>.</p>
+<h4 id="errado-regulação-não-determina-não-rivalidade-e-não-exclusão">5. Errado: regulação não determina não rivalidade e não exclusão</h4>
+<p>O comando trata de uma concessionária regulada. Isso não transforma a eletricidade consumida em bem público. O fornecimento pode ser medido e o acesso pode ser controlado; a energia consumida por um usuário não fica disponível para o consumo de outro.</p>
+<p><strong>Correção:</strong> classifique pelas condições de uso e exclusão, não pela existência de regulação ou pela identidade do fornecedor.</p>
+<h4 id="certo-excluir-o-não-pagante-é-diferente-de-ter-cobrança-eficiente">6. Certo: excluir o não pagante é diferente de ter cobrança eficiente</h4>
+<p>O gabarito definitivo considera o item <strong>certo</strong>. Na situação descrita, a cobrança depois de cada entrada permite condicionar o acesso ao pagamento e enfrentar o carona.</p>
+<p>A expressão sobre custos <strong>não significa que eles sejam irrelevantes para a decisão econômica</strong>. A interpretação é que um mecanismo pode resolver a possibilidade de acesso sem pagamento e, ainda assim, ser caro demais para valer a pena. Eliminar o carona não prova que o sistema de cobrança tenha benefício líquido positivo.</p>
+<p><strong>Para não confundir:</strong> exclusão possível é uma questão; eficiência e viabilidade da cobrança são outras.</p>
+<h4 id="errado-falta-verificar-o-congestionamento">7. Errado: falta verificar o congestionamento</h4>
+<p>Uma estrada de livre acesso e sem congestionamento aproxima-se de um bem público. Quando congestionada, cada veículo adicional prejudica o uso pelos demais, aparecendo rivalidade.</p>
+<p><strong>Correção:</strong> sem pedágio e congestionada, a estrada é classificada como <strong>recurso comum</strong>. A palavra “sempre” torna a afirmação falsa.</p>
+<h4 id="errado-a-definição-não-exige-fornecedor-estatal">8. Errado: a definição não exige fornecedor estatal</h4>
+<p>Não rivalidade e não exclusão são propriedades do bem. Elas não identificam obrigatoriamente quem o fornece.</p>
+<p>Doações, associações, receitas vinculadas a outros serviços e contratos podem viabilizar alguma provisão privada. O problema é a possibilidade de oferta insuficiente diante do carona.</p>
+<p><strong>Correção:</strong> o Estado pode financiar a provisão, mas não é, por definição, o único fornecedor possível. Financiamento e produção também podem ficar a cargo de agentes diferentes.</p>
+<h4 id="verdadeiro-enfrentar-o-financiamento-insuficiente">9. Verdadeiro: enfrentar o financiamento insuficiente</h4>
+<p>Quem recebe proteção sem contribuir voluntariamente tem incentivo a esperar que outros paguem. O financiamento público permite reunir recursos para o serviço coletivo.</p>
+<p>A questão original apresenta três afirmativas. O gabarito definitivo é <strong>C, sequência F-V-V</strong>; portanto, a terceira afirmativa é verdadeira. As duas primeiras não integram este exercício.</p>
+<h4 id="verdadeiro-decidir-a-oferta-é-uma-questão-de-alocação">10. Verdadeiro: decidir a oferta é uma questão de alocação</h4>
+<p>A função alocativa envolve a distribuição dos recursos entre usos, incluindo a provisão de bens públicos. Decidir <strong>quais oferecer</strong> e <strong>em que quantidade</strong> faz parte dessa função.</p>
+<p>A questão original perguntava o que o governo <strong>não deve</strong> fazer no âmbito da função alocativa, e seu gabarito é <strong>E</strong>. A alternativa A foi convertida aqui em afirmativa positiva. O “verdadeiro” se refere à adaptação didática; não é uma letra do gabarito original.</p>
+<h4 id="falso-o-problema-é-o-uso-excessivo">11. Falso: o problema é o uso excessivo</h4>
+<p>O usuário recebe o benefício de sua decisão, mas não considera todo o custo imposto aos demais. Assim, o uso tende a ficar <strong>acima</strong> do nível socialmente eficiente.</p>
+<p><strong>Correção:</strong> substituir “subutilizado” por “sobreutilizado”, nas condições de livre acesso sem controle eficaz consideradas no problema.</p>
+<p>A questão original 57 tem gabarito <strong>C</strong>. A alternativa D, recortada neste exercício, é uma afirmação incorreta.</p>
+<h4 id="falso-rivalidade-é-uma-característica-do-consumo">12. Falso: rivalidade é uma característica do consumo</h4>
+<p>A rivalidade depende de um uso reduzir a disponibilidade ou a qualidade para outros, e não simplesmente de quem oferece o bem.</p>
+<p><strong>Correção:</strong> a provisão privada não torna um bem automaticamente rival. Por exemplo, uma informação aberta produzida por uma organização privada pode continuar não rival. Uma mudança na forma de cobrar pode alterar a exclusão, sem necessariamente alterar a rivalidade.</p>
+<p>A questão original pedia a <strong>exceção</strong> entre formas de intervenção ligadas às externalidades. Seu gabarito <strong>E</strong> identifica justamente a alternativa inadequada, que deu origem a este item falso.</p>
+<h3 id="fontes-e-conferência-dos-gabaritos">Fontes e conferência dos gabaritos</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Exercícios da aula</th>
+<th>Origem</th>
+<th>Gabarito definitivo da origem</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1, 3 e 4</td>
+<td><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Cebraspe, Caesb, Economista, 22/06/2025</a></td>
+<td><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">41-E; 66-D; 61-C</a></td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-substituto-de-conselheirocns201-tipo-1.pdf">FGV, TCE-RR, Auditor Substituto, tipo 1, 26/01/2025</a></td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_tcerr_auditor-e-analista_ap01.pdf">67-C</a></td>
+</tr>
+<tr class="odd">
+<td>5 a 8</td>
+<td><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/958_MPO_ANALISTA_001_01.PDF">Cebraspe, MPO, Analista, Geral, P2, 28/04/2024</a></td>
+<td><a href="https://cdn.cebraspe.org.br/concursos/MPO_24/arquivos/GAB_DEFINITIVO_958_MPO_ANALISTA_001_01.PDF">74-E; 75-C; 76-E; 92-E</a></td>
+</tr>
+<tr class="even">
+<td>9</td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-do-estado-manhacns101-tipo-1.pdf">FGV, CAGE-RS, Auditor, manhã, tipo 1, 12/01/2025</a></td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito_definitivo_cagers_sdfisddsui.pdf">41-C, sequência F-V-V</a></td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/cns205_-_auditor_do_estado_-_economia_tardecns205_tipo_1_0.pdf">FGV, CGE-SC, Economia, tarde, tipo 1, 29/01/2023</a></td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/cgesc2022_gabarito_definitivo_retificado_20230327.pdf">25-E, questão com comando negativo</a></td>
+</tr>
+<tr class="even">
+<td>11</td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">FGV, ALEGO, Economista, tipo 1, 08/02/2026</a></td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">57-C; alternativa D incorreta</a></td>
+</tr>
+<tr class="odd">
+<td>12</td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/cns002-especialista-em-regulacaocns002-tipo-1.pdf">FGV, AGENERSA, Especialista, tipo 1, 05/03/2023</a></td>
+<td><a href="https://conhecimento.fgv.br/sites/default/files/concursos/agenersa-gabaritos-definitivos.pdf">41-E, exceção solicitada no original</a></td>
+</tr>
+</tbody>
+</table>
+<p>As resoluções e os exemplos complementares são de elaboração didática. O ano indicado corresponde à aplicação da prova, que pode diferir do ano do edital.</p>
+<p><strong>Referência teórica:</strong> Mankiw, N. Gregory. <em>Principles of Economics</em>. 8ª edição, capítulo 11. PDF fornecido: páginas 240 a 254; paginação impressa: 211 a 225. Figuras redesenhadas para a aula.</p>
+<p><a href="#/menu">← Menu</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Aula_15_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Aula_15_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Aula_15_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Aula_15_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

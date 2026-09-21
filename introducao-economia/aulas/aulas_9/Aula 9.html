@@ -1,0 +1,1531 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Aula_9_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Aula_9_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Aula_9_files/libs/quarto-html/popper.min.js"></script>
+<script src="Aula_9_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Aula_9_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Aula_9_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Aula_9_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <title>Introdução à economia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Aula_9_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Aula_9_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Aula_9_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link href="Aula_9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Aula_9_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Aula_9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Aula_9_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Introdução à economia</h1>
+  <p class="subtitle">Aula 9 - Firmas em Mercados Competitivos</p>
+
+<div class="quarto-title-authors">
+</div>
+
+</section>
+<section id="menu" class="slide level2 smaller scrollable">
+<h2>Firmas em Mercados Competitivos</h2>
+<h3 id="introdução">Introdução</h3>
+<p><a href="#/intro">01 - Por que a estrutura de mercado importa</a></p>
+<h3 id="o-que-é-um-mercado-competitivo">O que é um mercado competitivo?</h3>
+<p><a href="#/concorrencia">02 - O significado da concorrência</a></p>
+<p><a href="#/receita">03 - A receita de uma firma competitiva</a></p>
+<p><a href="#/receitatabela">04 - Receita total, média e marginal</a></p>
+<p><a href="#/JRP1">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="maximização-de-lucro-e-oferta-da-firma">Maximização de lucro e oferta da firma</h3>
+<p><a href="#/exemplolucro">05 - Um exemplo numérico de maximização do lucro</a></p>
+<p><a href="#/margem">06 - A decisão na margem</a></p>
+<p><a href="#/cmgoferta">07 - A curva de custo marginal e a decisão de oferta</a></p>
+<p><a href="#/mudancapreco">08 - Como a firma responde a uma mudança no preço</a></p>
+<p><a href="#/paralisar">09 - A decisão de paralisar no curto prazo</a></p>
+<p><a href="#/regraparalisar">10 - A regra de paralisação e a oferta de curto prazo</a></p>
+<p><a href="#/afundados">11 - Custos irrecuperáveis</a></p>
+<p><a href="#/estudocaso">12 - Restaurantes vazios e minigolfe fora de temporada</a></p>
+<p><a href="#/saidaentrada">13 - A decisão de sair ou entrar no mercado</a></p>
+<p><a href="#/comparacaoprazos">14 - Curto prazo e longo prazo</a></p>
+<p><a href="#/medindolucro">15 - Medindo lucro e prejuízo no gráfico</a></p>
+<p><a href="#/JRP2">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="a-curva-de-oferta-em-um-mercado-competitivo">A curva de oferta em um mercado competitivo</h3>
+<p><a href="#/ofertacp">16 - Oferta de mercado no curto prazo</a></p>
+<p><a href="#/entradasaida">17 - Entrada e saída no longo prazo</a></p>
+<p><a href="#/equilibriolp">18 - Equilíbrio de longo prazo e escala eficiente</a></p>
+<p><a href="#/lucrozero">19 - Por que permanecer com lucro econômico zero?</a></p>
+<p><a href="#/demandacp">20 - Aumento da demanda no curto prazo</a></p>
+<p><a href="#/demandalp">21 - Ajuste da demanda no longo prazo</a></p>
+<p><a href="#/ofertacrescente">22 - Por que a oferta de longo prazo pode ser crescente?</a></p>
+<p><a href="#/JRP3">🏆 Vamos a um jogo rápido!</a></p>
+<h3 id="conclusão-e-exercícios">Conclusão e exercícios</h3>
+<p><a href="#/conclusao">23 - Por trás da curva de oferta</a></p>
+<p><a href="#/concursos">24 - Exercícios de concursos públicos</a></p>
+</section>
+<section id="intro" class="slide level2 smaller scrollable">
+<h2>01 - Por que a estrutura de mercado importa</h2>
+<p><img src="imagens/img_00.png" style="width: 900px; height: auto;"></p>
+<p>Imagine dois fornecedores locais:</p>
+<p>⛽ Um posto aumenta o preço da gasolina em 20%. Muitos consumidores podem comprar em outro posto.</p>
+<p>🚰 A companhia de água aumenta sua tarifa em 20%. As famílias podem economizar, mas dificilmente encontram outro fornecedor.</p>
+<p>A diferença está na <strong>estrutura de mercado</strong>. No primeiro caso, muitas firmas vendem um produto semelhante. No segundo, uma única firma atende o mercado.</p>
+<p>Este capítulo investiga as decisões de produção das firmas competitivas e mostra o que existe por trás da curva de oferta.</p>
+<p>As medidas de custo estudadas na aula anterior cumprem papéis diferentes:</p>
+<p><span class="math display">\[
+CF,\;CV,\;CMeV,\;CMeT\;\text{e}\;CMg
+\]</span></p>
+<p>🔑 A questão central é identificar quais custos orientam a produção no curto prazo, a entrada ou saída no longo prazo e a oferta de mercado.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="concorrencia" class="slide level2 smaller scrollable">
+<h2>02 - O significado da concorrência</h2>
+<p>Um <strong>mercado competitivo</strong>, também chamado de mercado perfeitamente competitivo, apresenta duas características fundamentais:</p>
+<ol type="1">
+<li>Há muitos compradores e muitos vendedores.</li>
+<li>Os bens oferecidos pelos vendedores são, em grande medida, idênticos.</li>
+</ol>
+<p>Como cada participante representa uma parcela muito pequena do mercado, suas decisões individuais têm efeito desprezível sobre o preço.</p>
+<p><span class="math display">\[
+\boxed{\text{Compradores e vendedores são tomadores de preço}}
+\]</span></p>
+<p>🥛 No mercado de leite, nenhum consumidor compra o suficiente para alterar o preço. Cada produtor também é pequeno diante da oferta total.</p>
+<p>Se um produtor cobrar menos, renuncia receita sem necessidade. Se cobrar mais, os compradores procurarão os concorrentes.</p>
+<p>Uma terceira condição costuma caracterizar a concorrência perfeita:</p>
+<ol start="3" type="1">
+<li>As firmas podem entrar e sair livremente do mercado.</li>
+</ol>
+<p>Essa condição não é necessária para que a firma seja tomadora de preço, mas é decisiva para o equilíbrio de longo prazo.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="receita" class="slide level2 smaller scrollable">
+<h2>03 - A receita de uma firma competitiva</h2>
+<p><img src="imagens/img_01.png" style="width: 900px; height: auto;"></p>
+<p>Considere uma pequena fazenda que produz leite. Ela vende a quantidade (Q) ao preço de mercado (P):</p>
+<p><span class="math display">\[
+\boxed{RT=P\times Q}
+\]</span></p>
+<p>Se o preço é $6 por galão e a fazenda vende 1.000 galões:</p>
+<p><span class="math display">\[
+RT=6\times1.000=\$6.000
+\]</span></p>
+<p>Como a fazenda é pequena em relação ao mercado, produzir 2.000 galões não altera o preço. A receita total simplesmente dobra para $12.000.</p>
+<p>Logo, para a firma competitiva:</p>
+<p><span class="math display">\[
+P\;\text{constante}\quad\Longrightarrow\quad RT\;\text{proporcional a}\;Q
+\]</span></p>
+<p>A curva de demanda enfrentada pela firma é horizontal no preço de mercado. A firma pode escolher quanto produzir, mas não o preço pelo qual venderá.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="receitatabela" class="slide level2 smaller scrollable">
+<h2>04 - Receita total, média e marginal</h2>
+<p><img src="imagens/img_02.png" style="width: 900px; height: auto;"></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Quantidade (Q)</th>
+<th style="text-align: right;">Preço (P)</th>
+<th style="text-align: right;">Receita total (RT)</th>
+<th style="text-align: right;">Receita média (RMe=RT/Q)</th>
+<th style="text-align: right;">Receita marginal (RMg=RT/Q)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$12</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$18</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$24</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$30</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$36</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$42</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$48</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+</tr>
+</tbody>
+</table>
+<p>A <strong>receita média</strong> informa quanto a firma recebe pela unidade típica vendida:</p>
+<p><span class="math display">\[
+RMe=\frac{RT}{Q}=\frac{P\times Q}{Q}=P
+\]</span></p>
+<p>Esse resultado vale para qualquer firma.</p>
+<p>A <strong>receita marginal</strong> mede a variação da receita total causada pela venda de uma unidade adicional:</p>
+<p><span class="math display">\[
+RMg=\frac{\Delta RT}{\Delta Q}
+\]</span></p>
+<p>Como o preço não muda quando a firma competitiva amplia sua produção:</p>
+<p><span class="math display">\[
+\boxed{P=RMe=RMg}
+\]</span></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP1" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Uma firma competitiva vende cada unidade por $10.</p>
+<ol type="a">
+<li><p>O que acontece com o preço quando ela dobra a quantidade vendida?</p></li>
+<li><p>O que acontece com sua receita total?</p></li>
+<li><p>Quanto valem a receita média e a receita marginal?</p></li>
+</ol>
+<p><strong>Resposta esperada:</strong> o preço permanece em $10, a receita total dobra e (P=RMe=RMg=$10).</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="exemplolucro" class="slide level2 smaller scrollable">
+<h2>05 - Um exemplo numérico de maximização do lucro</h2>
+<p>Retomemos a fazenda, com preço de $6 e custo fixo de $3.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: right;">(Q)</th>
+<th style="text-align: right;">(RT)</th>
+<th style="text-align: right;">(CT)</th>
+<th style="text-align: right;">Lucro (RT-CT)</th>
+<th style="text-align: right;">(RMg)</th>
+<th style="text-align: right;">(CMg)</th>
+<th style="text-align: right;">(RMg-CMg)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">$3</td>
+<td style="text-align: right;">-$3</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+<td style="text-align: right;">-</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$5</td>
+<td style="text-align: right;">$1</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$2</td>
+<td style="text-align: right;">$4</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">$12</td>
+<td style="text-align: right;">$8</td>
+<td style="text-align: right;">$4</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$3</td>
+<td style="text-align: right;">$3</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">$18</td>
+<td style="text-align: right;">$12</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$4</td>
+<td style="text-align: right;">$2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">$24</td>
+<td style="text-align: right;">$17</td>
+<td style="text-align: right;">$7</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$5</td>
+<td style="text-align: right;">$1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">$30</td>
+<td style="text-align: right;">$23</td>
+<td style="text-align: right;">$7</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">$36</td>
+<td style="text-align: right;">$30</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$7</td>
+<td style="text-align: right;">-$1</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">$42</td>
+<td style="text-align: right;">$38</td>
+<td style="text-align: right;">$4</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$8</td>
+<td style="text-align: right;">-$2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">$48</td>
+<td style="text-align: right;">$47</td>
+<td style="text-align: right;">$1</td>
+<td style="text-align: right;">$6</td>
+<td style="text-align: right;">$9</td>
+<td style="text-align: right;">-$3</td>
+</tr>
+</tbody>
+</table>
+<p>O lucro máximo é $7, obtido com 4 ou 5 galões. A análise marginal indica 5 galões, pois o quinto acrescenta receita e custo iguais.</p>
+<p>Até o quinto galão, cada unidade acrescenta ao lucro ou não o reduz. A partir do sexto, o custo marginal supera a receita marginal e o lucro diminui.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="margem" class="slide level2 smaller scrollable">
+<h2>06 - A decisão na margem</h2>
+<p>Uma firma que busca maximizar lucro compara o ganho e o custo de cada unidade adicional.</p>
+<p>Se:</p>
+<p><span class="math display">\[
+RMg&gt;CMg
+\]</span></p>
+<p>a receita da unidade adicional supera seu custo. A firma aumenta a produção.</p>
+<p>Se:</p>
+<p><span class="math display">\[
+RMg&lt;CMg
+\]</span></p>
+<p>o custo da unidade adicional supera a receita. A firma reduz a produção.</p>
+<p>Os ajustes terminam quando:</p>
+<p><span class="math display">\[
+\boxed{RMg=CMg}
+\]</span></p>
+<p>Como, na concorrência perfeita, (RMg=P):</p>
+<p><span class="math display">\[
+\boxed{P=CMg}
+\]</span></p>
+<p>Esse é o nível de produção que maximiza o lucro, desde que seja vantajoso manter a firma produzindo.</p>
+<p>💡 A regra (RMg=CMg) vale também para firmas com poder de mercado. O que muda nos capítulos seguintes é a forma da receita marginal.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="cmgoferta" class="slide level2 smaller scrollable">
+<h2>07 - A curva de custo marginal e a decisão de oferta</h2>
+<p><img src="imagens/img_03.png" style="width: 900px; height: auto;"></p>
+<p>As curvas de custo apresentam as propriedades estudadas na aula anterior:</p>
+<ul>
+<li>o custo marginal é crescente;</li>
+<li>o custo médio total tem formato de U;</li>
+<li>o custo marginal cruza o custo médio total em seu ponto mínimo.</li>
+</ul>
+<p>A linha horizontal representa o preço de mercado. Para a firma competitiva, ela também representa a receita média e a receita marginal.</p>
+<p>Em uma quantidade menor que (Q^*), temos (RMg&gt;CMg). Produzir mais eleva o lucro.</p>
+<p>Em uma quantidade maior que (Q^*), temos (CMg&gt;RMg). Produzir menos eleva o lucro.</p>
+<p>Portanto, a firma converge para a quantidade em que o preço cruza a curva de custo marginal.</p>
+<p>⚠️ A igualdade (P=CMg) determina quanto produzir se a firma operar. Ainda precisamos saber quando ela deve produzir zero.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="mudancapreco" class="slide level2 smaller scrollable">
+<h2>08 - Como a firma responde a uma mudança no preço</h2>
+<p><img src="imagens/img_04.png" style="width: 900px; height: auto;"></p>
+<p>Quando o preço é (P_1), a firma escolhe (Q_1), onde:</p>
+<p><span class="math display">\[
+P_1=CMg(Q_1)
+\]</span></p>
+<p>Se a demanda de mercado aumenta e o preço sobe para (P_2), a antiga produção passa a apresentar (RMg&gt;CMg). A firma amplia a produção até (Q_2):</p>
+<p><span class="math display">\[
+P_2=CMg(Q_2)
+\]</span></p>
+<p>Cada preço seleciona uma quantidade na curva de custo marginal. Por isso:</p>
+<p><span class="math display">\[
+\boxed{\text{A curva de CMg determina a quantidade ofertada pela firma}}
+\]</span></p>
+<p>Essa conclusão precisa de duas qualificações:</p>
+<ul>
+<li>no curto prazo, a firma pode paralisar temporariamente;</li>
+<li>no longo prazo, a firma pode sair do mercado.</li>
+</ul>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="paralisar" class="slide level2 smaller scrollable">
+<h2>09 - A decisão de paralisar no curto prazo</h2>
+<p><strong>Paralisação</strong> é a decisão de curto prazo de não produzir durante determinado período devido às condições atuais do mercado.</p>
+<p><strong>Saída</strong> é a decisão de longo prazo de abandonar definitivamente o mercado.</p>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th>Decisão</th>
+<th>Receita perdida</th>
+<th>Custos evitados</th>
+<th>Custos ainda pagos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Paralisar</td>
+<td>Toda a receita</td>
+<td>Custos variáveis</td>
+<td>Custos fixos</td>
+</tr>
+<tr class="even">
+<td>Sair</td>
+<td>Toda a receita</td>
+<td>Custos variáveis e fixos</td>
+<td>Nenhum</td>
+</tr>
+</tbody>
+</table>
+<p>🌾 Se um agricultor não plantar durante uma safra, a terra fica ociosa e seu custo continua existindo. No curto prazo, esse custo é irrecuperável.</p>
+<p>Se o agricultor abandonar a atividade e vender a terra, pode evitar esse custo no longo prazo.</p>
+<p>A firma paralisa quando a receita obtida ao produzir não cobre os custos variáveis que a produção provoca.</p>
+<p><span class="math display">\[
+\boxed{\text{Paralisar se }RT&lt;CV}
+\]</span></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="regraparalisar" class="slide level2 smaller scrollable">
+<h2>10 - A regra de paralisação e a oferta de curto prazo</h2>
+<p><img src="imagens/img_05.png" style="width: 900px; height: auto;"></p>
+<p>Partindo da condição:</p>
+<p><span class="math display">\[
+RT&lt;CV
+\]</span></p>
+<p>Dividimos os dois lados pela quantidade (Q):</p>
+<p><span class="math display">\[
+\frac{RT}{Q}&lt;\frac{CV}{Q}
+\]</span></p>
+<p>Como (RT/Q=P) e (CV/Q=CMeV):</p>
+<p><span class="math display">\[
+\boxed{\text{Paralisar se }P&lt;CMeV}
+\]</span></p>
+<p>Se o preço não cobre o custo variável médio, produzir aumenta o prejuízo. A firma prefere produzir zero e arcar apenas com o custo fixo.</p>
+<p>Se (PCMeV), a receita cobre os custos variáveis e contribui para pagar parte do custo fixo. A firma opera onde (P=CMg), mesmo que apresente prejuízo.</p>
+<p>Logo:</p>
+<p><span class="math display">\[
+\boxed{\text{Oferta de curto prazo}=\text{trecho do CMg acima do CMeV}}
+\]</span></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="afundados" class="slide level2 smaller scrollable">
+<h2>11 - Custos irrecuperáveis</h2>
+<p>Um <strong>custo irrecuperável</strong> é um custo já comprometido que não pode ser recuperado.</p>
+<p>Como nenhuma decisão atual consegue alterá-lo, ele deve ser ignorado na escolha entre as alternativas disponíveis agora.</p>
+<p>No curto prazo, os custos fixos da firma são irrecuperáveis. Eles não mudam se a produção for positiva ou igual a zero. Por isso, o tamanho do custo fixo não altera a decisão de oferta de curto prazo.</p>
+<p>🎬 Exemplo do ingresso perdido</p>
+<p>Você atribui benefício de $15 a um filme e compra um ingresso por $10. Antes de entrar, perde o ingresso.</p>
+<p>O primeiro pagamento de $10 já ocorreu e não pode ser recuperado. A decisão atual compara:</p>
+<p><span class="math display">\[
+\text{benefício de assistir}=\$15
+\]</span></p>
+<p>com</p>
+<p><span class="math display">\[
+\text{custo de um novo ingresso}=\$10
+\]</span></p>
+<p>Como o benefício ainda supera o custo relevante, comprar outro ingresso é a decisão racional.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="estudocaso" class="slide level2 smaller scrollable">
+<h2>12 - Restaurantes vazios e minigolfe fora de temporada</h2>
+<p>📌 <strong>Estudo de caso</strong></p>
+<p>Um restaurante quase vazio no almoço pode continuar aberto de modo racional.</p>
+<p>Aluguel, equipamentos, mesas, pratos e talheres são custos fixos. Fechar no horário do almoço não elimina esses pagamentos.</p>
+<p>Para decidir se abre, o proprietário compara a receita dos poucos clientes com os custos variáveis do período, como alimentos adicionais e salários da equipe necessária.</p>
+<p><span class="math display">\[
+\boxed{\text{Abrir se }RT\geq CV}
+\]</span></p>
+<p>Um campo de minigolfe em uma região turística enfrenta a mesma escolha. A compra do terreno e a construção do campo já ocorreram. A operação deve continuar nas épocas em que a receita cobre os custos variáveis.</p>
+<p>🔑 Poucos clientes não significam necessariamente que fechar reduz o prejuízo. O critério correto depende dos custos que a decisão consegue evitar.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="saidaentrada" class="slide level2 smaller scrollable">
+<h2>13 - A decisão de sair ou entrar no mercado</h2>
+<p><img src="imagens/img_06.png" style="width: 900px; height: auto;"></p>
+<p>No longo prazo, a firma pode evitar custos fixos e variáveis. Ela sai quando a receita não cobre o custo total:</p>
+<p><span class="math display">\[
+RT&lt;CT
+\]</span></p>
+<p>Dividindo por (Q):</p>
+<p><span class="math display">\[
+\frac{RT}{Q}&lt;\frac{CT}{Q}
+\]</span></p>
+<p>Logo:</p>
+<p><span class="math display">\[
+\boxed{\text{Sair se }P&lt;CMeT}
+\]</span></p>
+<p>Para um empreendedor que considera iniciar uma firma, a regra é simétrica:</p>
+<p><span class="math display">\[
+\boxed{\text{Entrar se }P&gt;CMeT}
+\]</span></p>
+<p>Se a firma opera no longo prazo, produz onde (P=CMg). Contudo, permanece no mercado apenas se o preço cobrir o custo médio total.</p>
+<p>Assim:</p>
+<p><span class="math display">\[
+\boxed{\text{Oferta de longo prazo}=\text{trecho do CMg acima do CMeT}}
+\]</span></p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="comparacaoprazos" class="slide level2 smaller scrollable">
+<h2>14 - Curto prazo e longo prazo</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Situação do preço</th>
+<th>Curto prazo</th>
+<th>Longo prazo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>(P&gt;CMeT)</td>
+<td>Produzir e obter lucro</td>
+<td>Permanecer; entrada de novas firmas é atraente</td>
+</tr>
+<tr class="even">
+<td>(CMeVP&lt;CMeT)</td>
+<td>Produzir para minimizar o prejuízo</td>
+<td>Sair do mercado</td>
+</tr>
+<tr class="odd">
+<td>(P&lt;CMeV)</td>
+<td>Paralisar</td>
+<td>Sair do mercado</td>
+</tr>
+</tbody>
+</table>
+<p>Por que uma firma produz com prejuízo no curto prazo?</p>
+<p>Suponha (RT=80), (CV=60) e (CF=50).</p>
+<p>Se produzir:</p>
+<p><span class="math display">\[
+\pi=80-(60+50)=-30
+\]</span></p>
+<p>Se paralisar:</p>
+<p><span class="math display">\[
+\pi=0-50=-50
+\]</span></p>
+<p>Produzir reduz o prejuízo em $20, pois a receita cobre todo o custo variável e parte do custo fixo.</p>
+<p>No longo prazo, a firma evita também o custo fixo. Se (P&lt;CMeT), a saída é a melhor decisão.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="medindolucro" class="slide level2 smaller scrollable">
+<h2>15 - Medindo lucro e prejuízo no gráfico</h2>
+<p><img src="imagens/img_07.png" style="width: 900px; height: auto;"></p>
+<p>Partimos de:</p>
+<p><span class="math display">\[
+\pi=RT-CT
+\]</span></p>
+<p>Multiplicando e dividindo por (Q):</p>
+<p><span class="math display">\[
+\pi=\left(\frac{RT}{Q}-\frac{CT}{Q}\right)Q
+\]</span></p>
+<p>Como (RT/Q=P) e (CT/Q=CMeT):</p>
+<p><span class="math display">\[
+\boxed{\pi=(P-CMeT)Q}
+\]</span></p>
+<p>No gráfico, a altura do retângulo é a diferença entre preço e custo médio total. A largura é a quantidade produzida.</p>
+<ul>
+<li>Se (P&gt;CMeT), a área representa lucro positivo.</li>
+<li>Se (P&lt;CMeT), a área representa prejuízo.</li>
+</ul>
+<p>Uma firma com prejuízo ainda pode operar no curto prazo se (PCMeV). Nesse caso, produzir onde (P=CMg) minimiza a perda.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP2" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Uma firma competitiva produz 100 unidades. O preço é $10, o custo médio total é $8 e o custo fixo total é $200.</p>
+<ol type="a">
+<li><p>Qual é o lucro?</p></li>
+<li><p>Qual é o custo marginal na quantidade escolhida?</p></li>
+<li><p>Qual é o custo variável médio?</p></li>
+<li><p>Se o preço cair para $5, a firma deve paralisar no curto prazo?</p></li>
+</ol>
+<p><strong>Respostas:</strong></p>
+<p><span class="math display">\[
+\pi=(10-8)100=\$200
+\]</span></p>
+<p>Como a firma maximiza o lucro, (CMg=P=$10).</p>
+<p><span class="math display">\[
+CMeF=200/100=2\quad\text{e}\quad CMeV=CMeT-CMeF=8-2=\$6
+\]</span></p>
+<p>Com preço de $5, temos (P&lt;CMeV). A firma paralisa no curto prazo.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="ofertacp" class="slide level2 smaller scrollable">
+<h2>16 - Oferta de mercado no curto prazo</h2>
+<p><img src="imagens/img_08.png" style="width: 900px; height: auto;"></p>
+<p>No curto prazo, o número de firmas é fixo.</p>
+<p>Para cada preço acima do custo variável médio, cada firma oferece a quantidade em que:</p>
+<p><span class="math display">\[
+P=CMg
+\]</span></p>
+<p>A oferta de mercado resulta da soma horizontal das quantidades ofertadas por todas as firmas:</p>
+<p><span class="math display">\[
+\boxed{Q_S^{mercado}=q_1+q_2+\cdots+q_n}
+\]</span></p>
+<p>Se existem 1.000 firmas idênticas e cada uma oferece 100 unidades a determinado preço:</p>
+<p><span class="math display">\[
+Q_S^{mercado}=1.000\times100=100.000
+\]</span></p>
+<p>Uma mudança de preço desloca cada firma ao longo de sua curva de custo marginal e altera a quantidade total ofertada.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="entradasaida" class="slide level2 smaller scrollable">
+<h2>17 - Entrada e saída no longo prazo</h2>
+<p>No longo prazo, novas firmas podem entrar e firmas existentes podem sair.</p>
+<p>Quando (P&gt;CMeT):</p>
+<p><span class="math display">\[
+\pi&gt;0\quad\Longrightarrow\quad\text{entrada de firmas}
+\]</span></p>
+<p>A entrada amplia a oferta de mercado, reduz o preço e comprime o lucro.</p>
+<p>Quando (P&lt;CMeT):</p>
+<p><span class="math display">\[
+\pi&lt;0\quad\Longrightarrow\quad\text{saída de firmas}
+\]</span></p>
+<p>A saída reduz a oferta de mercado, eleva o preço e diminui o prejuízo das firmas remanescentes.</p>
+<p>O processo termina quando nenhuma firma deseja entrar ou sair:</p>
+<p><span class="math display">\[
+\boxed{\pi=0}
+\]</span></p>
+<p>Como:</p>
+<p><span class="math display">\[
+\pi=(P-CMeT)Q
+\]</span></p>
+<p>uma firma que produz apresenta lucro econômico zero quando (P=CMeT).</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="equilibriolp" class="slide level2 smaller scrollable">
+<h2>18 - Equilíbrio de longo prazo e escala eficiente</h2>
+<p><img src="imagens/img_09.png" style="width: 900px; height: auto;"></p>
+<p>A maximização do lucro exige:</p>
+<p><span class="math display">\[
+P=CMg
+\]</span></p>
+<p>A livre entrada e saída conduz a:</p>
+<p><span class="math display">\[
+P=CMeT
+\]</span></p>
+<p>Portanto:</p>
+<p><span class="math display">\[
+\boxed{P=CMg=CMeT}
+\]</span></p>
+<p>O custo marginal cruza o custo médio total no mínimo do CMeT. Logo, cada firma opera em sua <strong>escala eficiente</strong>.</p>
+<p>Com firmas idênticas, mesma tecnologia e insumos disponíveis aos mesmos preços, há apenas um preço compatível com lucro econômico zero:</p>
+<p><span class="math display">\[
+\boxed{P=\min CMeT}
+\]</span></p>
+<p>O número de firmas se ajusta para atender toda a demanda a esse preço. A oferta de mercado de longo prazo é horizontal e perfeitamente elástica.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="lucrozero" class="slide level2 smaller scrollable">
+<h2>19 - Por que permanecer com lucro econômico zero?</h2>
+<p>Lucro econômico zero não significa que os proprietários trabalham sem remuneração.</p>
+<p>O custo econômico inclui todos os custos de oportunidade do tempo e do capital aplicados no negócio.</p>
+<p>Considere um agricultor que:</p>
+<ul>
+<li>investe $1 milhão que renderia $50.000 por ano em outra aplicação;</li>
+<li>abandona um emprego que pagaria $30.000 por ano.</li>
+</ul>
+<p>Seu custo de oportunidade anual inclui:</p>
+<p><span class="math display">\[
+50.000+30.000=\$80.000
+\]</span></p>
+<p>No equilíbrio de lucro econômico zero, a receita cobre esse retorno normal e todos os demais custos.</p>
+<p>O contador registra os custos explícitos, mas não os custos implícitos. Por isso, nesse exemplo:</p>
+<p><span class="math display">\[
+\text{lucro econômico}=0
+\]</span></p>
+<p>e</p>
+<p><span class="math display">\[
+\text{lucro contábil}=\$80.000
+\]</span></p>
+<p>Esse lucro contábil é justamente o necessário para manter o agricultor na atividade.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="demandacp" class="slide level2 smaller scrollable">
+<h2>20 - Aumento da demanda no curto prazo</h2>
+<p><img src="imagens/img_10.png" style="width: 900px; height: auto;"></p>
+<p>O mercado começa em equilíbrio de longo prazo no ponto A:</p>
+<p><span class="math display">\[
+P_1=\min CMeT\quad\text{e}\quad\pi=0
+\]</span></p>
+<p>Uma descoberta favorável ao consumo de leite desloca a demanda de (D_1) para (D_2).</p>
+<p>No curto prazo, o número de firmas permanece fixo. O equilíbrio passa de A para B:</p>
+<p><span class="math display">\[
+P_1\rightarrow P_2\quad\text{e}\quad Q_1\rightarrow Q_2
+\]</span></p>
+<p>Cada firma aumenta a produção ao longo de sua curva de custo marginal.</p>
+<p>Como o novo preço supera o custo médio total:</p>
+<p><span class="math display">\[
+P_2&gt;CMeT\quad\Longrightarrow\quad\pi&gt;0
+\]</span></p>
+<p>O lucro econômico positivo cria o incentivo para a entrada de firmas.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="demandalp" class="slide level2 smaller scrollable">
+<h2>21 - Ajuste da demanda no longo prazo</h2>
+<p>Com o passar do tempo, novas firmas entram no mercado.</p>
+<p>A entrada aumenta a quantidade ofertada a cada preço e desloca a oferta de curto prazo de (O_1) para (O_2).</p>
+<p>O preço cai até retornar ao mínimo do custo médio total:</p>
+<p><span class="math display">\[
+P_2\rightarrow P_1
+\]</span></p>
+<p>O mercado chega ao ponto C, um novo equilíbrio de longo prazo:</p>
+<p><span class="math display">\[
+P=P_1,\qquad Q=Q_3,\qquad \pi=0
+\]</span></p>
+<p>Cada firma volta a produzir na escala eficiente. A quantidade de mercado é maior porque agora há mais firmas.</p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Horizonte</th>
+<th>Preço</th>
+<th>Produção por firma</th>
+<th>Número de firmas</th>
+<th>Quantidade de mercado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Equilíbrio inicial</td>
+<td>(P_1)</td>
+<td>Escala eficiente</td>
+<td>Inicial</td>
+<td>(Q_1)</td>
+</tr>
+<tr class="even">
+<td>Curto prazo</td>
+<td>(P_2&gt;P_1)</td>
+<td>Maior</td>
+<td>Fixo</td>
+<td>(Q_2)</td>
+</tr>
+<tr class="odd">
+<td>Novo longo prazo</td>
+<td>(P_1)</td>
+<td>Escala eficiente</td>
+<td>Maior</td>
+<td>(Q_3&gt;Q_1)</td>
+</tr>
+</tbody>
+</table>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="ofertacrescente" class="slide level2 smaller scrollable">
+<h2>22 - Por que a oferta de longo prazo pode ser crescente?</h2>
+<p><img src="imagens/img_11.png" style="width: 900px; height: auto;"></p>
+<p>A oferta horizontal de longo prazo depende de muitas firmas potenciais com custos idênticos e insumos disponíveis sem aumento de preço.</p>
+<p>Há duas razões para a oferta de longo prazo ser crescente.</p>
+<p><strong>1. Alguns recursos existem em quantidade limitada</strong></p>
+<p>Mais produção agrícola exige mais terra. Como a quantidade de terra é limitada, sua demanda aumenta o preço do insumo e eleva os custos de todos os produtores.</p>
+<p><strong>2. As firmas apresentam custos diferentes</strong></p>
+<p>No mercado de pintura, algumas pessoas trabalham mais rapidamente ou têm menor custo de oportunidade. Os produtores de baixo custo entram primeiro. Uma quantidade maior exige atrair firmas com custos mais altos, o que demanda preço maior.</p>
+<p>A firma marginal, que sairia se o preço caísse, obtém lucro econômico zero. Firmas de custo inferior podem manter lucro positivo no longo prazo.</p>
+<p>Mesmo quando crescente, a oferta de longo prazo tende a ser mais elástica que a oferta de curto prazo, pois o número de firmas consegue se ajustar.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="JRP3" class="slide level2 smaller scrollable">
+<h2>🏆 Vamos a um jogo rápido!</h2>
+<p>Em um mercado competitivo com livre entrada e saída, firmas idênticas estão em equilíbrio de longo prazo.</p>
+<ol type="a">
+<li><p>Qual é a relação entre preço, custo marginal e custo médio total?</p></li>
+<li><p>Em que ponto do custo médio total a firma opera?</p></li>
+<li><p>O que ocorre se o preço subir temporariamente acima desse nível?</p></li>
+<li><p>Por que a oferta de longo prazo pode ser crescente mesmo com livre entrada?</p></li>
+</ol>
+<p><strong>Resposta esperada:</strong></p>
+<p><span class="math display">\[
+P=CMg=\min CMeT
+\]</span></p>
+<p>A firma opera na escala eficiente. Um preço maior gera lucro e entrada, elevando a oferta. Recursos limitados ou diferenças de custo entre firmas podem tornar a oferta de longo prazo crescente.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="conclusao" class="slide level2 smaller scrollable">
+<h2>23 - Por trás da curva de oferta</h2>
+<p>Este capítulo aplicou o princípio de que pessoas racionais pensam na margem às decisões da firma competitiva.</p>
+<p>A análise marginal produziu uma teoria para a curva de oferta:</p>
+<p><span class="math display">\[
+\boxed{P=RMg=CMg}
+\]</span></p>
+<p>No curto prazo, a firma produz apenas se o preço cobrir o custo variável médio. No longo prazo, permanece apenas se o preço cobrir o custo médio total.</p>
+<p>Quando existe livre entrada e saída, o equilíbrio de longo prazo satisfaz:</p>
+<p><span class="math display">\[
+\boxed{P=CMg=\min CMeT}
+\]</span></p>
+<p>Assim, o preço pago por um bem em um mercado competitivo se aproxima do custo de produzir a unidade adicional. Com livre entrada e saída, o preço também iguala o menor custo médio total possível.</p>
+<p>As mesmas ferramentas marginais serão úteis para estudar firmas com poder de mercado, embora suas implicações para preço e produção sejam diferentes.</p>
+<p><a href="#/menu">← Menu</a></p>
+</section>
+<section id="concursos" class="slide level2 smaller scrollable">
+<h2>24 - Exercícios de concursos públicos</h2>
+<p><strong>12 questões: 6 de múltipla escolha e 6 de verdadeiro ou falso.</strong></p>
+<p>Seleção de provas da <strong>FGV</strong> e do <strong>Cebraspe</strong>, com enunciados e alternativas abreviados e adaptados para a aula. As letras das alternativas e os gabaritos originais foram preservados. Os cálculos complementares são indicados nas resoluções. As fontes oficiais estão ao final.</p>
+<p><strong>Múltipla escolha, questões 1 a 6:</strong> assinale uma alternativa por questão.</p>
+<p><strong>Questões 1 a 3:</strong> FGV, ALEGO, Analista Legislativo: Economista, 2026, caderno tipo 1.</p>
+<h3 id="questão-1-produzir-ou-paralisar">Questão 1: Produzir ou paralisar?</h3>
+<p><strong>Questão original 50.</strong> Qual decisão maximiza o lucro da firma competitiva no curto prazo?</p>
+<ol type="A">
+<li><p>Operar com <span class="math inline">\(P=CMg\)</span>, desde que <span class="math inline">\(P\geq CMeV\)</span>.</p></li>
+<li><p>Fixar <span class="math inline">\(P=CMeT\)</span>, pois o lucro seria sempre nulo.</p></li>
+<li><p>Igualar <span class="math inline">\(RMg=CMg\)</span>, considerando <span class="math inline">\(RMg\neq P\)</span>.</p></li>
+<li><p>Produzir com <span class="math inline">\(P&lt;CMg\)</span> para garantir lucro.</p></li>
+<li><p>Paralisar sempre que existirem custos fixos.</p></li>
+</ol>
+<h3 id="questão-2-produtividade-e-curva-de-oferta">Questão 2: Produtividade e curva de oferta</h3>
+<p><strong>Questão original 49.</strong> Com capital fixo e produtividade marginal decrescente do trabalho, qual afirmação descreve a firma competitiva?</p>
+<ol type="A">
+<li><p>O <span class="math inline">\(CMg\)</span> cai e a oferta pode decrescer.</p></li>
+<li><p>O <span class="math inline">\(CMg\)</span> sobe; seu trecho crescente acima do <span class="math inline">\(CMeV\)</span> constitui a oferta.</p></li>
+<li><p>O excedente do produtor equivale sempre à receita.</p></li>
+<li><p>Salários maiores deslocam a isoquanta e elevam a produção.</p></li>
+<li><p>Diluir custos fixos permite <span class="math inline">\(CMg\)</span> decrescente nessa situação.</p></li>
+</ol>
+<h3 id="questão-3-demanda-e-equilíbrio-de-mercado">Questão 3: Demanda e equilíbrio de mercado</h3>
+<p><strong>Questão original 43.</strong> A renda aumenta, o bem é normal e a oferta é crescente. Mantidas as demais condições, ocorre:</p>
+<ol type="A">
+<li><p>Expansão da demanda, com preço e quantidade maiores.</p></li>
+<li><p>Movimento e deslocamento simultâneos da demanda.</p></li>
+<li><p>Retração da demanda, preço menor e quantidade maior.</p></li>
+<li><p>Nenhuma alteração da demanda.</p></li>
+<li><p>Transformação do bem em inferior, reduzindo a demanda.</p></li>
+</ol>
+<h3 id="questão-4-quantidade-ótima-e-lucro">Questão 4: Quantidade ótima e lucro</h3>
+<p><strong>FGV, Receita Estadual do Paraná, Auditor Fiscal, 2025, tarde, tipo 1, questão original 2.</strong></p>
+<p>Uma firma competitiva vende a <span class="math inline">\(P=20\)</span> e tem custo <span class="math inline">\(CT(q)=50+5q+q^2\)</span>. Qual afirmação está correta?</p>
+<ol type="A">
+<li><p>O lucro máximo exige <span class="math inline">\(CMeT=P\)</span>.</p></li>
+<li><p>Maximizar o lucro exige <span class="math inline">\(CMg=CMeT\)</span>.</p></li>
+<li><p>A firma escolhe a produção pela condição <span class="math inline">\(CMg=P\)</span>.</p></li>
+<li><p>A concorrência elimina o lucro no curto prazo.</p></li>
+<li><p>A maior produção possível minimiza o custo médio.</p></li>
+</ol>
+<h3 id="questão-5-da-produção-ao-custo-total">Questão 5: Da produção ao custo total</h3>
+<p><strong>Cebraspe, Caesb, Analista de Suporte ao Negócio: Economista, 2025, questão original 34. Desafio quantitativo.</strong></p>
+<p>A tecnologia é <span class="math inline">\(q=5K^{2/3}L^{1/3}\)</span>. Cada unidade de capital custa <span class="math inline">\(0{,}02\)</span>; cada unidade de trabalho custa <span class="math inline">\(6\)</span>. No curto prazo, <span class="math inline">\(K=1.000\)</span>. Qual função representa o custo total?</p>
+<ol type="A">
+<li><p><span class="math inline">\(CT=10+(q/600)^3\)</span>.</p></li>
+<li><p><span class="math inline">\(CT=20+6(q/500)^3\)</span>.</p></li>
+<li><p><span class="math inline">\(CT=10+[6(q/800)]^3\)</span>.</p></li>
+<li><p><span class="math inline">\(CT=30+4(q/160)^3\)</span>.</p></li>
+<li><p><span class="math inline">\(CT=20+(q/160)^3\)</span>.</p></li>
+</ol>
+<h3 id="questão-6-aplicando-a-regra-de-oferta">Questão 6: Aplicando a regra de oferta</h3>
+<p><strong>Cebraspe, Caesb, Analista de Suporte ao Negócio: Economista, 2025, questão original 35. Desafio quantitativo.</strong></p>
+<p>Com os dados da questão anterior, a firma atua em concorrência perfeita e o preço é <span class="math inline">\(P=90\)</span>. Qual quantidade será ofertada no curto prazo?</p>
+<ol type="A">
+<li><p>15.000 unidades.</p></li>
+<li><p>20.000 unidades.</p></li>
+<li><p>25.000 unidades.</p></li>
+<li><p>30.000 unidades.</p></li>
+<li><p>35.000 unidades.</p></li>
+</ol>
+<p><strong>Apoio de cálculo acrescentado para a aula:</strong> a função de custo marginal correspondente é <span class="math inline">\(CMg(q)=18q^2/500^3\)</span>.</p>
+<h3 id="verdadeiro-ou-falso-questões-7-a-12">Verdadeiro ou falso: questões 7 a 12</h3>
+<p>Julgue cada afirmação separadamente. <strong>V corresponde a Certo (C)</strong> e <strong>F corresponde a Errado (E)</strong>, nomenclatura dos gabaritos do Cebraspe.</p>
+<h3 id="questão-7-características-da-concorrência-perfeita">Questão 7: Características da concorrência perfeita</h3>
+<p><strong>Cebraspe, FUB, Auditor, 2025, item original 108.</strong></p>
+<p>Muitos agentes, produto homogêneo e livre entrada caracterizam um mercado competitivo no qual nenhum participante isolado tem poder para determinar preços ou a quantidade total negociada.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="questão-8-demanda-da-firma-individual">Questão 8: Demanda da firma individual</h3>
+<p><strong>Cebraspe, FUB, Economista, 2018, item original 57.</strong></p>
+<p>A curva de demanda enfrentada por uma firma perfeitamente competitiva apresenta inclinação negativa.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="questão-9-custo-marginal-e-custos-médios">Questão 9: Custo marginal e custos médios</h3>
+<p><strong>Cebraspe, FUB, Economista, 2018, item original 54.</strong></p>
+<p>O crescimento do custo marginal implica, necessariamente, que os custos médios total e variável também estejam aumentando.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="questão-10-produtividade-e-escala">Questão 10: Produtividade e escala</h3>
+<p><strong>Cebraspe, FUB, Economista, 2018, item original 53.</strong></p>
+<p>A produtividade marginal decrescente de um fator basta para concluir que a tecnologia apresenta retornos decrescentes de escala.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="questão-11-permanecer-no-mercado">Questão 11: Permanecer no mercado</h3>
+<p><strong>Cebraspe, FUB, Economista, 2018, item original 55.</strong></p>
+<p>No longo prazo, permanecer no mercado é uma decisão ótima quando o preço cobre pelo menos o custo médio de produção.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="questão-12-lucro-econômico-no-longo-prazo">Questão 12: Lucro econômico no longo prazo</h3>
+<p><strong>Cebraspe, Funpresp-EXE, Analista de Previdência Complementar: Gestão de Investimentos e Riscos de Investimentos, 2025, item original 60.</strong></p>
+<p>Em concorrência perfeita, o equilíbrio de longo prazo não proporciona lucro econômico positivo às firmas.</p>
+<p><strong>( ) V / Certo  ( ) F / Errado</strong></p>
+<h3 id="gabarito-resumido">Gabarito resumido</h3>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Questão</th>
+<th style="text-align: center;">Resposta</th>
+<th style="text-align: center;">Questão</th>
+<th style="text-align: center;">Resposta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">V / C</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">F / E</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">9</td>
+<td style="text-align: center;">F / E</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">F / E</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">B</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">V / C</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">V / C</td>
+</tr>
+</tbody>
+</table>
+<h3 id="gabarito-resolvido">Gabarito resolvido</h3>
+<p><strong>1. Alternativa A.</strong> A firma aceita o preço de mercado, de modo que <span class="math inline">\(RMg=P\)</span>. Se estiver produzindo, ajusta a quantidade até <span class="math inline">\(P=CMg\)</span>, no trecho crescente do custo marginal. A produção só compensa quando a receita cobre o custo variável:</p>
+<p><span class="math display">\[
+RT\geq CV
+\quad\Longleftrightarrow\quad
+PQ\geq CV
+\quad\Longleftrightarrow\quad
+P\geq CMeV.
+\]</span></p>
+<p>Se <span class="math inline">\(P&lt;CMeV\)</span> na melhor alternativa de produção positiva, paralisar evita uma perda adicional. No ponto de fechamento, <span class="math inline">\(P=\min CMeV\)</span>, a firma fica indiferente entre produzir e paralisar. Os custos fixos permanecem nos dois casos.</p>
+<p>B confunde a decisão de curto prazo com o equilíbrio de longo prazo. C contraria <span class="math inline">\(RMg=P\)</span>. D indica que a última unidade custa mais do que rende. E trata a existência de custo fixo como motivo suficiente para fechar.</p>
+<p><strong>Aplicação numérica complementar, elaborada para a aula:</strong> suponha que, na quantidade ótima positiva, <span class="math inline">\(RT=80\)</span>, <span class="math inline">\(CV=60\)</span> e <span class="math inline">\(CF=50\)</span>.</p>
+<p><span class="math display">\[
+\pi_{\text{produzir}}=80-60-50=-30
+\qquad
+\pi_{\text{paralisar}}=-50.
+\]</span></p>
+<p>Produzir reduz o prejuízo em 20. Ter prejuízo não basta para justificar a paralisação.</p>
+<p><strong>2. Alternativa B.</strong> Mantido o salário, a queda da produtividade marginal faz cada unidade adicional exigir mais trabalho. Por isso, aumenta seu custo. Quando apenas o trabalho varia, podemos escrever:</p>
+<p><span class="math display">\[
+CMg=\frac{w}{PMg_L}.
+\]</span></p>
+<p>A firma oferece a quantidade em que <span class="math inline">\(P=CMg\)</span>, desde que cubra os custos variáveis. O trecho relevante de sua oferta acompanha, portanto, o <span class="math inline">\(CMg\)</span> crescente acima do mínimo do <span class="math inline">\(CMeV\)</span>.</p>
+<p>A inverte a relação entre produtividade e custo. C ignora os custos variáveis no cálculo do excedente do produtor. D confunde preço do insumo com tecnologia. E confunde a redução do custo fixo médio com a determinação do custo marginal.</p>
+<p><strong>3. Alternativa A.</strong> Como o bem é normal, renda maior aumenta a quantidade que os consumidores desejam comprar a cada preço. A curva de demanda se movimenta para a direita. Com a oferta crescente mantida, o novo equilíbrio apresenta preço e quantidade maiores.</p>
+<p>O aumento do preço gera um movimento <strong>ao longo da oferta</strong>. B mistura esse ajuste com o deslocamento da demanda. C e E invertem o efeito da renda sobre um bem normal. D desconsidera um determinante da demanda.</p>
+<p><strong>Ligação com o longo prazo:</strong> se houver livre entrada, firmas idênticas e custos dos insumos constantes, lucros positivos atraem novas firmas. A oferta se expande e o preço pode retornar ao mínimo do custo médio total. Essa é uma extensão do raciocínio da aula, não uma condição adicional da questão original.</p>
+<p><strong>4. Alternativa C.</strong> A firma recebe o preço por cada unidade adicional, portanto sua receita marginal é 20. O custo marginal é <span class="math inline">\(CMg=5+2q\)</span>, e a condição de escolha é:</p>
+<p><span class="math display">\[
+5+2q=20 \quad\Rightarrow\quad q^*=7{,}5.
+\]</span></p>
+<p><strong>Cálculo complementar para a aula:</strong> nessa quantidade,</p>
+<p><span class="math display">\[
+RT=20\times7{,}5=150,
+\qquad CT=50+37{,}5+56{,}25=143{,}75,
+\]</span></p>
+<p><span class="math display">\[
+\pi=150-143{,}75=6{,}25.
+\]</span></p>
+<p>Há lucro econômico positivo no curto prazo. A confunde lucro máximo com lucro nulo; B identifica o mínimo do custo médio; D generaliza para o curto prazo um resultado do equilíbrio de longo prazo; E ignora o custo das unidades adicionais. Como <span class="math inline">\(CMg\)</span> cresce e <span class="math inline">\(P&gt;CMeV=12{,}5\)</span>, produzir é a melhor decisão.</p>
+<p><strong>5. Alternativa B.</strong> O capital fixo gera <span class="math inline">\(CF=0{,}02\times1.000=20\)</span>. Substituindo o capital na função de produção:</p>
+<p><span class="math display">\[
+q=5\times1.000^{2/3}L^{1/3}=500L^{1/3}
+\quad\Rightarrow\quad L=(q/500)^3.
+\]</span></p>
+<p>O custo variável é a despesa com trabalho, <span class="math inline">\(CV=6L\)</span>. Logo,</p>
+<p><span class="math display">\[
+CT=CF+CV=20+6(q/500)^3.
+\]</span></p>
+<p>As opções A, C e D não preservam o custo fixo de 20; E não preserva a relação entre trabalho necessário e produção. A questão mostra como a tecnologia determina os custos usados na decisão de oferta.</p>
+<p><strong>6. Alternativa C.</strong> Usando <span class="math inline">\(P=CMg\)</span> no trecho crescente:</p>
+<p><span class="math display">\[
+90=\frac{18q^2}{500^3}
+\quad\Rightarrow\quad
+q^2=\frac{90\times125.000.000}{18}=625.000.000
+\quad\Rightarrow\quad q^*=25.000.
+\]</span></p>
+<p><strong>Verificação complementar de viabilidade:</strong></p>
+<p><span class="math display">\[
+CMeV=\frac{6(q/500)^3}{q}=\frac{6q^2}{500^3}.
+\]</span></p>
+<p>Em <span class="math inline">\(q=25.000\)</span>, o custo variável médio é 30. Como <span class="math inline">\(P=90&gt;30\)</span>, a receita cobre os custos variáveis. A e B ainda permitem expandir a produção com <span class="math inline">\(P&gt;CMg\)</span>; D e E incluem unidades cujo custo marginal supera o preço.</p>
+<p><strong>7. Verdadeiro / Certo.</strong> Cada agente representa uma parcela pequena do mercado e toma o preço como dado. A firma escolhe sua própria quantidade, mas não controla o resultado agregado. Produtos homogêneos e livre entrada completam as características descritas. Não se deve interpretar o item como uma proibição de a firma decidir quanto produzir.</p>
+<p><strong>8. Falso / Errado.</strong> A demanda da <strong>firma individual</strong> é horizontal ao preço de mercado. Uma unidade extra pode ser vendida pelo mesmo preço, portanto <span class="math inline">\(P=RMe=RMg\)</span>. A curva de demanda <strong>do mercado</strong> é que normalmente apresenta inclinação negativa. A afirmação confunde esses dois níveis de análise.</p>
+<p><strong>9. Falso / Errado.</strong> Para saber se uma média aumenta, é preciso comparar o custo da unidade adicional com a média atual. Enquanto <span class="math inline">\(CMg&lt;CMeT\)</span>, o custo médio total cai, mesmo que o custo marginal já esteja subindo. A mesma lógica vale para <span class="math inline">\(CMeV\)</span>. O custo marginal cruza cada curva de custo médio em seu mínimo, no formato usual em U.</p>
+<p><strong>Exemplo complementar:</strong> se a média é 10, uma unidade adicional com custo 8 reduz essa média, ainda que seu custo seja maior que o da unidade anterior, que custou 7.</p>
+<p><strong>10. Falso / Errado.</strong> Produtividade marginal analisa a variação de <strong>um</strong> fator, mantendo os demais fixos. Retornos de escala analisam o aumento proporcional de <strong>todos</strong> os fatores. Uma coisa não determina a outra.</p>
+<p><strong>Contraexemplo complementar:</strong> em <span class="math inline">\(q=\sqrt{KL}\)</span>, aumentar apenas <span class="math inline">\(L\)</span> com <span class="math inline">\(K\)</span> fixo gera incrementos cada vez menores de produção. Entretanto,</p>
+<p><span class="math display">\[
+f(2K,2L)=\sqrt{4KL}=2\sqrt{KL}=2f(K,L),
+\]</span></p>
+<p>portanto os retornos de escala são constantes.</p>
+<p><strong>11. Verdadeiro / Certo.</strong> No longo prazo, a firma deve cobrir todos os custos econômicos. Avaliada a melhor quantidade de produção, <span class="math inline">\(P\geq CMeT\)</span> equivale a receita pelo menos igual ao custo total. Se <span class="math inline">\(P&lt;CMeT\)</span> em qualquer alternativa viável, sair evita prejuízos persistentes. Na igualdade, o lucro econômico é zero e permanecer é compatível com a remuneração dos fatores, inclusive seus custos de oportunidade.</p>
+<p><strong>12. Verdadeiro / Certo.</strong> No modelo competitivo com livre entrada e saída, lucros positivos atraem firmas, ampliam a oferta e pressionam o preço para baixo; prejuízos provocam saída e o ajuste contrário. No equilíbrio de longo prazo do modelo de firmas idênticas:</p>
+<p><span class="math display">\[
+P=CMg=\min CMeT \quad\text{e}\quad \pi_{\text{econômico}}=0.
+\]</span></p>
+<p>Lucro econômico nulo não significa receita nula ou ausência de remuneração do empresário. O custo econômico inclui a melhor alternativa de uso de seu trabalho e de seu capital. Por isso, o lucro contábil pode ser positivo.</p>
+<h3 id="fontes">Fontes</h3>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/analista-legislativo-economista-cns207-tipo-1.pdf">Prova oficial da FGV, questões 43, 49 e 50</a>.</p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabarito-definitivo-ale-go.pdf">Gabarito definitivo da FGV, página 7: 43-A, 49-B e 50-A</a>.</p>
+<p><a href="https://conhecimento.fgv.br/sites/default/files/concursos/auditor-fiscal-tardecns102-tipo-1.pdf">FGV, Receita Estadual do Paraná, Auditor Fiscal, tarde, tipo 1, questão 2</a>. <a href="https://conhecimento.fgv.br/sites/default/files/concursos/gabdefinitivo-seappr-auditor-fiscal.pdf">Gabarito definitivo retificado: 2-C, tipo 1, turno da tarde</a>.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/MATRIZ_039_CAESB_016_00_Com%20Justificativas_OK.pdf">Cebraspe, Caesb, Economista, questões 34 e 35, prova com justificativas</a>. <a href="https://cdn.cebraspe.org.br/concursos/CAESB_24/arquivos/Gab_Definitivo_MATRIZ_039_CAESB_016_00.pdf">Gabarito definitivo: 34-B e 35-C, aplicação em 22/06/2025</a>.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/FUB_25/arquivos/088_FUB_003_01.pdf">Cebraspe, FUB, Auditor, 2025, item 108</a>. <a href="https://cdn.cebraspe.org.br/concursos/FUB_25/arquivos/Gab_Definitivo_088_FUB_003_01.pdf">Gabarito definitivo: 108-C</a>.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/MATRIZ_433_FUB003__PAG_3.PDF">Cebraspe, FUB, Economista, 2018, itens 53, 54, 55 e 57</a>. <a href="https://cdn.cebraspe.org.br/concursos/FUB_18/arquivos/19.GAB_DEFINITIVO_MATRIZ_433_FUB003__PAG_3.PDF">Gabarito definitivo: 53-E, 54-E, 55-C e 57-E</a>.</p>
+<p><a href="https://cdn.cebraspe.org.br/concursos/FUNPRESP_24_EXE/arquivos/040_FUNPRESPEXE_005_01.PDF">Cebraspe, Funpresp-EXE, cargo 5, item 60</a>. <a href="https://cdn.cebraspe.org.br/concursos/FUNPRESP_24_EXE/arquivos/Gab_Definitivo_040_FUNPRESPEXE_005_01.PDF">Gabarito definitivo: 60-C, aplicação em 09/02/2025</a>.</p>
+<p><strong>Referência teórica:</strong> Mankiw, <em>Princípios de Economia</em>, 8ª ed., capítulo 14, páginas 267 a 286 do livro, correspondentes às páginas 296 a 315 do PDF fornecido.</p>
+<p><a href="#/menu">← Menu</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Aula_9_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Aula_9_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Aula_9_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Aula_9_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
