@@ -17,6 +17,8 @@ website:
         contents:
           - text: "Introdução à Economia"
             href: introducao-economia/index.qmd
+      - text: "Artigos"
+        href: artigos/index.qmd
 
 format:
   html:

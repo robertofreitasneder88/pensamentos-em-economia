@@ -150,7 +150,7 @@ resources:
       <p class="perfil-area">Pensamentos em economia</p>
       <h1 id="nome-professor">Roberto de Freitas Neder</h1>
       <p class="perfil-cargo">Professor de Introdução à Economia</p>
-      <p class="perfil-resumo">Neste espaço, compartilho aulas e materiais de apoio ao estudo da economia.</p>
+      <p class="perfil-resumo">Neste espaço, compartilho aulas, artigos e materiais de apoio ao estudo da economia.</p>
 
       <ul class="perfil-contatos" aria-label="Perfis acadêmicos e profissionais">
         <li><a class="perfil-link" href="http://lattes.cnpq.br/1377987141571711" target="_blank" rel="noopener noreferrer" aria-label="Currículo Lattes, abre em nova aba">Lattes</a></li>
@@ -164,6 +164,12 @@ resources:
     <h2 id="titulo-curso">Introdução à Economia</h2>
     <p>Acesse o cronograma, os slides e os materiais organizados por unidade.</p>
     <a class="curso-link" href="introducao-economia/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
+  </section>
+
+  <section class="inicio-curso" aria-labelledby="titulo-artigos">
+    <h2 id="titulo-artigos">Artigos</h2>
+    <p>Textos de minha autoria e uma seleção de leituras que considero interessante.</p>
+    <a class="curso-link" href="artigos/index.html">Explorar artigos <span aria-hidden="true">&rarr;</span></a>
   </section>
 </div>
 ```

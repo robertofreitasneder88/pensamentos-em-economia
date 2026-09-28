@@ -1,0 +1,85 @@
+---
+title: "Artigos"
+description: "Artigos de Roberto de Freitas Neder e uma seleção de leituras recomendadas."
+lang: pt-BR
+toc: true
+toc-title: "Nesta página"
+toc-depth: 2
+resources:
+  - arquivos/*.pdf
+---
+
+Este espaço reúne textos de minha autoria e leituras que considero relevantes para ampliar o debate e a reflexão.
+
+## Artigos de minha autoria {#autoria}
+
+Publicações de minha autoria, incluindo trabalhos em coautoria.
+
+### Além do teto de vidro: trajetórias institucionais e liderança na Universidade de Brasília
+
+**Autoria:** June Alves de Arruda; Roberto de Freitas Neder; Guilherme Viana Ferreira; Andrea Felippe Cabello.
+
+Investiga a participação de homens e mulheres nos cargos de gestão da UnB, com base nos servidores ativos em dezembro de 2025. Examina como gênero, área de atuação, carreira e trajetória institucional se relacionam com o acesso à liderança, distinguindo segregação vertical e horizontal.
+
+[Abrir PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+[Baixar PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-secondary .btn-sm download="alem-do-teto-de-vidro.pdf"}
+
+---
+
+### Avaliação econômica de universidades públicas: uma análise de custo-benefício baseada em registros administrativos
+
+**Autoria:** Roberto de Freitas Neder; Andrea Felippe Cabello; Guilherme Viana Ferreira.
+
+Relaciona registros acadêmicos da UnB à RAIS de 2014 a 2023 para estimar diferenciais de rendimento associados à formação e compará-los aos custos públicos da instituição. Discute como a taxa de desconto, a definição dos custos e a inserção dos egressos no serviço público influenciam a relação benefício-custo.
+
+[Abrir PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+[Baixar PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-secondary .btn-sm download="avaliacao-economica-universidades-publicas.pdf"}
+
+---
+
+### O IPEA como núcleo institucional de um programa de pesquisa científica em economia aplicada: uma abordagem lakatosiana
+
+**Autoria:** Roberto de Freitas Neder; Andrea Felippe Cabello; Guilherme Viana Ferreira.
+
+Analisa a trajetória do IPEA à luz da metodologia dos programas de pesquisa de Imre Lakatos. Discute o potencial de agendas específicas do Instituto para articular continuidade teórica, aperfeiçoamento de métodos e avaliação de políticas públicas, sem estender esse diagnóstico à instituição como um todo.
+
+[Abrir PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+[Baixar PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-secondary .btn-sm download="ipea-abordagem-lakatosiana.pdf"}
+
+<!--
+MODELO PARA ADICIONAR OUTRO ARTIGO DE AUTORIA
+Copie o modelo a seguir para FORA deste comentário e preencha os campos.
+
+### Título do artigo
+
+**Autoria:** nome dos autores. **Publicação:** revista ou instituição, ano.
+
+Breve apresentação do artigo em duas ou três frases.
+
+[Ler artigo](COLE_O_LINK_AQUI){target="_blank" rel="noopener noreferrer"}
+
+Se preferir disponibilizar um PDF, salve-o na pasta artigos/arquivos do
+projeto e use, no lugar do link acima:
+
+[Baixar artigo em PDF](arquivos/nome-do-artigo.pdf){target="_blank"}
+-->
+
+## Leituras recomendadas {#leituras}
+
+Uma seleção de artigos de outros autores, acompanhados de uma breve indicação de sua relevância.
+
+*Em breve, as primeiras leituras estarão disponíveis aqui.*
+
+<!--
+MODELO PARA ADICIONAR UMA LEITURA RECOMENDADA
+Quando adicionar a primeira indicação, retire a mensagem "Em breve" acima.
+Copie o modelo a seguir para FORA deste comentário e preencha os campos.
+
+### Título do artigo
+
+**Autoria:** nome dos autores. **Publicação:** revista ou instituição, ano.
+
+Uma breve explicação do tema e do motivo da recomendação.
+
+[Ler artigo](COLE_O_LINK_AQUI){target="_blank" rel="noopener noreferrer"}
+-->
