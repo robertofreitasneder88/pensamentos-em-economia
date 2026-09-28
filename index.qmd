@@ -1,4 +1,169 @@
 ---
 title: ""
+pagetitle: "Roberto de Freitas Neder | Pensamentos em economia"
 title-block-banner: false
+toc: false
+lang: pt-BR
+resources:
+  - pagina_inicial/roberto-neder.png
 ---
+
+```{=html}
+<style>
+/* Estilos restritos à apresentação desta página. */
+.inicio-professor {
+  --perfil-tinta: #183747;
+  --perfil-secundaria: #4c6170;
+  --perfil-acento: #186780;
+  --perfil-borda: #d7e2e7;
+  max-width: 980px;
+  margin: 1.5rem auto 3rem;
+  color: var(--perfil-tinta);
+}
+.inicio-professor .perfil {
+  display: grid;
+  grid-template-columns: 176px minmax(0, 1fr);
+  align-items: center;
+  gap: 2.25rem;
+  padding: 1.5rem 0 2.5rem;
+  border-bottom: 1px solid var(--perfil-borda);
+}
+.inicio-professor .perfil-foto {
+  width: 176px;
+  height: 176px;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 30%;
+  border: 5px solid #edf4f6;
+}
+.inicio-professor .perfil-area {
+  margin: 0 0 0.7rem;
+  color: var(--perfil-acento);
+  font-size: 0.77rem;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+.inicio-professor h1 {
+  margin: 0 0 0.75rem;
+  color: var(--perfil-tinta);
+  font-size: clamp(1.8rem, 3.6vw, 2.45rem);
+  font-weight: 600;
+  line-height: 1.14;
+  letter-spacing: -0.035em;
+  overflow-wrap: break-word;
+}
+.inicio-professor .perfil-cargo {
+  margin: 0 0 0.85rem;
+  color: var(--perfil-secundaria);
+  font-size: 1rem;
+}
+.inicio-professor .perfil-resumo {
+  max-width: 38rem;
+  margin: 0 0 1.35rem;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+.inicio-professor .perfil-contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.inicio-professor .perfil-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0.45rem 0.85rem;
+  box-sizing: border-box;
+  border: 1px solid var(--perfil-borda);
+  border-radius: 6px;
+  color: var(--perfil-acento);
+  font-size: 0.86rem;
+  text-decoration: none;
+}
+.inicio-professor a.perfil-link:hover {
+  background: #edf4f6;
+  border-color: var(--perfil-acento);
+}
+.inicio-professor a:focus-visible {
+  outline: 3px solid var(--perfil-acento);
+  outline-offset: 4px;
+}
+.inicio-professor .inicio-curso {
+  margin-top: 2rem;
+  padding: 1.4rem 1.5rem;
+  border: 1px solid var(--perfil-borda);
+  border-radius: 10px;
+  background: #f6f9fa;
+}
+.inicio-professor .inicio-curso h2 {
+  margin: 0 0 0.65rem;
+  padding: 0;
+  border: 0;
+  font-size: 1.35rem;
+  color: var(--perfil-tinta);
+}
+.inicio-professor .inicio-curso p {
+  margin: 0 0 1rem;
+  color: var(--perfil-secundaria);
+  line-height: 1.6;
+}
+.inicio-professor .curso-link {
+  display: inline-block;
+  padding: 0.65rem 1rem;
+  border-radius: 6px;
+  background: var(--perfil-acento);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+.inicio-professor .curso-link:hover {
+  background: #124f63;
+  color: #fff;
+}
+@media (max-width: 680px) {
+  .inicio-professor { margin-top: 0.75rem; }
+  .inicio-professor .perfil {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .inicio-professor .perfil-foto { margin: 0 auto; }
+  .inicio-professor .perfil-contatos { justify-content: center; }
+  .inicio-professor .inicio-curso { padding: 1.25rem; }
+}
+</style>
+
+<div class="inicio-professor">
+  <section class="perfil" aria-labelledby="nome-professor">
+    <img class="perfil-foto" src="pagina_inicial/roberto-neder.png"
+         alt="Retrato de Roberto de Freitas Neder"
+         width="176" height="176" decoding="async" fetchpriority="high">
+
+    <div class="perfil-texto">
+      <p class="perfil-area">Pensamentos em economia</p>
+      <h1 id="nome-professor">Roberto de Freitas Neder</h1>
+      <p class="perfil-cargo">Professor de Introdução à Economia</p>
+      <p class="perfil-resumo">Neste espaço, compartilho aulas e materiais de apoio ao estudo da economia.</p>
+
+      <ul class="perfil-contatos" aria-label="Perfis acadêmicos e profissionais">
+        <li><a class="perfil-link" href="http://lattes.cnpq.br/1377987141571711" target="_blank" rel="noopener noreferrer" aria-label="Currículo Lattes, abre em nova aba">Lattes</a></li>
+        <li><a class="perfil-link" href="https://orcid.org/0009-0000-3772-2259" target="_blank" rel="noopener noreferrer" aria-label="ORCID, abre em nova aba">ORCID</a></li>
+        <li><a class="perfil-link" href="https://www.linkedin.com/in/rfnperito/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn, abre em nova aba">LinkedIn</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="inicio-curso" aria-labelledby="titulo-curso">
+    <h2 id="titulo-curso">Introdução à Economia</h2>
+    <p>Acesse o cronograma, os slides e os materiais organizados por unidade.</p>
+    <a class="curso-link" href="introducao-economia/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
+  </section>
+</div>
+```
