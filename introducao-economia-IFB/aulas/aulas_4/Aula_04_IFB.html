@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="Aula_04_IFB_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Aula_04_IFB_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Aula_04_IFB_files/libs/quarto-html/popper.min.js"></script>
+<script src="Aula_04_IFB_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Aula_04_IFB_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Aula_04_IFB_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Aula_04_IFB_files/libs/quarto-html/quarto-syntax-highlighting-845c23b38eaddc0f92fda52bfe77a8c8.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.36">
+
+  <meta name="author" content="Prof.&nbsp;Roberto de Freitas Neder">
+  <title>Introdução à Economia</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="Aula_04_IFB_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="Aula_04_IFB_files/libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="Aula_04_IFB_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="estilo.css">
+  <link href="Aula_04_IFB_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="Aula_04_IFB_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="Aula_04_IFB_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="Aula_04_IFB_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="quarto-title-block center">
+  <h1 class="title">Introdução à Economia</h1>
+  <p class="subtitle">Aula 4 — Custos, firma competitiva e estruturas de mercado</p>
+
+<div class="quarto-title-authors">
+<div class="quarto-title-author">
+<div class="quarto-title-author-name">
+Prof.&nbsp;Roberto de Freitas Neder 
+</div>
+</div>
+</div>
+
+</section>
+<section id="menu" class="slide level2 smaller scrollable">
+<h2>Aula 4 — Custos e estruturas de mercado</h2>
+<p><a href="#/s0">Objetivos da aula</a></p>
+<h3 id="capítulo-13-os-custos-de-produção">Capítulo 13 — Os custos de produção</h3>
+<p><a href="#/s1">1. Lucro e custo de oportunidade</a></p>
+<p><a href="#/s2">2. Produção e produto marginal</a></p>
+<p><a href="#/s3">3. Custos fixos e variáveis</a></p>
+<p><a href="#/s4">4. Custos médios e custo marginal</a></p>
+<p><a href="#/s5">5. Curvas de custo</a></p>
+<p><a href="#/s6">6. Curto prazo e longo prazo</a></p>
+<h3 id="capítulo-14-firmas-em-mercados-competitivos">Capítulo 14 — Firmas em mercados competitivos</h3>
+<p><a href="#/s7">7. Mercado competitivo</a></p>
+<p><a href="#/s8">8. Quanto produzir?</a></p>
+<p><a href="#/s9">9. Produzir ou suspender no curto prazo?</a></p>
+<p><a href="#/s10">10. Entrada e saída no longo prazo</a></p>
+<p><a href="#/s11">11. Lucro econômico zero não significa trabalhar de graça</a></p>
+<h3 id="resumão-capítulos-15-16-e-17">Resumão — Capítulos 15, 16 e 17</h3>
+<p><a href="#/s12">12. Estruturas de mercado: o mapa geral</a></p>
+<p><a href="#/s13">13. Monopólio</a></p>
+<p><a href="#/s14">14. Monopólio: quantidade e preço</a></p>
+<p><a href="#/s15">15. Concorrência perfeita × monopólio</a></p>
+<p><a href="#/s16">16. Competição monopolística</a></p>
+<p><a href="#/s17">17. Competição monopolística no longo prazo</a></p>
+<p><a href="#/s18">18. Oligopólio</a></p>
+<p><a href="#/s19">19. Cartel e incentivo para desviar</a></p>
+<p><a href="#/s20">20. Dilema dos prisioneiros e concorrência</a></p>
+<p><a href="#/s21">21. Quatro estruturas para guardar</a></p>
+<h3 id="síntese">Síntese</h3>
+<p><a href="#/s22">22. Síntese da aula</a></p>
+</section>
+<section id="s0" class="slide level2 smaller scrollable">
+<h2>Objetivos da aula</h2>
+<p>Ao final desta aula, você deverá ser capaz de:</p>
+<ul>
+<li>distinguir custos explícitos e implícitos;</li>
+<li>interpretar custos fixos, variáveis, médios e marginais;</li>
+<li>compreender a decisão de produção de uma firma competitiva;</li>
+<li>distinguir curto e longo prazo;</li>
+<li>reconhecer as principais estruturas de mercado;</li>
+<li>explicar, de forma introdutória, monopólio, competição monopolística e oligopólio.</li>
+</ul>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s1" class="slide level2 smaller scrollable">
+<h2>1. Lucro e custo de oportunidade</h2>
+<p>A firma busca transformar recursos em bens e serviços e precisa comparar receitas e custos.</p>
+<p><span class="math display">\[\text{Lucro}=\text{Receita Total}-\text{Custo Total}\]</span></p>
+<p>Para o economista, o custo inclui <strong>custos de oportunidade</strong>.</p>
+<p><strong>Custos explícitos:</strong> exigem pagamento monetário.</p>
+<p><strong>Custos implícitos:</strong> não exigem pagamento, mas representam oportunidades abandonadas.</p>
+<p>Por isso, <strong>lucro econômico</strong> e <strong>lucro contábil</strong> podem ser diferentes.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s2" class="slide level2 smaller scrollable">
+<h2>2. Produção e produto marginal</h2>
+<p>A <strong>função de produção</strong> relaciona a quantidade de insumos utilizada à quantidade produzida.</p>
+<p>O <strong>produto marginal</strong> mede quanto a produção aumenta quando acrescentamos uma unidade de determinado insumo.</p>
+<p>Em muitas situações aparece o <strong>produto marginal decrescente</strong>:</p>
+<blockquote>
+<p>mantendo outros fatores constantes, unidades adicionais de um insumo acrescentam cada vez menos à produção.</p>
+</blockquote>
+<p>Essa ideia ajuda a explicar por que o custo marginal pode crescer.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s3" class="slide level2 smaller scrollable">
+<h2>3. Custos fixos e variáveis</h2>
+<p><strong>Custo fixo (CF):</strong> não varia com a quantidade produzida no período analisado.</p>
+<p>Exemplos didáticos: aluguel de uma instalação ou determinado contrato fixo.</p>
+<p><strong>Custo variável (CV):</strong> varia com a produção.</p>
+<p>Exemplos: matérias-primas e parte dos gastos com trabalho.</p>
+<p><span class="math display">\[CT=CF+CV\]</span></p>
+<p>A classificação depende do <strong>horizonte de tempo</strong> considerado.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s4" class="slide level2 smaller scrollable">
+<h2>4. Custos médios e custo marginal</h2>
+<p><span class="math display">\[CMeT=\frac{CT}{Q}\]</span></p>
+<p><span class="math display">\[CMeV=\frac{CV}{Q}\]</span></p>
+<p><span class="math display">\[CMg=\frac{\Delta CT}{\Delta Q}\]</span></p>
+<p>O <strong>custo médio total</strong> informa o custo por unidade.</p>
+<p>O <strong>custo marginal</strong> informa quanto o custo total aumenta ao produzir uma unidade adicional.</p>
+<div title="Relação importante">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Relação importante</strong></p>
+</div>
+<div class="callout-content">
+<p>Quando o CMg está abaixo do custo médio, ele puxa a média para baixo. Quando está acima, puxa a média para cima.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s5" class="slide level2 smaller scrollable">
+<h2>5. Curvas de custo</h2>
+<p><img src="images/curvas_custo.png" style="height:440px;width:auto;max-width:88%;object-fit:contain;display:block;margin:auto;"></p>
+<p>No modelo usual:</p>
+<ul>
+<li>o CMg aumenta após determinado ponto;</li>
+<li>o CMeT tem formato de U;</li>
+<li>o CMg cruza o CMeT em seu ponto mínimo.</li>
+</ul>
+<p>A escala em que o CMeT é mínimo é chamada de <strong>escala eficiente</strong>.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s6" class="slide level2 smaller scrollable">
+<h2>6. Curto prazo e longo prazo</h2>
+<p>No <strong>curto prazo</strong>, alguns fatores permanecem fixos.</p>
+<p>No <strong>longo prazo</strong>, a firma possui maior capacidade de ajustar seus fatores e sua escala.</p>
+<p>Podem existir:</p>
+<ul>
+<li><strong>economias de escala:</strong> custo médio de longo prazo diminui quando a produção aumenta;</li>
+<li><strong>retornos constantes de escala:</strong> custo médio permanece aproximadamente constante;</li>
+<li><strong>deseconomias de escala:</strong> custo médio aumenta com a escala.</li>
+</ul>
+<p>Não significa que todo custo necessariamente cai no longo prazo.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s7" class="slide level2 smaller scrollable">
+<h2>7. Mercado competitivo</h2>
+<p>No modelo de concorrência perfeita:</p>
+<ul>
+<li>existem muitos compradores e vendedores;</li>
+<li>os produtos são essencialmente idênticos;</li>
+<li>cada firma individual tem impacto desprezível sobre o preço.</li>
+</ul>
+<p>A firma é <strong>tomadora de preço</strong>.</p>
+<p>Para a firma competitiva:</p>
+<p><span class="math display">\[P=RMe=RMg\]</span></p>
+<p>A livre entrada e saída torna-se especialmente importante para analisar o longo prazo.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s8" class="slide level2 smaller scrollable">
+<h2>8. Quanto produzir?</h2>
+<p>A regra geral de maximização de lucro é:</p>
+<p><span class="math display">\[RMg=CMg\]</span></p>
+<p>Na concorrência perfeita:</p>
+<p><span class="math display">\[RMg=P\]</span></p>
+<p>Logo:</p>
+<p><span class="math display">\[P=CMg\]</span></p>
+<p><img src="images/firma_competitiva.png" style="height:390px;width:auto;max-width:86%;object-fit:contain;display:block;margin:auto;"></p>
+<p>Se RMg &gt; CMg, aumentar a produção eleva o lucro. Se CMg &gt; RMg, reduzir a produção melhora o resultado.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s9" class="slide level2 smaller scrollable">
+<h2>9. Produzir ou suspender no curto prazo?</h2>
+<p>Encontrar <span class="math inline">\(P=CMg\)</span> responde <strong>quanto produzir</strong>, mas ainda precisamos perguntar se vale a pena operar.</p>
+<p>No curto prazo, os custos fixos já existem.</p>
+<p>A firma suspende temporariamente a produção quando:</p>
+<p><span class="math display">\[P&lt;CMeV\]</span></p>
+<p>Se:</p>
+<p><span class="math display">\[CMeV\leq P&lt;CMeT\]</span></p>
+<p>a firma pode continuar produzindo no curto prazo mesmo apresentando prejuízo, pois cobre os custos variáveis e parte dos fixos.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s10" class="slide level2 smaller scrollable">
+<h2>10. Entrada e saída no longo prazo</h2>
+<p>No longo prazo, a firma pode sair do mercado.</p>
+<p>Se o preço não cobre o custo médio total, há incentivo à saída.</p>
+<p>Com firmas semelhantes e livre entrada e saída:</p>
+<p><strong>lucros → entrada de firmas → aumento da oferta</strong></p>
+<p><strong>prejuízos → saída de firmas → redução da oferta</strong></p>
+<p>No equilíbrio competitivo usual de longo prazo:</p>
+<p><span class="math display">\[P=RMg=CMg=\min CMeT\]</span></p>
+<p>e o <strong>lucro econômico é zero</strong>.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s11" class="slide level2 smaller scrollable">
+<h2>11. Lucro econômico zero não significa trabalhar de graça</h2>
+<p>O custo econômico inclui também os custos de oportunidade do proprietário.</p>
+<p>Portanto, <strong>lucro econômico zero</strong> significa que a receita cobre:</p>
+<ul>
+<li>custos monetários;</li>
+<li>remuneração normal dos recursos;</li>
+<li>oportunidades abandonadas.</li>
+</ul>
+<p>Uma empresa pode apresentar lucro contábil positivo e lucro econômico igual a zero.</p>
+<p>Essa distinção conecta diretamente os capítulos 13 e 14.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s12" class="slide level2 smaller scrollable">
+<h2>12. Estruturas de mercado: o mapa geral</h2>
+<p><img src="images/estruturas_mercado.png" style="height:260px;width:auto;max-width:94%;object-fit:contain;display:block;margin:auto;"></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estrutura</th>
+<th style="text-align: right;">Vendedores</th>
+<th>Característica central</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Concorrência perfeita</td>
+<td style="text-align: right;">Muitos</td>
+<td>Produto homogêneo; firma aceita o preço</td>
+</tr>
+<tr class="even">
+<td>Competição monopolística</td>
+<td style="text-align: right;">Muitos</td>
+<td>Produto diferenciado</td>
+</tr>
+<tr class="odd">
+<td>Oligopólio</td>
+<td style="text-align: right;">Poucos</td>
+<td>Interdependência estratégica</td>
+</tr>
+<tr class="even">
+<td>Monopólio</td>
+<td style="text-align: right;">Um</td>
+<td>Barreiras à entrada e ausência de substituto próximo</td>
+</tr>
+</tbody>
+</table>
+<p>O restante da aula é um <strong>resumo introdutório</strong> dos capítulos 15, 16 e 17.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s13" class="slide level2 smaller scrollable">
+<h2>13. Monopólio</h2>
+<p>Um <strong>monopólio</strong> possui um único vendedor no mercado relevante e é protegido por barreiras à entrada.</p>
+<p>As barreiras podem estar associadas, por exemplo, ao controle de um recurso, decisões governamentais ou características de monopólio natural.</p>
+<p>O monopolista possui poder de mercado, mas não pode escolher livremente qualquer combinação de preço e quantidade: ele continua limitado pela <strong>demanda</strong>.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s14" class="slide level2 smaller scrollable">
+<h2>14. Monopólio: quantidade e preço</h2>
+<p>A regra de maximização continua sendo:</p>
+<p><span class="math display">\[RMg=CMg\]</span></p>
+<p>Mas, no monopólio:</p>
+<p><span class="math display">\[P&gt;RMg\]</span></p>
+<p>O procedimento é:</p>
+<p><strong>1. Encontrar a quantidade em <span class="math inline">\(RMg=CMg\)</span>.</strong></p>
+<p><strong>2. Subir até a curva de demanda para encontrar o preço.</strong></p>
+<p><img src="images/monopolio.png" style="height:390px;width:auto;max-width:86%;object-fit:contain;display:block;margin:auto;"></p>
+<div title="Erro comum">
+<div class="callout callout-warning callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Erro comum</strong></p>
+</div>
+<div class="callout-content">
+<p>O cruzamento de RMg e CMg determina a <strong>quantidade</strong>, não o preço do monopolista.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s15" class="slide level2 smaller scrollable">
+<h2>15. Concorrência perfeita × monopólio</h2>
+<h3 id="concorrência-perfeita">Concorrência perfeita</h3>
+<p><span class="math display">\[P=RMg=CMg\]</span></p>
+<p>A firma individual aceita o preço.</p>
+<h3 id="monopólio">Monopólio</h3>
+<p><span class="math display">\[P&gt;RMg=CMg\]</span></p>
+<p>O monopolista restringe a quantidade em relação à referência competitiva e cobra preço maior.</p>
+<p>Isso pode gerar <strong>perda de peso morto</strong>, pois algumas trocas potencialmente vantajosas deixam de ocorrer.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s16" class="slide level2 smaller scrollable">
+<h2>16. Competição monopolística</h2>
+<p>A <strong>competição monopolística</strong> combina:</p>
+<ol type="1">
+<li>muitos vendedores;</li>
+<li>produtos diferenciados;</li>
+<li>livre entrada e saída.</li>
+</ol>
+<p>Exemplos didáticos podem incluir restaurantes, roupas ou serviços diferenciados, dependendo de como o mercado é definido.</p>
+<p>Cada firma enfrenta uma demanda descendente porque seu produto não é perfeitamente idêntico ao dos concorrentes.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s17" class="slide level2 smaller scrollable">
+<h2>17. Competição monopolística no longo prazo</h2>
+<p>No curto prazo, a firma pode obter lucro ou prejuízo.</p>
+<p>Com livre entrada e saída, o número de firmas se ajusta.</p>
+<p>No equilíbrio de longo prazo do modelo:</p>
+<p><span class="math display">\[P=CMeT&gt;CMg=RMg\]</span></p>
+<p>O <strong>lucro econômico é zero</strong>, mas o preço continua acima do custo marginal.</p>
+<p>Assim, lucro zero não transforma a competição monopolística em concorrência perfeita.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s18" class="slide level2 smaller scrollable">
+<h2>18. Oligopólio</h2>
+<p>Um <strong>oligopólio</strong> possui poucos vendedores relevantes.</p>
+<p>A palavra-chave é <strong>interdependência estratégica</strong>:</p>
+<blockquote>
+<p>a decisão de uma firma afeta as outras, e cada firma precisa considerar as possíveis reações dos rivais.</p>
+</blockquote>
+<p>Preços, quantidades, publicidade e entrada podem depender das decisões dos concorrentes.</p>
+<p>A <strong>teoria dos jogos</strong> ajuda a estudar essas situações.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s19" class="slide level2 smaller scrollable">
+<h2>19. Cartel e incentivo para desviar</h2>
+<p>Firmas oligopolistas podem ter interesse coletivo em reduzir a produção e elevar o preço.</p>
+<p>Um acordo de coordenação pode formar um <strong>cartel</strong>.</p>
+<p>Mas existe um problema:</p>
+<blockquote>
+<p>aquilo que é melhor para o grupo pode não ser a melhor decisão individual de cada participante.</p>
+</blockquote>
+<p>Depois que o cartel define uma quantidade, cada firma pode ter incentivo para vender um pouco mais.</p>
+<p>Esse conflito ajuda a explicar por que a cooperação pode ser difícil de sustentar.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s20" class="slide level2 smaller scrollable">
+<h2>20. Dilema dos prisioneiros e concorrência</h2>
+<p>O <strong>dilema dos prisioneiros</strong> mostra uma situação em que decisões individualmente racionais podem produzir um resultado coletivo pior para os participantes.</p>
+<p>No oligopólio, ele ajuda a compreender por que:</p>
+<ul>
+<li>as firmas podem desejar cooperar;</li>
+<li>cada uma pode ter incentivo para romper o acordo;</li>
+<li>a concorrência pode reaparecer mesmo quando a cooperação aumentaria o lucro conjunto.</li>
+</ul>
+<p>Jogos repetidos podem alterar esses incentivos.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s21" class="slide level2 smaller scrollable">
+<h2>21. Quatro estruturas para guardar</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 18%">
+<col style="width: 25%">
+<col style="width: 18%">
+<col style="width: 18%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Estrutura</th>
+<th style="text-align: right;">Nº de vendedores</th>
+<th>Produto</th>
+<th>Entrada</th>
+<th>Decisão central</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Concorrência perfeita</strong></td>
+<td style="text-align: right;">Muitos</td>
+<td>Homogêneo</td>
+<td>Livre</td>
+<td>Aceita preço</td>
+</tr>
+<tr class="even">
+<td><strong>Competição monopolística</strong></td>
+<td style="text-align: right;">Muitos</td>
+<td>Diferenciado</td>
+<td>Livre</td>
+<td>Algum poder de preço</td>
+</tr>
+<tr class="odd">
+<td><strong>Oligopólio</strong></td>
+<td style="text-align: right;">Poucos</td>
+<td>Homogêneo ou diferenciado</td>
+<td>Barreiras frequentes</td>
+<td>Considera rivais</td>
+</tr>
+<tr class="even">
+<td><strong>Monopólio</strong></td>
+<td style="text-align: right;">Um</td>
+<td>Sem substituto próximo</td>
+<td>Barreiras</td>
+<td>Escolhe Q e lê P na demanda</td>
+</tr>
+</tbody>
+</table>
+<div title="Do resumão da UnB">
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Do resumão da UnB</strong></p>
+</div>
+<div class="callout-content">
+<p>Monopólio não garante lucro. Oligopólio não significa necessariamente cartel. Lucro econômico zero não significa ausência de remuneração.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="s22" class="slide level2 smaller scrollable">
+<h2>22. Síntese da aula</h2>
+<h3 id="custos">Custos</h3>
+<p><strong>Produção → custos → CMg e CMeT</strong></p>
+<h3 id="firma-competitiva">Firma competitiva</h3>
+<p><strong>P = RMg → produzir onde P = CMg → verificar se vale a pena operar</strong></p>
+<h3 id="estruturas-de-mercado">Estruturas de mercado</h3>
+<p><strong>Concorrência perfeita → competição monopolística → oligopólio → monopólio</strong></p>
+<p>À medida que mudam o número de firmas, a diferenciação e as barreiras à entrada, muda também o poder de mercado e a forma como a firma toma decisões.</p>
+<div title="Ideia central">
+<div class="callout callout-important callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Ideia central</strong></p>
+</div>
+<div class="callout-content">
+<p>As curvas de custo ajudam a entender <strong>como a firma produz</strong>. A estrutura de mercado ajuda a entender <strong>como ela transforma custos, demanda e concorrência em decisões de quantidade e preço</strong>.</p>
+</div>
+</div>
+</div>
+</div>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+</section>
+<section id="referência" class="slide level2 smaller">
+<h2>Referência</h2>
+<p>MANKIW, N. Gregory. <em>Principles of Economics</em>. 8. ed.&nbsp;Cengage Learning, 2018. Capítulos 13 e 14.</p>
+<p>Para a revisão das estruturas de mercado, foram condensados os materiais das aulas da UnB baseados nos capítulos 15, 16 e 17 do mesmo livro.</p>
+<p><a href="#/menu">← Voltar ao menu</a></p>
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="Aula_04_IFB_files/libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="Aula_04_IFB_files/libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

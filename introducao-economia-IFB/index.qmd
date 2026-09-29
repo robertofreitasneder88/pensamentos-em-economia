@@ -1,0 +1,31 @@
+---
+title: "Introdução à Economia - IFB"
+---
+
+### Outros Arquivos
+
+[**Ementa ampliada - versão preliminar**](aulas/outros_arquivos/Ementa%20ampliada.xlsx){target="_blank"}
+
+### Módulo 1 - Tópicos em microeconomia
+
+## Unidade 1 - Introdução
+
+[**Aula 1 - Como pensar economia**](aulas/aulas_1/Aula_01_IFB.html){target="_blank"}
+
+## Unidade 2 - Como funcionam os mercados
+
+[**Aula 2 - Oferta, demanda e elasticidade**](aulas/aulas_2/Aula_02_IFB.html){target="_blank"}
+
+[**Aula 3 - Políticas governamentais e eficiência dos mercados**](aulas/aulas_3/Aula_03_IFB.html){target="_blank"}
+
+## Unidade 3 - Firma
+
+[**Aula 4 - Custos, firma competitiva e estruturas de mercado**](aulas/aulas_3/Aula_03_IFB.html){target="_blank"}
+
+### Listas de Revisão
+
+[**Lista de Exercícios 1 - Introdução e pensamento econômico**](aulas/outros_arquivos/Lista_Exercicios_1_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 2 - Oferta, demanda e elasticidade**](aulas/outros_arquivos/Lista_Exercicios_2_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 3 - Políticas governamentais e eficiência**](aulas/outros_arquivos/Lista_Exercicios_3_IFB.pdf){target="_blank"}

@@ -1,7 +1,8 @@
 project:
   type: website
   resources:
-    - introducao-economia/aulas
+    - introducao-economia-UnB/aulas
+    - introducao-economia-IFB/aulas
 
 execute:
   enabled: false
@@ -13,10 +14,14 @@ website:
     style: "docked"
     search: true
     contents:
+      - text: "Início"
+        href: index.qmd
       - section: "Cursos"
         contents:
-          - text: "Introdução à Economia"
-            href: introducao-economia/index.qmd
+          - text: "Introdução à Economia - UnB"
+            href: introducao-economia-UnB/index.qmd
+          - text: "Introdução à Economia - IFB"
+            href: introducao-economia-IFB/index.qmd
       - text: "Artigos"
         href: artigos/index.qmd
 

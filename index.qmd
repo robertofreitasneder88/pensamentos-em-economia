@@ -152,18 +152,25 @@ resources:
       <p class="perfil-cargo">Professor de Introdução à Economia</p>
       <p class="perfil-resumo">Neste espaço, compartilho aulas, artigos e materiais de apoio ao estudo da economia.</p>
 
-      <ul class="perfil-contatos" aria-label="Perfis acadêmicos e profissionais">
+      <ul class="perfil-contatos" aria-label="Perfis acadêmicos, profissionais e contato">
         <li><a class="perfil-link" href="http://lattes.cnpq.br/1377987141571711" target="_blank" rel="noopener noreferrer" aria-label="Currículo Lattes, abre em nova aba">Lattes</a></li>
         <li><a class="perfil-link" href="https://orcid.org/0009-0000-3772-2259" target="_blank" rel="noopener noreferrer" aria-label="ORCID, abre em nova aba">ORCID</a></li>
         <li><a class="perfil-link" href="https://www.linkedin.com/in/rfnperito/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn, abre em nova aba">LinkedIn</a></li>
+        <li><a class="perfil-link" href="mailto:roberto.neder@unb.br" title="roberto.neder@unb.br" aria-label="Enviar e-mail para roberto.neder@unb.br">E-mail</a></li>
       </ul>
     </div>
   </section>
 
   <section class="inicio-curso" aria-labelledby="titulo-curso">
-    <h2 id="titulo-curso">Introdução à Economia</h2>
+    <h2 id="titulo-curso">Introdução à Economia - UnB</h2>
     <p>Acesse o cronograma, os slides e os materiais organizados por unidade.</p>
     <a class="curso-link" href="introducao-economia/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
+  </section>
+
+  <section class="inicio-curso" aria-labelledby="titulo-curso-ifb">
+    <h2 id="titulo-curso-ifb">Introdução à Economia - IFB</h2>
+    <p>Acesse as aulas e os materiais de apoio do curso do IFB.</p>
+    <a class="curso-link" href="introducao-economia-IFB/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
   </section>
 
   <section class="inicio-curso" aria-labelledby="titulo-artigos">
