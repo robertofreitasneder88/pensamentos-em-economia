@@ -164,7 +164,7 @@ resources:
   <section class="inicio-curso" aria-labelledby="titulo-curso">
     <h2 id="titulo-curso">Introdução à Economia - UnB</h2>
     <p>Acesse o cronograma, os slides e os materiais organizados por unidade.</p>
-    <a class="curso-link" href="introducao-economia/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
+    <a class="curso-link" href="introducao-economia-UnB/index.html">Acessar o curso <span aria-hidden="true">&rarr;</span></a>
   </section>
 
   <section class="inicio-curso" aria-labelledby="titulo-curso-ifb">
