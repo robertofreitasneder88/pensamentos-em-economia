@@ -46,15 +46,17 @@ title: "Introdução à Economia - UnB"
 
 [**Aula 14 - Externalidade**](aulas/aulas_14/Aula%2014.html){target="_blank" style="color: #198754;"}
 
-[**Aula 15 - Bens públicos  e recursos comuns**](aulas/aulas_15/Aula%2015.html){target="_blank" style="color: #198754;"}
+[**Aula 15 - Bens públicos e recursos comuns**](aulas/aulas_15/Aula%2015.html){target="_blank" style="color: #198754;"}
 
 [**Aula 16 - Fronteiras da microeconomia**](aulas/aulas_16/Aula%2016.html){target="_blank"}
+
+[**Aula de Revisão - 1ª Prova**](aulas/aulas_revisao/Aula_Revisao.html){target="_blank"}
 
 ### Módulo 2 - Tópicos em macroeconomia
 
 ## Unidade 6 - Contas nacionais
 
-## Unidade 7 - Crescimento Econômico, Desigualdade e Mercado de Trabalho 
+## Unidade 7 - Crescimento Econômico, Desigualdade e Mercado de Trabalho
 
 ## Unidade 8 - Economia Monetária
 
