@@ -50,8 +50,6 @@ title: "Introdução à Economia - UnB"
 
 [**Aula 16 - Fronteiras da microeconomia**](aulas/aulas_16/Aula%2016.html){target="_blank"}
 
-[**Aula de Revisão - 1ª Prova**](aulas/aulas_revisao/Aula_Revisao.html){target="_blank"}
-
 ### Módulo 2 - Tópicos em macroeconomia
 
 ## Unidade 6 - Contas nacionais
@@ -77,3 +75,17 @@ title: "Introdução à Economia - UnB"
 ## Unidade 8 - Economia Monetária
 
 ## Unidade 9 - Macroeconomia Aberta
+
+## Listas e Revisão
+
+[**Aula de Revisão - 1ª Prova**](aulas/aulas_revisao_1/Aula_Revisao.html){target="_blank"}
+
+[**Aula de Revisão - 2ª Prova**](aulas/aulas_revisao_2/Aula_Revisao.html){target="_blank"}
+
+[**1º Controle**](aulas/controles/Lista%201.docx){target="_blank"}
+
+[**1º Controle - Gabarito Comentado**](aulas/controles/Gabarito_Comentado_Lista_1_corrigido.docx){target="_blank"}
+
+[**2º Controle**](aulas/controles/Lista%202%20Alterada.docx){target="_blank"}
+
+[**2º Controle - Gabarito Comentado**](aulas/controles/Gabarito_Comentado_Lista_2.docx){target="_blank"}
