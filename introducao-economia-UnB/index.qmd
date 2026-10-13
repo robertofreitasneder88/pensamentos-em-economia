@@ -10,43 +10,43 @@ title: "Introdução à Economia - UnB"
 
 ## Unidade 1 - Introdução
 
-[**Aula 1 - Os 10 princípios da economia**](aulas/aulas_1/Aula%201.html){target="_blank" style="color: #198754;"}
+[**Aula 1 - Os 10 princípios da economia**](aulas/aulas_1/Aula%201.html){target="_blank"}
 
-[**Aula 2 - Pensando como um economista**](aulas/aulas_2/Aula%202.html){target="_blank" style="color: #198754;"}
+[**Aula 2 - Pensando como um economista**](aulas/aulas_2/Aula%202.html){target="_blank"}
 
-[**Aula 3 - Interdependência e ganhos de comércio**](aulas/aulas_3/Aula%203.html){target="_blank" style="color: #198754;"}
+[**Aula 3 - Interdependência e ganhos de comércio**](aulas/aulas_3/Aula%203.html){target="_blank"}
 
 ## Unidade 2 - Como funcionam os mercados
 
-[**Aula 4 - As forças de mercado da oferta e da demanda**](aulas/aulas_4/Aula%204.html){target="_blank" style="color: #198754;"}
+[**Aula 4 - As forças de mercado da oferta e da demanda**](aulas/aulas_4/Aula%204.html){target="_blank"}
 
-[**Aula 5 - Elasticidade e suas aplicações**](aulas/aulas_5/Aula%205.html){target="_blank" style="color: #198754;"}
+[**Aula 5 - Elasticidade e suas aplicações**](aulas/aulas_5/Aula%205.html){target="_blank"}
 
-[**Aula 6 - Oferta, demanda e políticas do governo**](aulas/aulas_6/Aula%206.html){target="_blank" style="color: #198754;"}
+[**Aula 6 - Oferta, demanda e políticas do governo**](aulas/aulas_6/Aula%206.html){target="_blank"}
 
-[**Aula 7 - Consumidores, Produtores e a eficiência do mercado**](aulas/aulas_7/Aula%207.html){target="_blank" style="color: #198754;"}
+[**Aula 7 - Consumidores, Produtores e a eficiência do mercado**](aulas/aulas_7/Aula%207.html){target="_blank"}
 
 ## Unidade 3 - Firma
 
-[**Aula 8 - Custos de Produção**](aulas/aulas_8/Aula%208.html){target="_blank" style="color: #c62828;"}
+[**Aula 8 - Custos de Produção**](aulas/aulas_8/Aula%208.html){target="_blank"}
 
-[**Aula 9 - Empresas em um mercado competitivo**](aulas/aulas_9/Aula%209.html){target="_blank" style="color: #c62828;"}
+[**Aula 9 - Empresas em um mercado competitivo**](aulas/aulas_9/Aula%209.html){target="_blank"}
 
 ## Unidade 4 - Estruturas de mercado
 
-[**Aula 10 - Monopólio**](aulas/aulas_10/Aula%2010.html){target="_blank" style="color: #c62828;"}
+[**Aula 10 - Monopólio**](aulas/aulas_10/Aula%2010.html){target="_blank"}
 
-[**Aula 11 - Concorrência Monopolística**](aulas/aulas_11/Aula%2011.html){target="_blank" style="color: #c62828;"}
+[**Aula 11 - Concorrência Monopolística**](aulas/aulas_11/Aula%2011.html){target="_blank"}
 
-[**Aula 12 - Oligopólio**](aulas/aulas_12/Aula%2012.html){target="_blank" style="color: #c62828;"}
+[**Aula 12 - Oligopólio**](aulas/aulas_12/Aula%2012.html){target="_blank"}
 
-[**Aula 13 - Resumão: Estrutura de Mercado**](aulas/aulas_13/Aula%2013.html){target="_blank" style="color: #c62828;"}
+[**Aula 13 - Resumão: Estrutura de Mercado**](aulas/aulas_13/Aula%2013.html){target="_blank"}
 
 ## Unidade 5 - Externalidades, Bens Públicos, Informação e Escolha Social
 
-[**Aula 14 - Externalidade**](aulas/aulas_14/Aula%2014.html){target="_blank" style="color: #198754;"}
+[**Aula 14 - Externalidade**](aulas/aulas_14/Aula%2014.html){target="_blank"}
 
-[**Aula 15 - Bens públicos e recursos comuns**](aulas/aulas_15/Aula%2015.html){target="_blank" style="color: #198754;"}
+[**Aula 15 - Bens públicos e recursos comuns**](aulas/aulas_15/Aula%2015.html){target="_blank"}
 
 [**Aula 16 - Fronteiras da microeconomia**](aulas/aulas_16/Aula%2016.html){target="_blank"}
 
@@ -56,10 +56,24 @@ title: "Introdução à Economia - UnB"
 
 ## Unidade 6 - Contas nacionais
 
+[**Aula 17 - Mensurando a renda de uma nação**](aulas/aulas_17/Aula%2017.html){target="_blank"}
+
+[**Aula 18 - Poupança, investimento e sistema financeiro**](aulas/aulas_18/Aula%2018.html){target="_blank"}
+
 ## Unidade 7 - Crescimento Econômico, Desigualdade e Mercado de Trabalho
+
+[**Aula 19 - Mensurando o custo de vida**](aulas/aulas_19/Aula%2019.html){target="_blank"}
+
+[**Aula 20 - Produção e crescimento**](aulas/aulas_20/Aula%2020.html){target="_blank"}
+
+[**Aula 21 - Desigualdade de renda e pobreza**](aulas/aulas_21/Aula%2021.html){target="_blank"}
+
+[**Aula 22 - Mercados de fatores de produção**](aulas/aulas_22/Aula%2022.html){target="_blank"}
+
+[**Aula 23 - Rendimentos e discriminação**](aulas/aulas_23/Aula%2023.html){target="_blank"}
+
+[**Aula 24 - Desemprego**](aulas/aulas_24/Aula%2024.html){target="_blank"}
 
 ## Unidade 8 - Economia Monetária
 
 ## Unidade 9 - Macroeconomia Aberta
-
-## Unidade 10 - Flutuações Econômicas no Curto Prazo
