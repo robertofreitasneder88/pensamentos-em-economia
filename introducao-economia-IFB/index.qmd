@@ -20,7 +20,11 @@ title: "Introdução à Economia - IFB"
 
 ## Unidade 3 - Firma
 
-[**Aula 4 - Custos, firma competitiva e estruturas de mercado**](aulas/aulas_3/Aula_03_IFB.html){target="_blank"}
+[**Aula 4 - Custos, firma competitiva e estruturas de mercado**](aulas/aulas_4/Aula_04_IFB.html){target="_blank"}
+
+## Unidade 4 - Externalidades, bens públicos e recursos comuns
+
+[**Aula 5 - Externalidades, bens públicos e recursos comuns**](aulas/aulas_5/Aula_05.html){target="_blank"}
 
 ### Listas de Revisão
 
@@ -29,3 +33,7 @@ title: "Introdução à Economia - IFB"
 [**Lista de Exercícios 2 - Oferta, demanda e elasticidade**](aulas/outros_arquivos/Lista_Exercicios_2_IFB.pdf){target="_blank"}
 
 [**Lista de Exercícios 3 - Políticas governamentais e eficiência**](aulas/outros_arquivos/Lista_Exercicios_3_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 4 - Custos, firma competitiva e estruturas de mercado**](aulas/outros_arquivos/Lista_Exercicios_4_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 5 - Externalidades, bens públicos e recursos comuns**](aulas/outros_arquivos/Lista_Exercicios_5_IFB.pdf){target="_blank"}
