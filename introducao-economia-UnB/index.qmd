@@ -66,6 +66,8 @@ title: "Introdução à Economia - UnB"
 
 [**Aula 21 - Desigualdade de renda e pobreza**](aulas/aulas_21/Aula%2021.html){target="_blank"}
 
+[▶ Assistir ao vídeo](https://youtu.be/z7D6t7KeFCA){target="_blank"}
+
 [**Aula 22 - Mercados de fatores de produção**](aulas/aulas_22/Aula%2022.html){target="_blank"}
 
 [**Aula 23 - Rendimentos e discriminação**](aulas/aulas_23/Aula%2023.html){target="_blank"}

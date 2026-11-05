@@ -1,6 +1,6 @@
 ---
 title: "Artigos"
-description: "Artigos de Roberto de Freitas Neder e uma seleção de leituras recomendadas."
+description: "Artigos de Roberto de Freitas Neder, textos seminais e materiais didáticos selecionados."
 lang: pt-BR
 toc: true
 toc-title: "Nesta página"
@@ -9,7 +9,7 @@ resources:
   - arquivos/*.pdf
 ---
 
-Este espaço reúne textos de minha autoria e leituras que considero relevantes para ampliar o debate e a reflexão.
+Este espaço reúne textos de minha autoria, artigos seminais e materiais didáticos que considero relevantes para o estudo e a reflexão em Economia.
 
 ## Artigos de minha autoria {#autoria}
 
@@ -21,10 +21,9 @@ Publicações de minha autoria, incluindo trabalhos em coautoria.
 
 Investiga a participação de homens e mulheres nos cargos de gestão da UnB, com base nos servidores ativos em dezembro de 2025. Examina como gênero, área de atuação, carreira e trajetória institucional se relacionam com o acesso à liderança, distinguindo segregação vertical e horizontal.
 
-[Abrir PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
-[Baixar PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-secondary .btn-sm download="alem-do-teto-de-vidro.pdf"}
+[Abrir PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/alem-do-teto-de-vidro.pdf){.btn .btn-outline-secondary .btn-sm download="alem-do-teto-de-vidro.pdf"}
 
----
+------------------------------------------------------------------------
 
 ### Avaliação econômica de universidades públicas: uma análise de custo-benefício baseada em registros administrativos
 
@@ -32,10 +31,9 @@ Investiga a participação de homens e mulheres nos cargos de gestão da UnB, co
 
 Relaciona registros acadêmicos da UnB à RAIS de 2014 a 2023 para estimar diferenciais de rendimento associados à formação e compará-los aos custos públicos da instituição. Discute como a taxa de desconto, a definição dos custos e a inserção dos egressos no serviço público influenciam a relação benefício-custo.
 
-[Abrir PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
-[Baixar PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-secondary .btn-sm download="avaliacao-economica-universidades-publicas.pdf"}
+[Abrir PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/avaliacao-economica-universidades-publicas.pdf){.btn .btn-outline-secondary .btn-sm download="avaliacao-economica-universidades-publicas.pdf"} [Apresentação](arquivos/Apresentacao_UnB_Custo_Beneficio.html){.btn .btn-outline-success .btn-sm target="_blank" rel="noopener noreferrer"}
 
----
+------------------------------------------------------------------------
 
 ### O IPEA como núcleo institucional de um programa de pesquisa científica em economia aplicada: uma abordagem lakatosiana
 
@@ -43,9 +41,9 @@ Relaciona registros acadêmicos da UnB à RAIS de 2014 a 2023 para estimar difer
 
 Analisa a trajetória do IPEA à luz da metodologia dos programas de pesquisa de Imre Lakatos. Discute o potencial de agendas específicas do Instituto para articular continuidade teórica, aperfeiçoamento de métodos e avaliação de políticas públicas, sem estender esse diagnóstico à instituição como um todo.
 
-[Abrir PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
-[Baixar PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-secondary .btn-sm download="ipea-abordagem-lakatosiana.pdf"}
+[Abrir PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/ipea-abordagem-lakatosiana.pdf){.btn .btn-outline-secondary .btn-sm download="ipea-abordagem-lakatosiana.pdf"}
 
+```{=html}
 <!--
 MODELO PARA ADICIONAR OUTRO ARTIGO DE AUTORIA
 Copie o modelo a seguir para FORA deste comentário e preencha os campos.
@@ -63,23 +61,68 @@ projeto e use, no lugar do link acima:
 
 [Baixar artigo em PDF](arquivos/nome-do-artigo.pdf){target="_blank"}
 -->
+```
 
-## Leituras recomendadas {#leituras}
+## Artigos seminais {#seminais}
 
-Uma seleção de artigos de outros autores, acompanhados de uma breve indicação de sua relevância.
+Textos que marcaram o desenvolvimento da teoria econômica e permanecem importantes para compreender debates contemporâneos.
 
-*Em breve, as primeiras leituras estarão disponíveis aqui.*
+### The Problem of Social Cost
 
+**Autoria:** Ronald H. Coase. **Publicação:** *Journal of Law and Economics*, v. 3, 1960.
+
+Um dos textos fundamentais da economia institucional e da análise econômica do direito. Coase reformula o problema das externalidades ao tratá-lo como uma relação recíproca entre agentes e mostra que a definição dos direitos, os custos de transação e as possibilidades de negociação são centrais para avaliar diferentes arranjos institucionais.
+
+[Abrir PDF](arquivos/coase-problem-social-cost-1960.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/coase-problem-social-cost-1960.pdf){.btn .btn-outline-secondary .btn-sm download="coase-problem-social-cost-1960.pdf"}
+
+```{=html}
 <!--
-MODELO PARA ADICIONAR UMA LEITURA RECOMENDADA
-Quando adicionar a primeira indicação, retire a mensagem "Em breve" acima.
-Copie o modelo a seguir para FORA deste comentário e preencha os campos.
+MODELO PARA ADICIONAR OUTRO ARTIGO SEMINAL
 
 ### Título do artigo
 
 **Autoria:** nome dos autores. **Publicação:** revista ou instituição, ano.
 
-Uma breve explicação do tema e do motivo da recomendação.
+Breve apresentação da contribuição do texto e de sua importância para a literatura.
 
-[Ler artigo](COLE_O_LINK_AQUI){target="_blank" rel="noopener noreferrer"}
+[Abrir PDF](arquivos/nome-do-artigo.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+[Baixar PDF](arquivos/nome-do-artigo.pdf){.btn .btn-outline-secondary .btn-sm download="nome-do-artigo.pdf"}
 -->
+```
+
+## Material didático {#didatico}
+
+Livros-texto e outras referências utilizadas como apoio ao estudo e às disciplinas de Economia.
+
+### Principles of Economics
+
+**Autoria:** N. Gregory Mankiw. **Edição:** 8ª edição.
+
+Livro introdutório que apresenta os principais conceitos de microeconomia e macroeconomia de forma progressiva e aplicada. Parte de escolhas, incentivos, custo de oportunidade e funcionamento dos mercados e avança para temas como bem-estar, externalidades, estruturas de mercado, crescimento, inflação, desemprego e política macroeconômica.
+
+[Abrir PDF](arquivos/mankiw-principles-economics-8ed.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/mankiw-principles-economics-8ed.pdf){.btn .btn-outline-secondary .btn-sm download="mankiw-principles-economics-8ed.pdf"}
+
+------------------------------------------------------------------------
+
+### Microeconomia: princípios básicos — uma abordagem moderna
+
+**Autoria:** Hal R. Varian. **Edição:** tradução da 7ª edição.
+
+Referência de microeconomia em nível intermediário, com tratamento analítico da escolha do consumidor, demanda, efeitos renda e substituição, escolha intertemporal e sob incerteza, teoria da firma, estruturas de mercado, teoria dos jogos, bem-estar, externalidades, bens públicos e informação. Combina intuição econômica, representação gráfica e formalização matemática.
+
+[Abrir PDF](arquivos/varian-microeconomia-principios-basicos-7ed.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/varian-microeconomia-principios-basicos-7ed.pdf){.btn .btn-outline-secondary .btn-sm download="varian-microeconomia-principios-basicos-7ed.pdf"}
+
+```{=html}
+<!--
+MODELO PARA ADICIONAR OUTRO MATERIAL DIDÁTICO
+
+### Título do livro ou material
+
+**Autoria:** nome dos autores. **Edição:** edição ou ano, quando pertinente.
+
+Breve apresentação do conteúdo, do nível de aprofundamento e do uso recomendado.
+
+[Abrir PDF](arquivos/nome-do-material.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
+[Baixar PDF](arquivos/nome-do-material.pdf){.btn .btn-outline-secondary .btn-sm download="nome-do-material.pdf"}
+-->
+```
