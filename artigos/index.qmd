@@ -100,7 +100,7 @@ Livros-texto e outras referências utilizadas como apoio ao estudo e às discipl
 
 Livro introdutório que apresenta os principais conceitos de microeconomia e macroeconomia de forma progressiva e aplicada. Parte de escolhas, incentivos, custo de oportunidade e funcionamento dos mercados e avança para temas como bem-estar, externalidades, estruturas de mercado, crescimento, inflação, desemprego e política macroeconômica.
 
-[Abrir PDF](arquivos/mankiw-principles-economics-8ed.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/mankiw-principles-economics-8ed.pdf){.btn .btn-outline-secondary .btn-sm download="mankiw-principles-economics-8ed.pdf"}
+[Acessar PDF](https://unbbr-my.sharepoint.com/:b:/g/personal/roberto_neder_unb_br/IQBVk7m_-X19TJ3KBL4LR1P4AZDArZ5VnX4GDN-WkNpRlYg?e=GxyUiu){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
 
 ------------------------------------------------------------------------
 
@@ -110,7 +110,7 @@ Livro introdutório que apresenta os principais conceitos de microeconomia e mac
 
 Referência de microeconomia em nível intermediário, com tratamento analítico da escolha do consumidor, demanda, efeitos renda e substituição, escolha intertemporal e sob incerteza, teoria da firma, estruturas de mercado, teoria dos jogos, bem-estar, externalidades, bens públicos e informação. Combina intuição econômica, representação gráfica e formalização matemática.
 
-[Abrir PDF](arquivos/varian-microeconomia-principios-basicos-7ed.pdf){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"} [Baixar PDF](arquivos/varian-microeconomia-principios-basicos-7ed.pdf){.btn .btn-outline-secondary .btn-sm download="varian-microeconomia-principios-basicos-7ed.pdf"}
+[Acessar PDF](https://unbbr-my.sharepoint.com/:b:/g/personal/roberto_neder_unb_br/IQCV9g4tHUHPQ7KdxUbkT__IAboqMPBPbxjFuVBFay5Wbyc?e=G8khOn){.btn .btn-outline-primary .btn-sm target="_blank" rel="noopener noreferrer"}
 
 ```{=html}
 <!--
