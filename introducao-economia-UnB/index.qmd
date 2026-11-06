@@ -72,11 +72,19 @@ title: "Introdução à Economia - UnB"
 
 [**Aula 23 - Rendimentos e discriminação**](aulas/aulas_23/Aula%2023.html){target="_blank"}
 
+[▶ Assistir ao vídeo](https://youtu.be/8pgpTzctVrI){target="_blank"}
+
 [**Aula 24 - Desemprego**](aulas/aulas_24/Aula%2024.html){target="_blank"}
 
 ## Unidade 8 - Economia Monetária
 
+[**Aula 25 - O sistema monetário**](aulas/aulas_25/Aula%2025.html){target="_blank"}
+
+[**Aula 26 - Inflação**](aulas/aulas_26/Aula%2026.html){target="_blank"}
+
 ## Unidade 9 - Macroeconomia Aberta
+
+[**Aula 27 - Macroeconomia aberta: conceitos básicos**](aulas/aulas_27/Aula%2027.html){target="_blank"}
 
 ## Listas e Revisão
 
@@ -91,3 +99,19 @@ title: "Introdução à Economia - UnB"
 [**2º Controle**](aulas/controles/Lista%202%20Alterada.docx){target="_blank"}
 
 [**2º Controle - Gabarito Comentado**](aulas/controles/Gabarito_Comentado_Lista_2.docx){target="_blank"}
+
+\[**3º Controle**\]
+
+\[**3º Controle - Gabarito Comentado**\]
+
+\[**4º Controle**\]
+
+\[**4º Controle - Gabarito Comentado**\]
+
+\[**Controle Substituto**\]
+
+\[**Controle Substituto - Gabarito Comentado**\]
+
+\[**5º Controle**\]
+
+\[**5º Controle - Gabarito Comentado**\]
