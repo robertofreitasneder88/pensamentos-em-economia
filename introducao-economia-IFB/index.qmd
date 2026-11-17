@@ -26,13 +26,17 @@ title: "Introdução à Economia - IFB"
 
 [**Aula 5 - Externalidades, bens públicos e recursos comuns**](aulas/aulas_5/Aula_05.html){target="_blank"}
 
-## Unidade 5 - Externalidades, bens públicos e recursos comuns
+## Unidade 5 - PIB, preços, poupança e crescimento
 
 [**Aula 6 - PIB, preços, poupança e crescimento**](aulas/aulas_6/Aula_06.html){target="_blank"}
 
-## Unidade 6 - Externalidades, bens públicos e recursos comuns
+## Unidade 6 - Desigualdade, fatores, salários e desemprego
 
-[**Aula 7 -Desigualdade, fatores, salários e desemprego**](aulas/aulas_7/Aula_07.html){target="_blank"}
+[**Aula 7 - Desigualdade, fatores, salários e desemprego**](aulas/aulas_7/Aula_07.html){target="_blank"}
+
+## Unidade 7 - Sistema monetário e inflação
+
+## Unidade 8 - Macroeconomia aberta e Conceitos de Comércio Internacional
 
 ### Listas de Revisão
 
