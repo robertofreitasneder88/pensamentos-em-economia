@@ -26,6 +26,14 @@ title: "Introdução à Economia - IFB"
 
 [**Aula 5 - Externalidades, bens públicos e recursos comuns**](aulas/aulas_5/Aula_05.html){target="_blank"}
 
+## Unidade 5 - Externalidades, bens públicos e recursos comuns
+
+[**Aula 6 - PIB, preços, poupança e crescimento**](aulas/aulas_6/Aula_06.html){target="_blank"}
+
+## Unidade 6 - Externalidades, bens públicos e recursos comuns
+
+[**Aula 7 -Desigualdade, fatores, salários e desemprego**](aulas/aulas_7/Aula_07.html){target="_blank"}
+
 ### Listas de Revisão
 
 [**Lista de Exercícios 1 - Introdução e pensamento econômico**](aulas/outros_arquivos/Lista_Exercicios_1_IFB.pdf){target="_blank"}
@@ -37,3 +45,7 @@ title: "Introdução à Economia - IFB"
 [**Lista de Exercícios 4 - Custos, firma competitiva e estruturas de mercado**](aulas/outros_arquivos/Lista_Exercicios_4_IFB.pdf){target="_blank"}
 
 [**Lista de Exercícios 5 - Externalidades, bens públicos e recursos comuns**](aulas/outros_arquivos/Lista_Exercicios_5_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 6 - PIB, preços, poupança e crescimento**](aulas/outros_arquivos/Lista_Exercicios_6_IFB.pdf){target="_blank"}
+
+[**Lista de Exercícios 7 - Desigualdade, fatores, salários e desemprego**](aulas/outros_arquivos/Lista_Exercicios_7_IFB.pdf){target="_blank"}
